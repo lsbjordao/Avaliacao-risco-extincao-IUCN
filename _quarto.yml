@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "Avaliação do Risco de Extinção de Espécies"
+  author: "Lucas S.B. Jordão"
+  date: "23/03/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: lux
+      dark: cyborg
+    number-sections: false
+    css: "style.css"
+    include-in-header:
+      - text: |
+          <script src="nav-arrows.js"></script>
+
+lang: pt
+
+

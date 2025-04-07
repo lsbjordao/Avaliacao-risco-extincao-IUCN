@@ -1,0 +1,8 @@
+p strong {
+    font-weight: bold !important;
+}
+
+.highlight-hover:hover {
+    background-color: #f0f8ff;  /* Cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease;  /* Suaviza a transição */
+}

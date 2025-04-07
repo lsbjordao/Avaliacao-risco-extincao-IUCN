@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama Portaria MMA nº 162/16</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            mermaid.initialize({ startOnLoad: true });
+        });
+    </script>
+    <style>
+        .mermaid {
+            width: 100%;  /* Define a largura do gráfico */
+            margin: 0 auto;  /* Centraliza o gráfico */
+        }
+    </style>
+</head>
+<body>
+    <div class="mermaid">
+        flowchart TD
+            C[JBRJ propõe alteração<br>da lista ao MMA]
+            C -->|Requisitos| D[Validação externa<br>por especialistas]
+            D -->|Inclusão de informações técnicas| E[Distribuição geográfica,<br>fatores de ameaça,<br>estado de conservação]
+            C -->|Submissão ao| F[MMA]
+            F -->|Encaminha para| G[CONABIO]
+            G -->|Tem 60 dias para análise| H[Manifestação sobre<br>a proposta]
+            H -->|Em caso de divergência| I[Apresentação de<br>estudos e análises]
+            I -->|Se necessário, MMA convoca| J[Painel de especialistas]
+            J -->|Avaliação das ponderações do CONABIO| K[Decisão conjunta<br>MMA e painel]
+            K -->|Se procedente| L[JBRJ reavalia as<br>espécies questionadas]
+            L -->|Considerando novas informações| M[Reenvio ao MMA]
+            M -->|Emissão de parecer final| N[MMA emite parecer final]
+    </div>
+</body>
+</html>
