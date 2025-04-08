@@ -1,25 +1,31 @@
 # IUCN
 
-A IUCN (União Internacional para a Conservação da Natureza) é uma união de membros composta por organizações governamentais e da sociedade civil. Juntas, trabalhamos para promover o desenvolvimento sustentável e criar um mundo justo que valorize e conserve a natureza.
+::: {layout-ncol=2}
+
+::: {#first-column style="display: flex; justify-content: center;"}
+
+A **IUCN** (União Internacional para a Conservação da Natureza) é uma união composta por membros de organizações governamentais e da sociedade civil. Juntas, essas entidades trabalham para promover o desenvolvimento sustentável e construir um mundo mais justo, que valorize e conserve a natureza.
+
+:::
+
+::: {#second-column style="display: flex; justify-content: center;"}
+![](https://iucn.org/themes/custom/iucn_revamp/logo.svg){width=60%}
+:::
+
+:::
 
 ## Missão
 
-Influenciar, encorajar e ajudar a sociedade mundial a conservar a integridade e a diversidade biológica, e garantir que
-qualquer uso dos recursos naturais seja equitativo e ecologicamente sustentável.
+Influenciar, encorajar e apoiar a sociedade global na conservação da integridade e da diversidade biológica, assegurando que o uso dos recursos naturais seja equitativo e ecologicamente sustentável.
 
 ## História e atualidade
 
-Criado em 1948
-> 1,500 membros organizacionais
-(Estados, Agências Governamentais,
-ONGs) de >170 paises.
-> 1,000 funcionários (incluindo
-escritórios Regionais e Nacionais)
-> 18,000 Membros da Comissão
-(cientistas e especialistas)
-~ 5,000 representantes de
-organizações parceiras
-Muitos especialistas que não são
-membros das Comissões
-Observador oficial da
-Assembleia Geral da ONU
+Fundada em **1948**, a IUCN reúne:
+
+- Mais de **1.500 membros organizacionais**, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de **170 países**.
+- Aproximadamente **1.000 funcionários**, atuando em escritórios regionais e nacionais.
+- Cerca de **18.000 membros de comissões**, entre cientistas e especialistas.
+- Aproximadamente **5.000 representantes de organizações parceiras**.
+- Diversos especialistas que colaboram mesmo sem integrar formalmente as comissões.
+
+A IUCN também atua como **observadora oficial** na Assembleia Geral das Nações Unidas.

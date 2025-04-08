@@ -2,9 +2,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Política Pública de Proteção das Espécies Ameaçadas",
+    "title": "Avaliação do Risco de Extinção de Espécies",
     "section": "",
-    "text": "Prefácio\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Prefácio",
+    "crumbs": [
+      "Prefácio"
+    ]
   },
   {
     "objectID": "intro.html",
@@ -138,5 +141,55 @@
     "title": "PRONABIO e CONABIO",
     "section": "CONABIO",
     "text": "CONABIO\n\n\n\n\n\n\nA Portaria MMA nº 394, de 17 de agosto de 2021 aprova o Regimento Interno da CONABIO.\n\n\n\nArt. 1º A Comissão Nacional de Biodiversidade é instância colegiada de caráter consultivo, cuja finalidade é coordenar, acompanhar e avaliar as ações do Programa Nacional de Diversidade Biológica PRONABIO, conforme expressa o Decreto nº 4.703, de 21 de maio de 2003 e demais alterações, competindo-lhe o seguinte:\n I - coordenar a elaboração da Política Nacional da Biodiversidade, com base nos princípios e diretrizes previstos no Decreto no 4.339, de 2002; \n II - promover a implementação dos compromissos assumidos pelo Brasil junto à Convenção sobre Diversidade Biológica"
+  },
+  {
+    "objectID": "iucn.html",
+    "href": "iucn.html",
+    "title": "IUCN",
+    "section": "",
+    "text": "Missão\nInfluenciar, encorajar e apoiar a sociedade global na conservação da integridade e da diversidade biológica, assegurando que o uso dos recursos naturais seja equitativo e ecologicamente sustentável.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>IUCN</span>"
+    ]
+  },
+  {
+    "objectID": "iucn.html#história-e-atualidade",
+    "href": "iucn.html#história-e-atualidade",
+    "title": "IUCN",
+    "section": "História e atualidade",
+    "text": "História e atualidade\nFundada em 1948, a IUCN reúne:\n\nMais de 1.500 membros organizacionais, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de 170 países.\nAproximadamente 1.000 funcionários, atuando em escritórios regionais e nacionais.\nCerca de 18.000 membros de comissões, entre cientistas e especialistas.\nAproximadamente 5.000 representantes de organizações parceiras.\nDiversos especialistas que colaboram mesmo sem integrar formalmente as comissões.\n\nA IUCN também atua como observadora oficial na Assembleia Geral das Nações Unidas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>IUCN</span>"
+    ]
+  },
+  {
+    "objectID": "lista-vermelha.html",
+    "href": "lista-vermelha.html",
+    "title": "Lista Vermelha",
+    "section": "",
+    "text": "Relevância\nA Lista Vermelha da IUCN oferece uma compilação abrangente dos status de conservação das espécies em escala global. Mais do que uma simples lista, sua abordagem combina dados científicos, critérios técnicos e avaliações colaborativas. É amplamente utilizada para orientar ações e políticas de conservação, com base nas melhores informações disponíveis sobre ameaças, ecologia, reprodução e medidas de proteção.\nA Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual é a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha</span>"
+    ]
+  },
+  {
+    "objectID": "lista-vermelha.html#objetivos",
+    "href": "lista-vermelha.html#objetivos",
+    "title": "Lista Vermelha",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nObjetivo Geral\nFonte de informação mais abrangente do mundo sobre o risco de extinção das espécies.\nFornecer informações e análises sobre o status, tendências e ameaças às espécies, a fim de informar e catalisar ações para a conservação da biodiversidade.\n\n\nObjetivos específicos\nEstabelecer uma linha de base a partir da qual monitora a mudança nos status das espécies.\n\nFornecer um contexto global para estabelecer prioridades de conservação em nível local.\nMonitorar de forma contínua o status de uma seleção representativa de espécies (como indicadores de biodiversidade) que abrangem todos os principais ecossistemas do mundo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha</span>"
+    ]
+  },
+  {
+    "objectID": "lista-vermelha.html#relevância",
+    "href": "lista-vermelha.html#relevância",
+    "title": "Lista Vermelha",
+    "section": "",
+    "text": "Mais que uma simples lista, a IUCN representa uma compilação abrangente dos status de conservação das espécies em escala global;\nVai além de nomes e categorias de ameaça: a abordagem da IUCN incorpora dados científicos, critérios técnicos e avaliações colaborativas para orientar ações de conservação;\nAmplamente utilizado para informar e influenciar a conservação da biodiversidade;\nMétodo para avaliar o risco com base nas melhores informações científicas disponíveis;\nInclui informações sobre ameaças (por exemplo, espécies invasoras), ecologia, reprodução e ações de conservação;",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha</span>"
+    ]
   }
 ]
