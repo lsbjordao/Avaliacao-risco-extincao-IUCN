@@ -64,6 +64,7 @@ Dessa maneira, citamos alguns exemplos sobre a utilização dos termos "categori
 
 ### Critério C
 
+<iframe id="iframeC" src="./criterio-c.html" width="100%" style="border: none;"></iframe>
 
 ### Critério D
 
@@ -96,4 +97,5 @@ Dessa maneira, citamos alguns exemplos sobre a utilização dos termos "categori
   // Aplica para ambos os iframes
   ajustarAltura("iframeA");
   ajustarAltura("iframeB");
+  ajustarAltura("iframeC");
 </script>

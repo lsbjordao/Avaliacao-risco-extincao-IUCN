@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Categoria C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-wrapper {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tcolorbox {
+            border: 1px solid black;
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tcolorbox-header {
+            background-color: darkgray;
+            color: black;
+            padding: 0.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .criteria-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        .criteria-table th, 
+        .criteria-table td {
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+            border: none;
+        }
+
+        .header-row th {
+            padding-bottom: 15px;
+        }
+
+        .gray {
+            background-color: #c0c0c0;
+            font-weight: bold;
+            text-align: left;
+            width: 40%;
+        }
+
+        .cr {
+            background-color: #fd6864;
+            width: 20%;
+        }
+
+        .en {
+            background-color: #ffcc67;
+            width: 20%;
+        }
+
+        .vu {
+            background-color: #ffffc7;
+            width: 20%;
+        }
+
+        .condition-label {
+            background-color: #efefef;
+            text-align: center;
+            width: 30px;
+            font-weight: bold;
+        }
+
+        .condition-text {
+            background-color: #efefef;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            padding: 0px 0 5px 0;
+            margin-top: 15px;
+        }
+
+        .subcondition {
+            padding-left: 15px;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="tcolorbox">
+            <div class="tcolorbox-header">
+                População pequena ou em declínio
+            </div>
+
+            <table class="criteria-table">
+                <tr class="header-row">
+                    <th class="white"></th>
+                    <th class="cr">CR</th>
+                    <th class="en">EN</th>
+                    <th class="vu">VU</th>
+                </tr>
+                <tr>
+                    <td class="gray">Número de indivíduos maduros</td>
+                    <td class="cr" style="vertical-align: middle;">&lt; 250</td>
+                    <td class="en" style="vertical-align: middle;">&lt; 2.500</td>
+                    <td class="vu" style="vertical-align: middle;">&lt; 10.000</td>
+                </tr>
+            </table>
+
+            <div class="section-title">E PELO MENOS 1 dos subcritérios (C1 ou C2):</div>
+
+            <!-- C1 Section -->
+            <table class="criteria-table">
+                <tr>
+                    <td class="condition-label">C1</td>
+                    <td class="condition-text">Declínio contínuo observado, estimado ou projetado de pelo menos (até 100 anos no futuro):</td>
+                    <td class="cr">25% em 3 anos ou 1 geração (qual for mais longa)</td>
+                    <td class="en">20% em 5 anos ou 2 gerações (qual for mais longa)</td>
+                    <td class="vu">10% em 10 anos ou 3 gerações (qual for mais longa)</td>
+                </tr>
+            </table>
+
+            <!-- C2 Section -->
+            <div class="section-title">C2: Declínio contínuo observado, estimado, projetado ou inferido E pelo menos uma das seguintes condições:</div>
+
+            <table class="criteria-table">
+                <tr>
+                    <td class="condition-label">(a)</td>
+                    <td class="condition-text">(i) Número de indivíduos maduros em cada subpopulação</td>
+                    <td class="cr" style="vertical-align: middle;">≤ 50</td>
+                    <td class="en" style="vertical-align: middle;">≤ 250</td>
+                    <td class="vu" style="vertical-align: middle;">≤ 1.000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="condition-text subcondition">(ii) % de indivíduos maduros em uma subpopulação =</td>
+                    <td class="cr" style="vertical-align: middle;">90-100%</td>
+                    <td class="en" style="vertical-align: middle;">95-100%</td>
+                    <td class="vu" style="vertical-align: middle;">100%</td>
+                </tr>
+                <tr>
+                    <td class="condition-label">(b)</td>
+                    <td class="condition-text">Flutuações extremas no número de indivíduos maduros</td>
+                    <td colspan="3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
