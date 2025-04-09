@@ -157,10 +157,7 @@
     "href": "iucn.html#história-e-atualidade",
     "title": "IUCN",
     "section": "História e atualidade",
-    "text": "História e atualidade\nFundada em 1948, a IUCN reúne:\n\nMais de 1.500 membros organizacionais, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de 170 países.\nAproximadamente 1.000 funcionários, atuando em escritórios regionais e nacionais.\nCerca de 18.000 membros de comissões, entre cientistas e especialistas.\nAproximadamente 5.000 representantes de organizações parceiras.\nDiversos especialistas que colaboram mesmo sem integrar formalmente as comissões.\n\nA IUCN também atua como observadora oficial na Assembleia Geral das Nações Unidas.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>IUCN</span>"
-    ]
+    "text": "História e atualidade\nFundada em 1948, a IUCN reúne:\n\nMais de 1.500 membros organizacionais, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de 170 países.\nAproximadamente 1.000 funcionários, atuando em escritórios regionais e nacionais.\nCerca de 18.000 membros de comissões, entre cientistas e especialistas.\nAproximadamente 5.000 representantes de organizações parceiras.\nDiversos especialistas que colaboram mesmo sem integrar formalmente as comissões.\n\nA IUCN também atua como observadora oficial na Assembleia Geral das Nações Unidas."
   },
   {
     "objectID": "lista-vermelha.html",
@@ -197,19 +194,27 @@
     "href": "lista-vermelha.html#para-que-ela-serve",
     "title": "Lista Vermelha da IUCN",
     "section": "Para que ela serve?",
-    "text": "Para que ela serve?\nA Lista orienta ações de conservação, políticas públicas e decisões ambientais em todo o mundo. É usada por governos, ONGs, cientistas e gestores para priorizar esforços, identificar espécies ameaçadas e promover a proteção de habitats e ecossistemas.\nA Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha da IUCN</span>"
-    ]
+    "text": "Para que ela serve?\nA Lista orienta ações de conservação, políticas públicas e decisões ambientais em todo o mundo. É usada por governos, ONGs, cientistas e gestores para priorizar esforços, identificar espécies ameaçadas e promover a proteção de habitats e ecossistemas.\nA Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas."
   },
   {
     "objectID": "lista-vermelha.html#por-que-ela-importa",
     "href": "lista-vermelha.html#por-que-ela-importa",
     "title": "Lista Vermelha da IUCN",
     "section": "Por que ela importa?",
-    "text": "Por que ela importa?\nPorque fornece uma base confiável para entender o risco de extinção das espécies e agir antes que seja tarde demais. Ao reunir conhecimento científico e promover cooperação internacional, a Lista Vermelha contribui para a conservação da biodiversidade e o uso sustentável dos recursos naturais — fundamentais para o equilíbrio ecológico e o bem-estar humano.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha da IUCN</span>"
-    ]
+    "text": "Por que ela importa?\nPorque fornece uma base confiável para entender o risco de extinção das espécies e agir antes que seja tarde demais. Ao reunir conhecimento científico e promover cooperação internacional, a Lista Vermelha contribui para a conservação da biodiversidade e o uso sustentável dos recursos naturais — fundamentais para o equilíbrio ecológico e o bem-estar humano."
+  },
+  {
+    "objectID": "iucn.html#missão",
+    "href": "iucn.html#missão",
+    "title": "IUCN",
+    "section": "Missão",
+    "text": "Missão\nInfluenciar, encorajar e apoiar a sociedade global na conservação da integridade e da diversidade biológica, assegurando que o uso dos recursos naturais seja equitativo e ecologicamente sustentável."
+  },
+  {
+    "objectID": "lista-vermelha.html#o-que-é",
+    "href": "lista-vermelha.html#o-que-é",
+    "title": "Lista Vermelha da IUCN",
+    "section": "O que é?",
+    "text": "O que é?\nA Lista Vermelha de Espécies Ameaçadas da IUCN é a mais abrangente fonte de informações sobre o status de risco de extinção das espécies em escala global. Ela classifica espécies em diferentes categorias de risco de extinção com base em critérios científicos e dados atualizados sobre populações, distribuição e ameaças."
   }
 ]
