@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Árvore IUCN com D3.js</title>
+    <style>
+        html, body {
+          margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Remove barras de rolagem */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            width: 100%;
+            height: 100vh;
+        }
+
+        text {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .symbol {
+            fill: #eee;
+            stroke: #999;
+            stroke-width: 2px;
+        }
+
+        .symbol-DD { fill: #999999; }
+        .symbol-LC { fill: #006566; }
+        .symbol-NT { fill: #006566; }
+        .symbol-VU { fill: #cc9901; }
+        .symbol-EN { fill: #cd6633; }
+        .symbol-CR { fill: #cd3232; }
+        .symbol-EW { fill: #000000; }
+        .symbol-EX { fill: #000000; }
+        .symbol-NE { fill: white; }
+        .symbol-NA { fill: white; }
+
+        .text-DD { fill: white; }
+        .text-LC { fill: white; }
+        .text-NT { fill: #9fd09b; }
+        .text-VU { fill: white; }
+        .text-EN { fill: #ffd09b; }
+        .text-CR { fill: #fcc8c8; }
+        .text-EW { fill: white; }
+        .text-EX { fill: #cd3232; }
+        .text-NE { fill: black; }
+        .text-NA { fill: black; }
+    </style>
+</head>
+
+<body>
+    <svg id="tree"></svg>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        const iconCategories = ["DD", "LC", "NT", "VU", "EN", "CR", "EW", "EX", "NE", "NA"];
+
+        const data = {
+            name: "Todas as espécies",
+            children: [
+                {
+                    name: "Nâo avaliada",
+                    children: [{ name: "NE" }]
+                },
+                {
+                    name: "Elegível para avaliação regional",
+                    children: [
+                        { name: "NA" },
+                        {
+                            name: "Avaliadas",
+                            children: [
+                                { name: "DD" },
+                                {
+                                    name: "Dados adequados",
+                                    children: [
+                                        { name: "LC" },
+                                        { name: "NT" },
+                                        {
+                                            name: "Ameaçadas",
+                                            children: [
+                                                { name: "VU" },
+                                                { name: "EN" },
+                                                { name: "CR" }
+                                            ]
+                                        },
+                                        {
+                                            name: "Extintas",
+                                            children: [
+                                                { name: "EW" },
+                                                { name: "EX" }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        };
+
+        const width = 800;
+        const height = 800;
+        const symbolRadius = 30;
+
+        const svg = d3.select("#tree")
+            .attr("viewBox", [0, 0, width, height])
+            .append("g")
+            .attr("transform", "translate(80,40)");
+
+        const root = d3.hierarchy(data);
+        const treeLayout = d3.tree().size([height - 100, width - 200]);
+        treeLayout(root);
+
+        const maxLeafY = width - 200;
+
+        root.each(d => {
+            if (!d.children) {
+                d.y = maxLeafY;
+            }
+        });
+
+        const leaves = root.leaves();
+        const alignedY = d3.scalePoint()
+            .domain(leaves.map(d => d.data.name))
+            .range([0, height - 100]);
+
+        leaves.forEach((leaf, i) => {
+            leaf.x = alignedY(leaf.data.name);
+        });
+
+        root.eachBefore(d => {
+            if (!d.children) return;
+            const childrenY = d.children.map(c => c.x);
+            d.x = d3.mean(childrenY);
+        });
+
+        // Links
+        svg.selectAll("path.link")
+            .data(root.links())
+            .join("path")
+            .attr("class", "link")
+            .attr("fill", "none")
+            .attr("stroke", "#ccc")
+            .attr("stroke-width", 3)
+            .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x)
+            );
+
+        // Nós
+        const node = svg.selectAll("g.node")
+            .data(root.descendants())
+            .join("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        // Círculo estilizado via CSS
+        node.filter(d => iconCategories.includes(d.data.name))
+            .append("circle")
+            .attr("r", symbolRadius)
+            .attr("class", d => `symbol symbol-${d.data.name}`);
+
+        // Letra da categoria no centro do círculo
+        node.filter(d => iconCategories.includes(d.data.name))
+            .append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", "0.35em")
+            .attr("fill", "#fff")
+            .attr("font-weight", "bold")
+            .attr("class", d => `text-${d.data.name}`)
+            .text(d => d.data.name);
+
+        // Nome do nó ao lado (somente para nós sem símbolo)
+        node.filter(d => !iconCategories.includes(d.data.name))
+            .append("text")
+            .attr("dy", -4)
+            .attr("x", -15)
+            .style("text-anchor", "start")
+            .style("font-weight", "bold")
+            .text(d => d.data.name);
+    </script>
+</body>
+
+</html>

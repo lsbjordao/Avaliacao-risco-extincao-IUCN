@@ -6,14 +6,165 @@
 
 ## O que é?
 
-A Lista Vermelha de Espécies Ameaçadas da IUCN é a mais abrangente fonte de informações sobre o *status* de risco de extinção das espécies em escala global. Ela classifica espécies em diferentes categorias de risco de extinção com base em critérios científicos e dados atualizados sobre populações, distribuição e ameaças.
+A Lista Vermelha de Espécies Ameaçadas da IUCN ([https://www.iucnredlist.org/](https://www.iucnredlist.org/)) é a mais abrangente fonte de informações sobre o *status* de risco de extinção das espécies em escala global. Ela classifica espécies em diferentes categorias de risco de extinção com base em critérios científicos e dados atualizados sobre populações, distribuição e ameaças.
 
-## Para que ela serve?
+## Para que serve?
 
 A Lista orienta ações de conservação, políticas públicas e decisões ambientais em todo o mundo. É usada por governos, ONGs, cientistas e gestores para priorizar esforços, identificar espécies ameaçadas e promover a proteção de habitats e ecossistemas.
 
 A Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas.
 
-## Por que ela importa?
+## Por que importa?
 
 Porque fornece uma base confiável para entender o risco de extinção das espécies e agir antes que seja tarde demais. Ao reunir conhecimento científico e promover cooperação internacional, a Lista Vermelha contribui para a conservação da biodiversidade e o uso sustentável dos recursos naturais — fundamentais para o equilíbrio ecológico e o bem-estar humano.
+
+## Responsáveis pelas avaliações
+
+As avaliações da Lista Vermelha da IUCN são conduzidas principalmente pela Comissão de Sobrevivência de Espécies (*Species Survival Commission* – SSC), por meio das Autoridades da Lista Vermelha (*Red List Authorities* – RLA). Também contam com a colaboração de parceiros institucionais, organizações conservacionistas, jardins botânicos, além de especialistas que atuam em projetos de avaliação liderados pela IUCN ou por membros das comissões temáticas que compõem os grupos de especialistas da SSC.
+
+### O que são as Red List Authorities (RLAs)?
+
+As *Red List Authorities* (RLAs), ou **Autoridades da Lista Vermelha**, são grupos responsáveis por coordenar a avaliação de espécies dentro de sua área de atuação, seguindo as Regras e Procedimentos da IUCN.
+
+### Qual é o papel das RLAs?
+
+O principal objetivo das RLAs é garantir que **todas as espécies sob sua responsabilidade sejam avaliadas corretamente** de acordo com as **Categorias e Critérios da Lista Vermelha da IUCN**, preferencialmente a cada cinco anos, e **obrigatoriamente a cada dez anos**.
+
+As responsabilidades das RLAs incluem:
+
+- Estabelecer mecanismos para avaliação e reavaliação regular das espécies;
+- Atuar como **autoridade taxonômica** para os grupos de espécies sob sua responsabilidade;
+- Quando não realizam diretamente as avaliações, revisar os resultados feitos por outros avaliadores.
+
+### Quem coordena as atividades?
+
+Cada RLA possui um **Coordenador**, que tem as seguintes funções:
+
+- Supervisionar e coordenar as atividades relacionadas à Lista Vermelha dentro da RLA;
+- Garantir que **pelo menos um revisor independente** (sem envolvimento direto na avaliação) valide o status de cada espécie, com base na documentação fornecida;
+- Assegurar que as avaliações sejam enviadas corretamente à Lista Vermelha da IUCN.
+
+### Como estão organizadas as RLAs?
+
+As RLAs existem para todos os **principais grupos taxonômicos** presentes na Lista Vermelha. Em geral, uma RLA funciona como um **subgrupo dentro de um Grupo de Especialistas da SSC/IUCN**, responsável por um grupo de espécies ou por espécies de uma determinada região geográfica.
+
+Há também **casos especiais**, como o da **BirdLife International**, que é a RLA oficial para **todas as aves**.
+
+Uma lista completa das RLAs e seus contatos está disponível no **Diretório da SSC**.
+
+### E quando não há uma RLA para certo grupo ou região?
+
+Se não houver um grupo de especialistas cobrindo determinado grupo taxonômico ou área geográfica, a equipe da IUCN pode encaminhar essas avaliações para um **Subcomitê de Conservação**, que revisará as informações.
+
+Além disso, a equipe da **Unidade da Lista Vermelha** (*Red List Unit*), junto com outros parceiros da IUCN, pode **indicar novas organizações ou redes** adequadas para atuarem como RLAs.
+
+### CNCFlora/JBRJ é autoridade brasileira em plantas
+
+No Brasil, o CNCFlora/JBRJ ([https://cncflora.jbrj.gov.br/](https://cncflora.jbrj.gov.br/)), é reconhecido como a autoridade nacional para a elaboração de listas vermelhas de espécies da flora nativa, conforme estabelecido oficialmente através das Portaria MMA nº 43/14 e Portaria MMA nº 443/14, e  internacionalmente, a partir da designação do CNCFlora pela Comissão de Sobrevivência de Espécies - SSC da IUCN como a autoridade global em avaliação de risco de extinção de plantas brasileiras (*Brazil Plants Red List Authority* - BP-RLA) [](https://iucn.org/our-union/commissions/group/iucn-ssc-brazil-plant-red-list-authority).
+
+## Categorias
+
+- As categorias do sistema de avaliação do risco de extinção da Lista
+Vermelha da IUCN são:
+
+<iframe src="./tree-categories.html" width="100%" height="600" style="border:none;"></iframe>
+
+## Critérios
+
+O protocolo da Lista Vermelha apresenta cinco critérios (A–E):
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify 
+streamline:graph-arrow-decrease-solid >}}</span> $A$: Declínio populacional
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify tdesign:map-bubble >}}</span> $B$: Distribuição geográfica restrita
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify ant-design:heat-map-outlined >}}</span> $C$: População pequena e em declínio
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify mdi:map-marker-radius-outline >}}</span> $D$: População muito pequena ou restrita
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify mdi:graph-bar >}}</span> $E$: Análise quantitativa
+
+Os critérios $A$–$D$ são subdivididos em subcritérios: 
+
+- $A1$, $A2$, $A3$, $A4$, $B1$, $B2$, $C1$, $C2$, $D1$, $D2$.
+
+Além dos subcritérios supracitados, os critérios $A$ e $B$, e o subcritério $C2$, se subdividem em condições:
+
+- Do critério $A$: $a$, $b$, $c$, $d$, $e$;
+- Do critério $B$: $a$, $b$, $c$;
+- Do subcritério $C2$: $a$, $b$.
+
+Por sua vez, as condições $b$ e $c$ do critério $B$ e a condição a do subcritério $C2$ também se apresentam subdidividas em subcondições:
+
+- Da condição $b$ do critério $B$: $i$, $ii$, $iii$, $iv$, $v$;
+- Da condição $c$ do critério $B$: $i$, $ii$, $iii$, $iv$;
+- Da condição $a$ do subcritério $C2$: $i$, $ii$.
+
+Os critérios, subcritérios, condições e subcondições possuem requisitos
+que precisam ser atendidos para o devido enquadramento.
+
+A regra geral é a necessidade de justificação através de documentação para o enquadramento nos (sub)critérios e (sub)condições.
+
+Ainda que não haja referências para documentação, a justificação precisa estar textualmente explícita no texto final da aplicação do sistema de categorias e critérios da IUCN, e que ao menos essa justificação seja dada por inferência ou suspeição.
+
+O termo categorização refere-se ao atendimento dos (sub)critérios e (sub)condições que justificam a seleção da categoria de ameaça.
+
+O termo enquadramento refere-se ao atendimento dos requisitos justificam a seleção dos (sub)critérios e (sub)condições.
+
+Dessa maneira, citamos alguns exemplos sobre a utilização dos termos "categorização" e "enquadramento":
+
+::: {.callout-important}
+- A afirmação: — um táxon foi "enquadrado" na categoria VU — seria inadequada. O adequado seria dizer: — "um táxon foi categorizado como VU".
+
+- A afirmação: — "Categorizar" um táxon no critério B — seria uma afirmativa inadequada. O melhor termo seria dizer: — o "enquadramento" no critério B foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — "os requisitos para o enquadramento no critério B foram atendidos".
+
+- A afirmação: — Os requisitos de verificação das subcondições i e ii para enquadramento na condição b do critério B foram atendidos — está adequada.
+
+- Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR de acordo com o critério B1ab(i,ii,iii,iv).
+
+- Nesse caso, omite-se os termos "subcritério" "condições" e "subcondições".
+:::
+
+### Critério A
+
+<iframe id="iframeA" src="./criterio-a.html" width="100%" style="border: none;"></iframe>
+
+### Critério B
+
+<iframe id="iframeB" src="./criterio-b.html" width="100%" style="border: none;"></iframe>
+
+### Critério C
+
+
+### Critério D
+
+
+### Critério E
+
+
+
+
+
+
+
+
+<script>
+  function ajustarAltura(iframeId) {
+    const iframe = document.getElementById(iframeId);
+
+    function setAltura() {
+      if (iframe.contentWindow && iframe.contentWindow.document.body) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+    }
+
+    iframe.onload = setAltura;
+
+    // Se o conteúdo mudar dinamicamente após carregamento
+    setInterval(setAltura, 500);
+  }
+
+  // Aplica para ambos os iframes
+  ajustarAltura("iframeA");
+  ajustarAltura("iframeB");
+</script>
