@@ -1,0 +1,6 @@
+# Categorias
+
+- As categorias do sistema de avaliação do risco de extinção da Lista
+Vermelha da IUCN são:
+
+<iframe src="./tree-categories.html" width="100%" height="600" style="border:none;"></iframe>

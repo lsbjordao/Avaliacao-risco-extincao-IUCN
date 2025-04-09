@@ -9,6 +9,8 @@ book:
     - index.qmd
     - iucn.qmd
     - lista-vermelha.qmd
+    - categorias.qmd
+    - criterios.qmd
     - references.qmd
 
 bibliography: references.bib

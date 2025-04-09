@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lista Vermelha da IUCN – Avaliação do Risco de Extinção de Espécies</title>
+<title>Critérios – Avaliação do Risco de Extinção de Espécies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./categorias.html" rel="next">
-<link href="./iucn.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./categorias.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -44,6 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dark-9080cd1872618827307f6bc34f81b6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-797cd9785c3901c68a1090156ceb6a41.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="nav-arrows.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -86,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lista-vermelha.html"><span class="chapter-title">Lista Vermelha da IUCN</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./criterios.html"><span class="chapter-title">Critérios</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -127,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lista-vermelha.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Lista Vermelha da IUCN</span></a>
+  <a href="./lista-vermelha.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista Vermelha da IUCN</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -137,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./criterios.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Critérios</span></a>
+  <a href="./criterios.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Critérios</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -156,18 +186,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é?</a></li>
-  <li><a href="#para-que-serve" id="toc-para-que-serve" class="nav-link" data-scroll-target="#para-que-serve">Para que serve?</a></li>
-  <li><a href="#por-que-importa" id="toc-por-que-importa" class="nav-link" data-scroll-target="#por-que-importa">Por que importa?</a></li>
-  <li><a href="#responsáveis-pelas-avaliações" id="toc-responsáveis-pelas-avaliações" class="nav-link" data-scroll-target="#responsáveis-pelas-avaliações">Responsáveis pelas avaliações</a>
-  <ul class="collapse">
-  <li><a href="#o-que-são-as-red-list-authorities-rlas" id="toc-o-que-são-as-red-list-authorities-rlas" class="nav-link" data-scroll-target="#o-que-são-as-red-list-authorities-rlas">O que são as Red List Authorities (RLAs)?</a></li>
-  <li><a href="#qual-é-o-papel-das-rlas" id="toc-qual-é-o-papel-das-rlas" class="nav-link" data-scroll-target="#qual-é-o-papel-das-rlas">Qual é o papel das RLAs?</a></li>
-  <li><a href="#quem-coordena-as-atividades" id="toc-quem-coordena-as-atividades" class="nav-link" data-scroll-target="#quem-coordena-as-atividades">Quem coordena as atividades?</a></li>
-  <li><a href="#como-estão-organizadas-as-rlas" id="toc-como-estão-organizadas-as-rlas" class="nav-link" data-scroll-target="#como-estão-organizadas-as-rlas">Como estão organizadas as RLAs?</a></li>
-  <li><a href="#e-quando-não-há-uma-rla-para-certo-grupo-ou-região" id="toc-e-quando-não-há-uma-rla-para-certo-grupo-ou-região" class="nav-link" data-scroll-target="#e-quando-não-há-uma-rla-para-certo-grupo-ou-região">E quando não há uma RLA para certo grupo ou região?</a></li>
-  <li><a href="#cncflorajbrj-é-autoridade-brasileira-em-plantas" id="toc-cncflorajbrj-é-autoridade-brasileira-em-plantas" class="nav-link" data-scroll-target="#cncflorajbrj-é-autoridade-brasileira-em-plantas">CNCFlora/JBRJ é autoridade brasileira em plantas</a></li>
-  </ul></li>
+  <li><a href="#critério-a" id="toc-critério-a" class="nav-link active" data-scroll-target="#critério-a">Critério A</a></li>
+  <li><a href="#critério-b" id="toc-critério-b" class="nav-link" data-scroll-target="#critério-b">Critério B</a></li>
+  <li><a href="#critério-c" id="toc-critério-c" class="nav-link" data-scroll-target="#critério-c">Critério C</a></li>
+  <li><a href="#critério-d" id="toc-critério-d" class="nav-link" data-scroll-target="#critério-d">Critério D</a></li>
+  <li><a href="#critério-e" id="toc-critério-e" class="nav-link" data-scroll-target="#critério-e">Critério E</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Lista Vermelha da IUCN</span></h1>
+<h1 class="title"><span class="chapter-title">Critérios</span></h1>
 </div>
 
 
@@ -352,65 +375,93 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div style="text-align: center;">
-<p><img src="https://upload.wikimedia.org/wikipedia/en/e/ec/IUCN_Red_List.svg" class="img-fluid"></p>
+<p>O protocolo da Lista Vermelha apresenta cinco critérios (A–E):</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="streamline:graph-arrow-decrease-solid" aria-label="Icon graph-arrow-decrease-solid from streamline Iconify.design set." title="Icon graph-arrow-decrease-solid from streamline Iconify.design set."></iconify-icon></span> <span class="math inline">\(A\)</span>: Declínio populacional</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="tdesign:map-bubble" aria-label="Icon map-bubble from tdesign Iconify.design set." title="Icon map-bubble from tdesign Iconify.design set."></iconify-icon></span> <span class="math inline">\(B\)</span>: Distribuição geográfica restrita</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="ant-design:heat-map-outlined" aria-label="Icon heat-map-outlined from ant-design Iconify.design set." title="Icon heat-map-outlined from ant-design Iconify.design set."></iconify-icon></span> <span class="math inline">\(C\)</span>: População pequena e em declínio</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="mdi:map-marker-radius-outline" aria-label="Icon map-marker-radius-outline from mdi Iconify.design set." title="Icon map-marker-radius-outline from mdi Iconify.design set."></iconify-icon></span> <span class="math inline">\(D\)</span>: População muito pequena ou restrita</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="mdi:graph-bar" aria-label="Icon graph-bar from mdi Iconify.design set." title="Icon graph-bar from mdi Iconify.design set."></iconify-icon></span> <span class="math inline">\(E\)</span>: Análise quantitativa</p>
+<p>Os critérios <span class="math inline">\(A\)</span>–<span class="math inline">\(D\)</span> são subdivididos em subcritérios:</p>
+<ul>
+<li><span class="math inline">\(A1\)</span>, <span class="math inline">\(A2\)</span>, <span class="math inline">\(A3\)</span>, <span class="math inline">\(A4\)</span>, <span class="math inline">\(B1\)</span>, <span class="math inline">\(B2\)</span>, <span class="math inline">\(C1\)</span>, <span class="math inline">\(C2\)</span>, <span class="math inline">\(D1\)</span>, <span class="math inline">\(D2\)</span>.</li>
+</ul>
+<p>Além dos subcritérios supracitados, os critérios <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, e o subcritério <span class="math inline">\(C2\)</span>, se subdividem em condições:</p>
+<ul>
+<li>Do critério <span class="math inline">\(A\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span>, <span class="math inline">\(e\)</span>;</li>
+<li>Do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>;</li>
+<li>Do subcritério <span class="math inline">\(C2\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>.</li>
+</ul>
+<p>Por sua vez, as condições <span class="math inline">\(b\)</span> e <span class="math inline">\(c\)</span> do critério <span class="math inline">\(B\)</span> e a condição a do subcritério <span class="math inline">\(C2\)</span> também se apresentam subdidividas em subcondições:</p>
+<ul>
+<li>Da condição <span class="math inline">\(b\)</span> do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>, <span class="math inline">\(iii\)</span>, <span class="math inline">\(iv\)</span>, <span class="math inline">\(v\)</span>;</li>
+<li>Da condição <span class="math inline">\(c\)</span> do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>, <span class="math inline">\(iii\)</span>, <span class="math inline">\(iv\)</span>;</li>
+<li>Da condição <span class="math inline">\(a\)</span> do subcritério <span class="math inline">\(C2\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>.</li>
+</ul>
+<p>Os critérios, subcritérios, condições e subcondições possuem requisitos que precisam ser atendidos para o devido enquadramento.</p>
+<p>A regra geral é a necessidade de justificação através de documentação para o enquadramento nos (sub)critérios e (sub)condições.</p>
+<p>Ainda que não haja referências para documentação, a justificação precisa estar textualmente explícita no texto final da aplicação do sistema de categorias e critérios da IUCN, e que ao menos essa justificação seja dada por inferência ou suspeição.</p>
+<p>O termo categorização refere-se ao atendimento dos (sub)critérios e (sub)condições que justificam a seleção da categoria de ameaça.</p>
+<p>O termo enquadramento refere-se ao atendimento dos requisitos justificam a seleção dos (sub)critérios e (sub)condições.</p>
+<p>Dessa maneira, citamos alguns exemplos sobre a utilização dos termos “categorização” e “enquadramento”:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<section id="o-que-é" class="level2">
-<h2 class="anchored" data-anchor-id="o-que-é">O que é?</h2>
-<p>A Lista Vermelha de Espécies Ameaçadas da IUCN (<a href="https://www.iucnredlist.org/">https://www.iucnredlist.org/</a>) é a mais abrangente fonte de informações sobre o <em>status</em> de risco de extinção das espécies em escala global. Ela classifica espécies em diferentes categorias de risco de extinção com base em critérios científicos e dados atualizados sobre populações, distribuição e ameaças.</p>
-</section>
-<section id="para-que-serve" class="level2">
-<h2 class="anchored" data-anchor-id="para-que-serve">Para que serve?</h2>
-<p>A Lista orienta ações de conservação, políticas públicas e decisões ambientais em todo o mundo. É usada por governos, ONGs, cientistas e gestores para priorizar esforços, identificar espécies ameaçadas e promover a proteção de habitats e ecossistemas.</p>
-<p>A Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas.</p>
-</section>
-<section id="por-que-importa" class="level2">
-<h2 class="anchored" data-anchor-id="por-que-importa">Por que importa?</h2>
-<p>Porque fornece uma base confiável para entender o risco de extinção das espécies e agir antes que seja tarde demais. Ao reunir conhecimento científico e promover cooperação internacional, a Lista Vermelha contribui para a conservação da biodiversidade e o uso sustentável dos recursos naturais — fundamentais para o equilíbrio ecológico e o bem-estar humano.</p>
-</section>
-<section id="responsáveis-pelas-avaliações" class="level2">
-<h2 class="anchored" data-anchor-id="responsáveis-pelas-avaliações">Responsáveis pelas avaliações</h2>
-<p>As avaliações da Lista Vermelha da IUCN são conduzidas principalmente pela Comissão de Sobrevivência de Espécies (<em>Species Survival Commission</em> – SSC), por meio das Autoridades da Lista Vermelha (<em>Red List Authorities</em> – RLA). Também contam com a colaboração de parceiros institucionais, organizações conservacionistas, jardins botânicos, além de especialistas que atuam em projetos de avaliação liderados pela IUCN ou por membros das comissões temáticas que compõem os grupos de especialistas da SSC.</p>
-<section id="o-que-são-as-red-list-authorities-rlas" class="level3">
-<h3 class="anchored" data-anchor-id="o-que-são-as-red-list-authorities-rlas">O que são as Red List Authorities (RLAs)?</h3>
-<p>As <em>Red List Authorities</em> (RLAs), ou <strong>Autoridades da Lista Vermelha</strong>, são grupos responsáveis por coordenar a avaliação de espécies dentro de sua área de atuação, seguindo as Regras e Procedimentos da IUCN.</p>
-</section>
-<section id="qual-é-o-papel-das-rlas" class="level3">
-<h3 class="anchored" data-anchor-id="qual-é-o-papel-das-rlas">Qual é o papel das RLAs?</h3>
-<p>O principal objetivo das RLAs é garantir que <strong>todas as espécies sob sua responsabilidade sejam avaliadas corretamente</strong> de acordo com as <strong>Categorias e Critérios da Lista Vermelha da IUCN</strong>, preferencialmente a cada cinco anos, e <strong>obrigatoriamente a cada dez anos</strong>.</p>
-<p>As responsabilidades das RLAs incluem:</p>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li>Estabelecer mecanismos para avaliação e reavaliação regular das espécies;</li>
-<li>Atuar como <strong>autoridade taxonômica</strong> para os grupos de espécies sob sua responsabilidade;</li>
-<li>Quando não realizam diretamente as avaliações, revisar os resultados feitos por outros avaliadores.</li>
+<li><p>A afirmação: — um táxon foi “enquadrado” na categoria VU — seria inadequada. O adequado seria dizer: — “um táxon foi categorizado como VU”.</p></li>
+<li><p>A afirmação: — “Categorizar” um táxon no critério B — seria uma afirmativa inadequada. O melhor termo seria dizer: — o “enquadramento” no critério B foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — “os requisitos para o enquadramento no critério B foram atendidos”.</p></li>
+<li><p>A afirmação: — Os requisitos de verificação das subcondições i e ii para enquadramento na condição b do critério B foram atendidos — está adequada.</p></li>
+<li><p>Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR de acordo com o critério B1ab(i,ii,iii,iv).</p></li>
+<li><p>Nesse caso, omite-se os termos “subcritério” “condições” e “subcondições”.</p></li>
 </ul>
+</div>
+</div>
+<section id="critério-a" class="level3">
+<h3 class="anchored" data-anchor-id="critério-a">Critério A</h3>
+<iframe id="iframeA" src="./criterio-a.html" width="100%" style="border: none;">
+</iframe>
 </section>
-<section id="quem-coordena-as-atividades" class="level3">
-<h3 class="anchored" data-anchor-id="quem-coordena-as-atividades">Quem coordena as atividades?</h3>
-<p>Cada RLA possui um <strong>Coordenador</strong>, que tem as seguintes funções:</p>
-<ul>
-<li>Supervisionar e coordenar as atividades relacionadas à Lista Vermelha dentro da RLA;</li>
-<li>Garantir que <strong>pelo menos um revisor independente</strong> (sem envolvimento direto na avaliação) valide o status de cada espécie, com base na documentação fornecida;</li>
-<li>Assegurar que as avaliações sejam enviadas corretamente à Lista Vermelha da IUCN.</li>
-</ul>
+<section id="critério-b" class="level3">
+<h3 class="anchored" data-anchor-id="critério-b">Critério B</h3>
+<iframe id="iframeB" src="./criterio-b.html" width="100%" style="border: none;">
+</iframe>
 </section>
-<section id="como-estão-organizadas-as-rlas" class="level3">
-<h3 class="anchored" data-anchor-id="como-estão-organizadas-as-rlas">Como estão organizadas as RLAs?</h3>
-<p>As RLAs existem para todos os <strong>principais grupos taxonômicos</strong> presentes na Lista Vermelha. Em geral, uma RLA funciona como um <strong>subgrupo dentro de um Grupo de Especialistas da SSC/IUCN</strong>, responsável por um grupo de espécies ou por espécies de uma determinada região geográfica.</p>
-<p>Há também <strong>casos especiais</strong>, como o da <strong>BirdLife International</strong>, que é a RLA oficial para <strong>todas as aves</strong>.</p>
-<p>Uma lista completa das RLAs e seus contatos está disponível no <strong>Diretório da SSC</strong>.</p>
+<section id="critério-c" class="level3">
+<h3 class="anchored" data-anchor-id="critério-c">Critério C</h3>
 </section>
-<section id="e-quando-não-há-uma-rla-para-certo-grupo-ou-região" class="level3">
-<h3 class="anchored" data-anchor-id="e-quando-não-há-uma-rla-para-certo-grupo-ou-região">E quando não há uma RLA para certo grupo ou região?</h3>
-<p>Se não houver um grupo de especialistas cobrindo determinado grupo taxonômico ou área geográfica, a equipe da IUCN pode encaminhar essas avaliações para um <strong>Subcomitê de Conservação</strong>, que revisará as informações.</p>
-<p>Além disso, a equipe da <strong>Unidade da Lista Vermelha</strong> (<em>Red List Unit</em>), junto com outros parceiros da IUCN, pode <strong>indicar novas organizações ou redes</strong> adequadas para atuarem como RLAs.</p>
+<section id="critério-d" class="level3">
+<h3 class="anchored" data-anchor-id="critério-d">Critério D</h3>
 </section>
-<section id="cncflorajbrj-é-autoridade-brasileira-em-plantas" class="level3">
-<h3 class="anchored" data-anchor-id="cncflorajbrj-é-autoridade-brasileira-em-plantas">CNCFlora/JBRJ é autoridade brasileira em plantas</h3>
-<p>No Brasil, o CNCFlora/JBRJ (<a href="https://cncflora.jbrj.gov.br/">https://cncflora.jbrj.gov.br/</a>), é reconhecido como a autoridade nacional para a elaboração de listas vermelhas de espécies da flora nativa, conforme estabelecido oficialmente através das Portaria MMA nº 43/14 e Portaria MMA nº 443/14, e internacionalmente, a partir da designação do CNCFlora pela Comissão de Sobrevivência de Espécies - SSC da IUCN como a autoridade global em avaliação de risco de extinção de plantas brasileiras (<em>Brazil Plants Red List Authority</em> - BP-RLA) <a href="https://iucn.org/our-union/commissions/group/iucn-ssc-brazil-plant-red-list-authority"></a>.</p>
+<section id="critério-e" class="level3">
+<h3 class="anchored" data-anchor-id="critério-e">Critério E</h3>
+<script>
+  function ajustarAltura(iframeId) {
+    const iframe = document.getElementById(iframeId);
+
+    function setAltura() {
+      if (iframe.contentWindow && iframe.contentWindow.document.body) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+    }
+
+    iframe.onload = setAltura;
+
+    // Se o conteúdo mudar dinamicamente após carregamento
+    setInterval(setAltura, 500);
+  }
+
+  // Aplica para ambos os iframes
+  ajustarAltura("iframeA");
+  ajustarAltura("iframeB");
+</script>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -828,13 +879,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./iucn.html" class="pagination-link" aria-label="IUCN">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">IUCN</span></span>
+      <a href="./categorias.html" class="pagination-link" aria-label="Categorias">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Categorias</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./categorias.html" class="pagination-link" aria-label="Categorias">
-        <span class="nav-page-text"><span class="chapter-title">Categorias</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="Referências">
+        <span class="nav-page-text">Referências</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

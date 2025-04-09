@@ -1,0 +1,99 @@
+# Critérios
+
+O protocolo da Lista Vermelha apresenta cinco critérios (A–E):
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify 
+streamline:graph-arrow-decrease-solid >}}</span> $A$: Declínio populacional
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify tdesign:map-bubble >}}</span> $B$: Distribuição geográfica restrita
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify ant-design:heat-map-outlined >}}</span> $C$: População pequena e em declínio
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify mdi:map-marker-radius-outline >}}</span> $D$: População muito pequena ou restrita
+
+<span style="font-size: 2em; vertical-align: middle;">{{< iconify mdi:graph-bar >}}</span> $E$: Análise quantitativa
+
+Os critérios $A$–$D$ são subdivididos em subcritérios: 
+
+- $A1$, $A2$, $A3$, $A4$, $B1$, $B2$, $C1$, $C2$, $D1$, $D2$.
+
+Além dos subcritérios supracitados, os critérios $A$ e $B$, e o subcritério $C2$, se subdividem em condições:
+
+- Do critério $A$: $a$, $b$, $c$, $d$, $e$;
+- Do critério $B$: $a$, $b$, $c$;
+- Do subcritério $C2$: $a$, $b$.
+
+Por sua vez, as condições $b$ e $c$ do critério $B$ e a condição a do subcritério $C2$ também se apresentam subdidividas em subcondições:
+
+- Da condição $b$ do critério $B$: $i$, $ii$, $iii$, $iv$, $v$;
+- Da condição $c$ do critério $B$: $i$, $ii$, $iii$, $iv$;
+- Da condição $a$ do subcritério $C2$: $i$, $ii$.
+
+Os critérios, subcritérios, condições e subcondições possuem requisitos
+que precisam ser atendidos para o devido enquadramento.
+
+A regra geral é a necessidade de justificação através de documentação para o enquadramento nos (sub)critérios e (sub)condições.
+
+Ainda que não haja referências para documentação, a justificação precisa estar textualmente explícita no texto final da aplicação do sistema de categorias e critérios da IUCN, e que ao menos essa justificação seja dada por inferência ou suspeição.
+
+O termo categorização refere-se ao atendimento dos (sub)critérios e (sub)condições que justificam a seleção da categoria de ameaça.
+
+O termo enquadramento refere-se ao atendimento dos requisitos justificam a seleção dos (sub)critérios e (sub)condições.
+
+Dessa maneira, citamos alguns exemplos sobre a utilização dos termos "categorização" e "enquadramento":
+
+::: {.callout-important}
+- A afirmação: — um táxon foi "enquadrado" na categoria VU — seria inadequada. O adequado seria dizer: — "um táxon foi categorizado como VU".
+
+- A afirmação: — "Categorizar" um táxon no critério B — seria uma afirmativa inadequada. O melhor termo seria dizer: — o "enquadramento" no critério B foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — "os requisitos para o enquadramento no critério B foram atendidos".
+
+- A afirmação: — Os requisitos de verificação das subcondições i e ii para enquadramento na condição b do critério B foram atendidos — está adequada.
+
+- Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR de acordo com o critério B1ab(i,ii,iii,iv).
+
+- Nesse caso, omite-se os termos "subcritério" "condições" e "subcondições".
+:::
+
+### Critério A
+
+<iframe id="iframeA" src="./criterio-a.html" width="100%" style="border: none;"></iframe>
+
+### Critério B
+
+<iframe id="iframeB" src="./criterio-b.html" width="100%" style="border: none;"></iframe>
+
+### Critério C
+
+
+### Critério D
+
+
+### Critério E
+
+
+
+
+
+
+
+
+<script>
+  function ajustarAltura(iframeId) {
+    const iframe = document.getElementById(iframeId);
+
+    function setAltura() {
+      if (iframe.contentWindow && iframe.contentWindow.document.body) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+    }
+
+    iframe.onload = setAltura;
+
+    // Se o conteúdo mudar dinamicamente após carregamento
+    setInterval(setAltura, 500);
+  }
+
+  // Aplica para ambos os iframes
+  ajustarAltura("iframeA");
+  ajustarAltura("iframeB");
+</script>
