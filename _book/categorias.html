@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./criterios.html" rel="next">
-<link href="./lista-vermelha.html" rel="prev">
+<link href="./categoriasEcriterios.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -132,6 +152,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./categoriasEcriterios.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./categorias.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Categorias</span></a>
   </div>
 </li>
@@ -151,8 +176,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#extinto-ex" id="toc-extinto-ex" class="nav-link active" data-scroll-target="#extinto-ex">Extinto (EX)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -340,8 +371,70 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <iframe src="./tree-categories.html" width="100%" height="600" style="border:none;">
 </iframe>
+<section id="extinto-ex" class="level2">
+<h2 class="anchored" data-anchor-id="extinto-ex">Extinto (EX)</h2>
+<p>Um táxon é categorizado como <code>Extinto (EX)</code> quando não há dúvida razoável de que o último indivíduo morreu. Supõe-se que um táxon esteja extinto após a realização de levantamentos extensivos em todos os habitats conhecidos e/ou esperados, nos períodos apropriados (diurnos, sazonais, anuais), e em toda sua área de distribuição histórica, sem que nenhum indivíduo tenha sido registrado. Esses levantamentos devem ocorrer ao longo de um período de tempo adequado ao ciclo de vida e à forma de vida do táxon.</p>
+<p>Apesar de a extinção representar o desaparecimento definitivo de uma espécie, sua detecção é extremamente difícil. Por isso, a atribuição da categoria <code>EX</code> exige rigor científico e cautela, baseando-se nas melhores evidências disponíveis e em metodologias consistentes de amostragem e monitoramento.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Categorizar como <code>EX</code> tem implicações significativas para a conservação, porque as medidas de proteção e o financiamento da conservação geralmente não são direcionados a espécies que se acredita estarem extintas.</p>
+<p>Portanto, uma espécie não deve ser listada nas categorias <code>Extinta (EX)</code> ou <code>Extinta na Natureza (EW)</code> se houver qualquer possibilidade razoável de que ainda possam existir, a fim de evitar o “<a title="Esse termo foi aplicado pela primeira vez ao caso da ave Dicaeum quadricolor, redescoberta em 1992 após 86 anos sem registro (Dutson et al. 1993), tendo sido considerada extinta pelo menos 40 anos antes, na presunção de que não havia mais nenhum remanescente de seu habitat florestal na ilha de Cebu (Magsalay et al. 1995)." style="text-decoration: underline;">Erro de Romeu</a>” <span class="citation" data-cites="Collar1998">(<a href="references.html#ref-Collar1998" role="doc-biblioref">Collar 1998</a>)</span>, onde quaisquer medidas de proteção e financiamento são removidos de espécies ameaçadas na crença errônea de que eles já estão extintos.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Existente a menos que provado extinto ou extinto a menos que provado existente?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Diamond, J.M.</strong> 1987. Extant Unless Proven Extinct? Or, Extinct Unless Proven Extant? <em>Conservation Biology</em> 1(1): 77–79.</p>
+<p>a <span class="citation" data-cites="Penedo2015">Penedo et al. (<a href="references.html#ref-Penedo2015" role="doc-biblioref">2015</a>)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A busca ativa em campo é essencial para confirmar extinções
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uma abordagem probatória para classificar as extinções é apropriada para encorajar os esforços contínuos de conservação até que não haja dúvida razoável de que o último indivíduo de uma espécie morreu.</p>
+</div>
+</div>
+<p>No entanto, se as avaliações de EX ou EW forem menosprezadas, as taxas de extinção com base na Lista Vermelha provavelmente serão subestimadas.</p>
+<p>Há custos para fazer os dois tipos de erros (listar uma espécie existente como <code>EX</code> e deixar de listar uma espécie extinta como <code>EX</code>) e benefícios de fazer a listagem correta (Akçakaya et al.&nbsp;2017). Essas questões são tratadas por:</p>
+<ol type="1">
+<li><p>definir uma etiqueta “Possivelmente Extinta” para espécies listadas como <code>CR</code>, mas que provavelmente serão extintas;</p></li>
+<li><p>usar métodos que calculam a probabilidade de extinção da espécie e comparar essa probabilidade aos limites recomendados (em https://www.iucn-redlist.org/resources/ex-probability); e</p></li>
+<li><p>usando a probabilidade de que uma espécie está extinta no cálculo do número de espécies extintas e taxas de extinção (tópico 11.4 da publicação Guidelines for Using the IUCN Red List Categories and Criteria).</p></li>
+</ol>
+<p>É altamente recomendável que os métodos e limites descritos em https://www.iucn-redlist.org/resources/ex-probability sejam aplicados a qualquer espécie que não tenha sido registrada desde a última avaliação, ou que se suspeite que tenha se extinguido.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Collar1998" class="csl-entry" role="listitem">
+Collar, N. J. 1998. <span>«Extinction by assumption; or, the Romeo Error on Cebu»</span>. <em>Oryx</em> 32 (4): 239–44. <a href="https://doi.org/10.1046/j.1365-3008.1998.d01-51.x">https://doi.org/10.1046/j.1365-3008.1998.d01-51.x</a>.
+</div>
+<div id="ref-Penedo2015" class="csl-entry" role="listitem">
+Penedo, Thiago Serrano de Almeida, Miguel d’Ávila de Moraes, Rafael Augusto Xavier Borges, Daniel Maurenza, Diogo Marcilio Judice, e Gustavo Martinelli. 2015. <span>«Considerations on extinct species of Brazilian flora»</span>. <em>Rodriguésia</em> 66 (3): 711–15. <a href="https://doi.org/10.1590/2175-7860201566304">https://doi.org/10.1590/2175-7860201566304</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -758,8 +851,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./lista-vermelha.html" class="pagination-link" aria-label="Lista Vermelha da IUCN">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lista Vermelha da IUCN</span></span>
+      <a href="./categoriasEcriterios.html" class="pagination-link" aria-label="Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

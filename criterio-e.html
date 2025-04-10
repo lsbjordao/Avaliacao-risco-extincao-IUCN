@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Categoria E</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-wrapper {
+            padding: 2rem;
+        }
+
+        .tcolorbox {
+            border: 1px solid black;
+            background-color: white;
+            padding: 1rem;
+            max-width: 1000px;
+            margin: 0 auto 2rem auto;
+            box-sizing: border-box;
+        }
+
+        .tcolorbox-header {
+            background-color: darkgray;
+            color: black;
+            padding: 0.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .criteria-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .criteria-table th,
+        .criteria-table td {
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid white;
+        }
+
+        .gray {
+            background-color: #C0C0C0;
+            text-align: left;
+            width: 40%;
+        }
+
+        .cr-header,
+        .cr-val {
+            background-color: #FD6864;
+            width: 20%;
+        }
+
+        .en-header,
+        .en-val {
+            background-color: #FFCC67;
+            width: 20%;
+        }
+
+        .vu-header,
+        .vu-val {
+            background-color: #FFFFC7;
+            width: 20%;
+        }
+
+        .cr-header {
+            background-color: #FE0000;
+        }
+
+        .en-header {
+            background-color: #F8A102;
+        }
+
+        .vu-header {
+            background-color: #F8FF00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="tcolorbox">
+            <div class="tcolorbox-header">
+                Análise quantitativa
+            </div>
+
+            <table class="criteria-table">
+                <tr>
+                    <th></th>
+                    <th class="cr-header">CR</th>
+                    <th class="en-header">EN</th>
+                    <th class="vu-header">VU</th>
+                </tr>
+                <tr>
+                    <td class="gray">Indicação da probabilidade de extinção na natureza:</td>
+                    <td class="cr-val">&ge; 50% em 10 anos ou 3 gerações, a que for mais longa (100 anos no máx.)</td>
+                    <td class="en-val">&ge; 20% em 20 anos ou 5 gerações, a que for mais longa (100 anos no máx.)</td>
+                    <td class="vu-val">&ge; 10% em 100 anos</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

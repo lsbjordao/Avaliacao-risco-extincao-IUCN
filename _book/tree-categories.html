@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <title>Árvore IUCN com D3.js</title>
     <style>
-        html, body {
-          margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden; /* Remove barras de rolagem */
-        }
+        html,
         body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
 
         svg {
@@ -23,45 +20,113 @@
 
         text {
             font-family: sans-serif;
-            font-size: 14px;
+            font-size: 18px;
         }
 
         .symbol {
             fill: #eee;
             stroke: #999;
             stroke-width: 2px;
+            transition: all 0.2s ease;
         }
 
-        .symbol-DD { fill: #999999; }
-        .symbol-LC { fill: #006566; }
-        .symbol-NT { fill: #006566; }
-        .symbol-VU { fill: #cc9901; }
-        .symbol-EN { fill: #cd6633; }
-        .symbol-CR { fill: #cd3232; }
-        .symbol-EW { fill: #000000; }
-        .symbol-EX { fill: #000000; }
-        .symbol-NE { fill: white; }
-        .symbol-NA { fill: white; }
+        .symbol-DD {
+            fill: #999999;
+        }
 
-        .text-DD { fill: white; }
-        .text-LC { fill: white; }
-        .text-NT { fill: #9fd09b; }
-        .text-VU { fill: white; }
-        .text-EN { fill: #ffd09b; }
-        .text-CR { fill: #fcc8c8; }
-        .text-EW { fill: white; }
-        .text-EX { fill: #cd3232; }
-        .text-NE { fill: black; }
-        .text-NA { fill: black; }
+        .symbol-LC {
+            fill: #006566;
+        }
+
+        .symbol-NT {
+            fill: #006566;
+        }
+
+        .symbol-VU {
+            fill: #cc9901;
+        }
+
+        .symbol-EN {
+            fill: #cd6633;
+        }
+
+        .symbol-CR {
+            fill: #cd3232;
+        }
+
+        .symbol-EW {
+            fill: #000000;
+        }
+
+        .symbol-EX {
+            fill: #000000;
+        }
+
+        .symbol-NE,
+        .symbol-NA {
+            fill: white;
+        }
+
+        .text-DD,
+        .text-LC,
+        .text-VU,
+        .text-EN,
+        .text-CR,
+        .text-EW {
+            fill: white;
+        }
+
+        text {
+            cursor: default;
+        }
+
+        .text-NT {
+            fill: #9fd09b;
+        }
+
+        .text-EX {
+            fill: #cd3232;
+        }
+
+        .text-NE,
+        .text-NA {
+            fill: black;
+        }
+
+        #tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            max-width: 250px;
+        }
     </style>
 </head>
 
 <body>
     <svg id="tree"></svg>
+    <div id="tooltip"></div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
         const iconCategories = ["DD", "LC", "NT", "VU", "EN", "CR", "EW", "EX", "NE", "NA"];
+        const categoryDescriptions = {
+            DD: "<i>Data Deficient</i><br>Dados Insuficientes<br><br>Não há informações adequadas para fazer uma avaliação direta ou indireta do risco de extinção com base na distribuição e/ou no status populacional. Um táxon nesta categoria pode ser bem estudado, e sua biologia bem conhecida, mas faltam dados apropriados sobre abundância e/ou distribuição",
+            LC: "<i>Least Concern</i><br>Menor Preocupação<br><br>Foi avaliado com base nos critérios da Lista Vermelha e não se qualifica como CR, EN, VU e NT",
+            NT: "<i>Near Threatened</i><br>Quase Ameaçada<br><br>Foi avaliado com base nos critérios, mas não se qualifica atualmente como Criticamente Em Perigo, Em Perigo ou Vulnerável, embora esteja próximo de se qualificar ou tenha probabilidade de se qualificar para uma categoria de ameaça em um futuro próximo",
+            VU: "<i>Vulnerable</i><br>Vulnerável<br><br>As melhores evidências disponíveis indicam que o táxon atende a qualquer um dos critérios de A a E para VU, sendo, portanto, considerado como enfrentando um alto risco de extinção na natureza<br>",
+            EN: "<i>Endangered</i><br>Em Perigo<br><br>As melhores evidências disponíveis indicam que o táxon atende a qualquer um dos critérios de A a E para EN, sendo, portanto, considerado como enfrentando um risco muito alto de extinção na natureza",
+            CR: "<i>Critically Endangered</i><br>Criticamente em Perigo<br><br>As melhores evidências disponíveis indicam que o táxon atende a qualquer um dos critérios de A a E para CR, sendo, portanto, considerado como enfrentando um risco <b>extremamente alto</b> de extinção na natureza",
+            EW: "<i>Extinct in the Wild</i><br>Extinta na Natureza<br><br>Se sabe que o táxon sobrevive apenas em cultivo, em cativeiro ou como uma população (ou populações) naturalizada bem fora de sua distribuição passada. Um táxon é presumido EW quando pesquisas exaustivas em habitats conhecidos e/ou esperados, em momentos apropriados (diurnos, sazonais, anuais), ao longo de sua distribuição histórica, não conseguiram registrar nenhum indivíduo. As pesquisas devem ser conduzidas ao longo de um período adequado ao ciclo de vida e à forma de vida do táxon",
+            EX: "<i>Extinct</i><br>Extinta<br><br>Não há dúvida razoável de que o último indivíduo morreu. Um táxon é presumido EX quando pesquisas exaustivas em habitats conhecidos e/ou esperados, em momentos apropriados (diurnos, sazonais, anuais), ao longo de sua distribuição histórica, não conseguiram registrar nenhum indivíduo. As pesquisas devem ser realizadas ao longo de um período adequado ao ciclo de vida e à forma de vida do táxon",
+            NE: "<i>Not Aplicable</i><br>Não Avaliada<br><br>Não estão publicadas na Lista Vermelha da IUCN",
+            NA: "<i>Not Evaluated</i><br>Não Aplicável<br><br>Não se qualifica para avaliação em um determinado contexto geográfico"
+        };
 
         const data = {
             name: "Todas as espécies",
@@ -116,6 +181,8 @@
             .append("g")
             .attr("transform", "translate(80,40)");
 
+        const tooltip = d3.select("#tooltip");
+
         const root = d3.hierarchy(data);
         const treeLayout = d3.tree().size([height - 100, width - 200]);
         treeLayout(root);
@@ -163,23 +230,91 @@
             .attr("class", "node")
             .attr("transform", d => `translate(${d.y},${d.x})`);
 
-        // Círculo estilizado via CSS
-        node.filter(d => iconCategories.includes(d.data.name))
-            .append("circle")
-            .attr("r", symbolRadius)
-            .attr("class", d => `symbol symbol-${d.data.name}`);
+        // Nó com círculo + texto + tooltip
+        const categoryNodes = node.filter(d => iconCategories.includes(d.data.name));
 
-        // Letra da categoria no centro do círculo
-        node.filter(d => iconCategories.includes(d.data.name))
-            .append("text")
-            .attr("text-anchor", "middle")
-            .attr("dy", "0.35em")
-            .attr("fill", "#fff")
-            .attr("font-weight", "bold")
-            .attr("class", d => `text-${d.data.name}`)
-            .text(d => d.data.name);
+        categoryNodes.each(function (d) {
+            const g = d3.select(this);
 
-        // Nome do nó ao lado (somente para nós sem símbolo)
+            g.append("circle")
+                .attr("r", symbolRadius)
+                .attr("class", `symbol symbol-${d.data.name}`);
+
+            g.append("text")
+                .attr("text-anchor", "middle")
+                .attr("dy", "0.35em")
+                .style("font-size", "18px")
+                .style("font-weight", "bold")
+                .attr("class", `text-${d.data.name}`)
+                .text(d.data.name);
+
+            // Evento mouseover: ativa efeitos visuais e exibe tooltip
+            g.on("mouseover", function (event, d) {
+                g.select("circle")
+                    .transition().duration(200)
+                    .attr("r", symbolRadius * 1.2)
+                    .attr("stroke", "#ffd700")
+                    .attr("stroke-width", 4);
+
+                g.select("text")
+                    .transition().duration(200)
+                    .style("font-size", "22px");
+
+                // Mostra temporariamente para calcular o tamanho real
+                tooltip
+                    .style("opacity", 0)
+                    .style("display", "block")
+                    .html(`<strong>${d.data.name}</strong><br>${categoryDescriptions[d.data.name]}`);
+            });
+
+            // Evento mousemove: calcula posição do tooltip dinamicamente
+            g.on("mousemove", function (event) {
+                const tooltipRect = tooltip.node().getBoundingClientRect();
+                const iframeRect = document.body.getBoundingClientRect(); // Limite do conteúdo visível no iframe
+                const offset = 20;
+
+                const mouseX = event.pageX;
+                const mouseY = event.pageY;
+
+                let tooltipX = mouseX - tooltipRect.width - offset;
+                let tooltipY = mouseY + 10;
+
+                // Se o tooltip sair pela esquerda, joga pra direita
+                if (tooltipX < iframeRect.left + offset) {
+                    tooltipX = mouseX + offset;
+                }
+
+                // Se o tooltip sair pela parte de baixo, move pra cima
+                if (tooltipY + tooltipRect.height > iframeRect.bottom) {
+                    tooltipY = mouseY - tooltipRect.height - offset;
+                }
+
+                tooltip
+                    .style("left", tooltipX + "px")
+                    .style("top", tooltipY + "px")
+                    .style("opacity", 1);
+            });
+
+
+            // Evento mouseout: remove efeitos e esconde tooltip
+            g.on("mouseout", function () {
+                g.select("circle")
+                    .transition().duration(200)
+                    .attr("r", symbolRadius)
+                    .attr("stroke", null);
+
+                g.select("text")
+                    .transition().duration(200)
+                    .style("font-size", "18px");
+
+                tooltip
+                    .style("opacity", 0)
+                    .style("display", "none");
+            });
+
+        });
+
+        // Nome dos nós intermediários (sem ícones)
         node.filter(d => !iconCategories.includes(d.data.name))
             .append("text")
             .attr("dy", -4)

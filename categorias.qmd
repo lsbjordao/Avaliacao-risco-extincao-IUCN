@@ -1,6 +1,88 @@
+
+```{r}
+#| echo: false
+library(RefManageR)
+library(knitr)
+bib_file <- "references.bib"
+bib <- ReadBib(bib_file)
+
+format_article <- function(reference) {
+    author <- paste(reference$author$family, ", ", reference$author$given, sep="")
+    year <- reference$year
+    title <- reference$title
+    journal <- reference$journal
+    volume <- reference$volume
+    number <- reference$number
+    pages <- reference$pages
+
+    formatted_reference <- paste("**", author, "** ", year, ". ", title,
+        " *", journal, "* ", volume, "(", number, "): ",
+        pages, ".",
+        sep = ""
+    )
+    return(formatted_reference)
+}
+
+format_book <- function(reference) {
+    author <- reference$author
+    year <- reference$year
+    title <- reference$title
+    publisher <- reference$publisher
+    address <- reference$address
+
+    formatted_reference <- paste(author, "(", year, ").", title, ".",
+        publisher, ",", address, ".",
+        sep = ""
+    )
+    return(formatted_reference)
+}
+
+Diamond1987 <- format_article(bib["Diamond1987"])
+```
+
 # Categorias
 
 - As categorias do sistema de avaliação do risco de extinção da Lista
 Vermelha da IUCN são:
 
 <iframe src="./tree-categories.html" width="100%" height="600" style="border:none;"></iframe>
+
+## Extinto (EX)
+
+Um táxon é categorizado como `Extinto (EX)` quando não há dúvida razoável de que o último indivíduo morreu. Supõe-se que um táxon esteja extinto após a realização de levantamentos extensivos em todos os habitats conhecidos e/ou esperados, nos períodos apropriados (diurnos, sazonais, anuais), e em toda sua área de distribuição histórica, sem que nenhum indivíduo tenha sido registrado. Esses levantamentos devem ocorrer ao longo de um período de tempo adequado ao ciclo de vida e à forma de vida do táxon.
+
+Apesar de a extinção representar o desaparecimento definitivo de uma espécie, sua detecção é extremamente difícil. Por isso, a atribuição da categoria `EX` exige rigor científico e cautela, baseando-se nas melhores evidências disponíveis e em metodologias consistentes de amostragem e monitoramento.
+
+::: {.callout-important}
+Categorizar como `EX` tem implicações significativas para a conservação, porque as medidas de proteção e o financiamento da conservação geralmente não são direcionados a espécies que se acredita estarem extintas. 
+
+Portanto, uma espécie não deve ser listada nas categorias `Extinta (EX)` ou `Extinta na Natureza (EW)` se houver qualquer possibilidade razoável de que ainda possam existir, a fim de evitar o "<a title="Esse termo foi aplicado pela primeira vez ao caso da ave Dicaeum quadricolor, redescoberta em 1992 após 86 anos sem registro (Dutson et al. 1993), tendo sido considerada extinta pelo menos 40 anos antes, na presunção de que não havia mais nenhum remanescente de seu habitat florestal na ilha de Cebu (Magsalay et al. 1995)." style="text-decoration: underline;">Erro de Romeu</a>" [@Collar1998], onde quaisquer medidas de proteção e financiamento são removidos de espécies ameaçadas na crença errônea de que eles já estão extintos. 
+:::
+
+::: {.callout-note}
+
+## Existente a menos que provado extinto ou extinto a menos que provado existente?
+
+`r Diamond1987`
+
+a @Penedo2015.
+:::
+
+::: {.callout-tip}
+
+## A busca ativa em campo é essencial para confirmar extinções
+
+Uma abordagem probatória para classificar as extinções é apropriada para encorajar os esforços contínuos de conservação até que não haja dúvida razoável de que o último indivíduo de uma espécie morreu.
+:::
+
+No entanto, se as avaliações de EX ou EW forem menosprezadas, as taxas de extinção com base na Lista Vermelha provavelmente serão subestimadas.
+
+Há custos para fazer os dois tipos de erros (listar uma espécie existente como `EX` e deixar de listar uma espécie extinta como `EX`) e benefícios de fazer a listagem correta (Akçakaya et al. 2017). Essas questões são tratadas por:
+
+1. definir uma etiqueta "Possivelmente Extinta" para espécies listadas como `CR`, mas que provavelmente serão extintas;
+
+2. usar métodos que calculam a probabilidade de extinção da espécie e comparar essa probabilidade aos limites recomendados (em https://www.iucn-redlist.org/resources/ex-probability); e
+
+3. usando a probabilidade de que uma espécie está extinta no cálculo do número de espécies extintas e taxas de extinção (tópico 11.4 da publicação Guidelines for Using the IUCN Red List Categories and Criteria).
+
+É altamente recomendável que os métodos e limites descritos em https://www.iucn-redlist.org/resources/ex-probability sejam aplicados a qualquer espécie que não  tenha sido registrada desde a última avaliação, ou que se suspeite que tenha se extinguido.

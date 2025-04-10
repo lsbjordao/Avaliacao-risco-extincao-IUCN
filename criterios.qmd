@@ -68,15 +68,11 @@ A menção aos termos "subcritério" e "subcondição" tem finalidade exclusivam
 
 ### Critério D
 
+<iframe id="iframeD" src="./criterio-d.html" width="100%" style="border: none;"></iframe>
 
 ### Critério E
 
-
-
-
-
-
-
+<iframe id="iframeE" src="./criterio-e.html" width="100%" style="border: none;"></iframe>
 
 <script>
   function ajustarAltura(iframeId) {
@@ -98,4 +94,6 @@ A menção aos termos "subcritério" e "subcondição" tem finalidade exclusivam
   ajustarAltura("iframeA");
   ajustarAltura("iframeB");
   ajustarAltura("iframeC");
+  ajustarAltura("iframeD");
+  ajustarAltura("iframeE");
 </script>

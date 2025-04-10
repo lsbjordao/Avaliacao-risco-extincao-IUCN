@@ -9,6 +9,7 @@ book:
     - index.qmd
     - iucn.qmd
     - lista-vermelha.qmd
+    - categoriasEcriterios.qmd
     - categorias.qmd
     - criterios.qmd
     - references.qmd
@@ -27,5 +28,3 @@ format:
           <script src="nav-arrows.js"></script>
 
 lang: pt
-
-

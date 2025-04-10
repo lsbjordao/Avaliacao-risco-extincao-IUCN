@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Categoria C</title>
+    <title>Critério D - População muito pequena ou restrita</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,10 +37,10 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 1rem;
-            table-layout: fixed; /* Garante larguras consistentes */
+            table-layout: fixed;
         }
 
-        .criteria-table th, 
+        .criteria-table th,
         .criteria-table td {
             padding: 8px;
             text-align: center;
@@ -54,15 +54,16 @@
 
         .gray {
             background-color: #c0c0c0;
+            font-weight: bold;
             text-align: left;
             width: 40%;
         }
-        
-        .lightgray {
-            background-color: #c0c0c0 !important;
+
+        .white {
+            background-color: white;
+            width: 40%;
         }
 
-        /* Cores dos cabeçalhos */
         .cr-header {
             background-color: #FE0000;
             width: 15%;
@@ -78,7 +79,6 @@
             width: 15%;
         }
 
-        /* Cores dos valores */
         .cr-val {
             background-color: #FD6864;
             width: 15%;
@@ -127,61 +127,36 @@
 <body>
     <div class="page-wrapper">
         <div class="tcolorbox">
-            <div class="tcolorbox-header">
-                População pequena ou em declínio
-            </div>
-
+            <div class="tcolorbox-header">População muito pequena ou restrita</div>
             <table class="criteria-table">
                 <tr class="header-row">
                     <th></th>
+                    <th class="white"></th>
                     <th class="cr-header">CR</th>
                     <th class="en-header">EN</th>
                     <th class="vu-header">VU</th>
                 </tr>
                 <tr>
-                    <td class="gray text-justify">Número de indivíduos maduros</td>
-                    <td class="cr-val">&lt; 250</td>
-                    <td class="en-val">&lt; 2.500</td>
-                    <td class="vu-val">&lt; 10.000</td>
-                </tr>
-            </table>
-
-            <div class="section-title">E PELO MENOS 1 dos subcritérios (C1 ou C2):</div>
-
-            <!-- C1 Section -->
-            <table class="criteria-table">
-                <tr>
-                    <td class="condition-label lightgray">C1</td>
-                    <td class="gray text-justify">Declínio contínuo observado, estimado ou projetado de pelo menos (até 100 anos no futuro):</td>
-                    <td class="cr-val">25% em 3 anos ou 1 geração (qual for mais longa)</td>
-                    <td class="en-val">20% em 5 anos ou 2 gerações (qual for mais longa)</td>
-                    <td class="vu-val">10% em 10 anos ou 3 gerações (qual for mais longa)</td>
+                    <td class="condition-label">D</td>
+                    <td class="condition-text text-justify">Número de indivíduos maduros</td>
+                    <td class="cr-val">&lt; 50</td>
+                    <td class="en-val">&lt; 250</td>
+                    <td class="vu-val"><strong>D1.</strong> &lt; 1.000<br></td>
                 </tr>
                 <tr>
-                    <td class="condition-label lightgray">C2</td>
-                    <td class="gray text-justify">Declínio contínuo observado, estimado, projetado ou inferido E pelo menos uma das seguintes condições:</td>
-                    <td class="white"></td>
-                    <td class="white"></td>
-                    <td class="white"></td>
-                </tr>
-                <tr>
-                    <td class="condition-label" rowspan="2">(a)</td>
-                    <td class="condition-text text-justify"><b>(i)</b> Número de indivíduos maduros em cada subpopulação</td>
-                    <td class="cr-val">≤ 50</td>
-                    <td class="en-val">≤ 250</td>
-                    <td class="vu-val">≤ 1.000</td>
-                </tr>
-                <tr>
-                    <td class="condition-text subcondition text-justify"><b>(ii)</b> % de indivíduos maduros em uma subpopulação =</td>
-                    <td class="cr-val">90-100%</td>
-                    <td class="en-val">95-100%</td>
-                    <td class="vu-val">100%</td>
-                </tr>
-                
-                <tr>
-                    <td class="condition-label">(b)</td>
-                    <td class="condition-text text-justify">Flutuações extremas no número de indivíduos maduros</td>
-                    <td colspan="3"></td>
+                    <td class="condition-label">D2</td>
+                    <td class="condition-text text-justify">
+                        <em>Aplicável apenas à categoria VU</em><br>
+                        AOO restrita ou número de situações de ameaça, com ameaça plausível que possa levar o táxon às
+                        categorias CR ou EX em um período de tempo muito breve.
+                    </td>
+                    <td class="white">–</td>
+                    <td class="white">–</td>
+                    <td class="vu-val text-justify">
+                        <strong>D2.</strong> tipicamente:<br>
+                        AOO &lt; 20 km²<br>
+                        ou número de situações de ameaça ≤ 5
+                    </td>
                 </tr>
             </table>
         </div>
