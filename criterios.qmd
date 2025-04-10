@@ -29,8 +29,7 @@ Por sua vez, as condições $b$ e $c$ do critério $B$ e a condição a do subcr
 - Da condição $c$ do critério $B$: $i$, $ii$, $iii$, $iv$;
 - Da condição $a$ do subcritério $C2$: $i$, $ii$.
 
-Os critérios, subcritérios, condições e subcondições possuem requisitos
-que precisam ser atendidos para o devido enquadramento.
+Os critérios, subcritérios, condições e subcondições possuem requisitos que precisam ser atendidos para o devido enquadramento.
 
 A regra geral é a necessidade de justificação através de documentação para o enquadramento nos (sub)critérios e (sub)condições.
 
@@ -38,21 +37,22 @@ Ainda que não haja referências para documentação, a justificação precisa e
 
 O termo categorização refere-se ao atendimento dos (sub)critérios e (sub)condições que justificam a seleção da categoria de ameaça.
 
-O termo enquadramento refere-se ao atendimento dos requisitos justificam a seleção dos (sub)critérios e (sub)condições.
+O termo **enquadramento** refere-se ao atendimento dos requisitos que justificam a aplicação dos (sub)critérios e (sub)condições. 
 
 Dessa maneira, citamos alguns exemplos sobre a utilização dos termos "categorização" e "enquadramento":
 
-::: {.callout-important}
+::: {.callout-note}
 - A afirmação: — um táxon foi "enquadrado" na categoria VU — seria inadequada. O adequado seria dizer: — "um táxon foi categorizado como VU".
 
 - A afirmação: — "Categorizar" um táxon no critério B — seria uma afirmativa inadequada. O melhor termo seria dizer: — o "enquadramento" no critério B foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — "os requisitos para o enquadramento no critério B foram atendidos".
 
 - A afirmação: — Os requisitos de verificação das subcondições i e ii para enquadramento na condição b do critério B foram atendidos — está adequada.
 
-- Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR de acordo com o critério B1ab(i,ii,iii,iv).
+- Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR empregando o critério B1ab(i,ii,iii,iv).
 
-- Nesse caso, omite-se os termos "subcritério" "condições" e "subcondições".
 :::
+
+A menção aos termos "subcritério" e "subcondição" tem finalidade exclusivamente didática, sendo empregada para facilitar a compreensão da hierarquia dos requisitos para o enquadramento em um critério. No entanto, tais termos não devem ser utilizados em textos formais.
 
 ### Critério A
 
