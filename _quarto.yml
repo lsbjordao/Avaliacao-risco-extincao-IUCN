@@ -22,6 +22,8 @@ format:
       light: lux
       dark: cyborg
     number-sections: false
+    crossref:
+      fig-prefix: "Figura"
     css: "style.css"
     include-in-header:
       - text: |

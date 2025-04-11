@@ -49,7 +49,7 @@ Vermelha da IUCN são:
 
 ## Extinto (EX)
 
-Um táxon é categorizado como `Extinto (EX)` quando não há dúvida razoável de que o último indivíduo morreu. Supõe-se que um táxon esteja extinto após a realização de levantamentos extensivos em todos os habitats conhecidos e/ou esperados, nos períodos apropriados (diurnos, sazonais, anuais), e em toda sua área de distribuição histórica, sem que nenhum indivíduo tenha sido registrado. Esses levantamentos devem ocorrer ao longo de um período de tempo adequado ao ciclo de vida e à forma de vida do táxon.
+Um táxon é categorizado como `Extinto (EX)` quando não resta dúvida razoável de que o último indivíduo morreu. Supõe-se que um táxon esteja extinto após a realização de levantamentos extensivos em todos os habitats conhecidos e/ou esperados, nos períodos apropriados (diurnos, sazonais, anuais), e em toda sua área de distribuição histórica, sem que nenhum indivíduo tenha sido registrado. Esses levantamentos devem ocorrer ao longo de um período de tempo adequado ao ciclo de vida e à forma de vida do táxon.
 
 Apesar de a extinção representar o desaparecimento definitivo de uma espécie, sua detecção é extremamente difícil. Por isso, a atribuição da categoria `EX` exige rigor científico e cautela, baseando-se nas melhores evidências disponíveis e em metodologias consistentes de amostragem e monitoramento.
 
@@ -65,24 +65,93 @@ Portanto, uma espécie não deve ser listada nas categorias `Extinta (EX)` ou `E
 
 `r Diamond1987`
 
-a @Penedo2015.
+Essa questão reflete uma tensão conceitual e prática na avaliação de extinções: deve-se presumir que uma espécie ainda existe até que haja evidência suficiente de sua extinção ("*extant unless proven extinct*") ou o contrário — considerar extinta até que se prove que ainda existe ("*extinct unless proven extant*")?
+
+A abordagem conservadora adotada pela Lista Vermelha da IUCN segue o princípio "*extant unless proven extinct*", ou seja, assume-se que uma espécie ainda existe na ausência de evidências conclusivas de extinção. Isso busca evitar falsos positivos, mas pode levar a subestimações nas taxas de extinção.
+
+Já a posição "*extinct unless proven extant*" é mais comum em contextos paleontológicos ou históricos, onde a ausência prolongada de registros confiáveis pode justificar a classificação como extinta. Essa abordagem é mais propensa a falsos positivos, mas pode ser útil quando há alta confiança na qualidade dos dados de busca.
 :::
 
 ::: {.callout-tip}
 
-## A busca ativa em campo é essencial para confirmar extinções
+## Repetidas buscas ativas em campo são essenciais para confirmar extinções
 
 Uma abordagem probatória para classificar as extinções é apropriada para encorajar os esforços contínuos de conservação até que não haja dúvida razoável de que o último indivíduo de uma espécie morreu.
 :::
 
-No entanto, se as avaliações de EX ou EW forem menosprezadas, as taxas de extinção com base na Lista Vermelha provavelmente serão subestimadas.
+::: {.callout-warning}
 
-Há custos para fazer os dois tipos de erros (listar uma espécie existente como `EX` e deixar de listar uma espécie extinta como `EX`) e benefícios de fazer a listagem correta (Akçakaya et al. 2017). Essas questões são tratadas por:
+## Trade-off entre dois tipos de erro  
 
-1. definir uma etiqueta "Possivelmente Extinta" para espécies listadas como `CR`, mas que provavelmente serão extintas;
+Ao avaliar a extinção de espécies, é fundamental considerar o equilíbrio entre dois tipos de erro:
 
-2. usar métodos que calculam a probabilidade de extinção da espécie e comparar essa probabilidade aos limites recomendados (em https://www.iucn-redlist.org/resources/ex-probability); e
+- **Falso positivo**: É o erro de declarar que uma espécie está extinta quando, na realidade, ela ainda persiste em alguma forma ou em um pequeno número de indivíduos.
+    - **Exemplo:** 
+        - *Pseudophilautus stellatus* (@fig-Pseudophilautus-stellatus), uma rã do Sri Lanka, foi declarada extinta, mas redescoberta décadas depois [@Wickramasinghe2013]. A categorização precoce como extinta impediu ações que poderiam ter favorecido sua proteção durante esse período.
+        - @Penedo2015
+- **Falso negativo**: Ocorre quando uma espécie que, de fato, já está extinta continua sendo classificada como existente ou ameaçada.
+    - **Exemplo:** Apesar de décadas sem registros ou avistamentos confirmados, o golfinho do rio Yangtzé ou baiji (*Lipotes vexillifer*, @fig-baiji), um odontoceto de água doce estritamente obrigatório conhecido apenas do sistema do meio-inferior do rio Yangtzé e do rio Qiantang vizinho, no leste da China, tem sido reconhecido há muito tempo como uma das espécies de mamíferos mais raras e ameaçadas do mundo, continua sendo listado pela IUCN como `Criticamente em Perigo (Possivelmente Extinto)`. Essa classificação reflete a persistência de uma incerteza residual, mesmo quando todas as evidências sugerem fortemente que a espécie já se encontra extinta. No caso do Baiji, a manutenção do status "Possivelmente Extinto" implica que os sistemas de monitoramento e os relatórios de conservação não reconhecem formalmente a extinção [@Turvey2007].
 
-3. usando a probabilidade de que uma espécie está extinta no cálculo do número de espécies extintas e taxas de extinção (tópico 11.4 da publicação Guidelines for Using the IUCN Red List Categories and Criteria).
+```{r}
+#| label: fig-Pseudophilautus-stellatus
+#| fig-cap: "*Pseudophilautus stellatus*, anfíbio da família Rhacophoridae. Em 2004, a IUCN declarou a espécie extinta, já que buscas na região não foram capazes de encontrar um indivíduo vivo. Em 2012, foi anunciada oficialmente a redescoberta do anfíbio no Santuário do Pico Wilderness ([Wikipedia](https://pt.wikipedia.org/wiki/Pseudophilautus_stellatus))."
+#| column: margin
+#| echo: false
 
-É altamente recomendável que os métodos e limites descritos em https://www.iucn-redlist.org/resources/ex-probability sejam aplicados a qualquer espécie que não  tenha sido registrada desde a última avaliação, ou que se suspeite que tenha se extinguido.
+knitr::include_graphics("Pseudophilautus-stellatus.jpeg")
+```
+
+```{r}
+#| label: fig-baiji
+#| fig-cap: "O odontoceto baiji é categorizado como **Criticamente em Perigo (Possivelmente Extinto)** pela [IUCN](https://www.iucnredlist.org/species/12119/50362206)."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("baiji.jpeg")
+```
+
+Ambos os erros têm consequências importantes para a conservação:
+
+- **Falso positivo:** 
+    - Esse erro pode ocorrer se, por exemplo, as pesquisas não detectam os últimos indivíduos por se tratarem de populações extremamente reduzidas ou difíceis de serem encontradas. Se uma espécie for erroneamente considerada extinta (um falso positivo), os esforços de conservação podem ser abandonados prematuramente, mesmo que ainda haja chance de recuperação ou manejo para garantir sua sobrevivência.
+- **Falso negativo:**
+    - Esse erro acontece muitas vezes por cautela, quando há receio de se cometer um falso positivo. Assim, mesmo diante da ausência de evidências recentes e de fortes indícios de desaparecimento, a espécie é mantida na lista como se ainda estivesse presente ou em risco. Como consequência, pode-se desperdiçar recursos monitorando ou tentando salvar uma espécie que já não existe, além de subestimar a taxa real de extinção.
+
+Se avaliações de `EX` ou `EW` forem evitadas ou excessivamente cautelosas por receio de cometer falsos positivos, há um risco de **subestimar as taxas reais de extinção**. Isso pode gerar uma falsa percepção de sucesso das ações de conservação e mascarar a gravidade da crise da biodiversidade.
+
+Por outro lado, reconhecer corretamente uma extinção traz benefícios significativos: contribui para a compreensão mais precisa dos padrões de perda de biodiversidade, permite avaliar a eficácia de políticas de conservação e pode influenciar positivamente decisões estratégicas para evitar novas extinções.
+
+Como destacam @Akakaya2017, o processo de categorização na Lista Vermelha envolve um *trade-off*: é preciso ponderar cuidadosamente os custos e benefícios de cada tipo de erro, em busca do maior acerto possível dentro das limitações dos dados disponíveis.
+
+O equilíbrio entre essas abordagens envolve considerar:
+
+- a qualidade e abrangência das buscas recentes;
+- o histórico de registros da espécie;
+- a detectabilidade do táxon;
+- e os custos ecológicos, sociais e políticos de cada tipo de erro.
+
+Em síntese: não se trata apenas de uma escolha binária, mas de um espectro de decisões informadas por dados, contexto e critérios transparentes.
+:::
+
+::: {.callout-note}
+
+## Meios de confirmação de extinção de espécies
+
+Essas questões são tratadas pela IUCN:
+
+1. Definir uma etiqueta `(Possivelmente Extinta)` para espécies listadas como `CR`, mas que provavelmente são extintas;
+
+2. Usar métodos que calculam a probabilidade de extinção da espécie e comparar essa probabilidade aos limites recomendados (em [https://www.iucnredlist.org/resources/ex-probability](https://www.iucnredlist.org/resources/ex-probability))
+    - Segundo as direrizes da IUCN, é altamente recomendável que os métodos propostos sejam aplicados a qualquer espécie que não tenha sido registrada desde a última avaliação, ou que se suspeite que tenha se extinguido.
+
+3. Usando a probabilidade de que uma espécie está extinta no cálculo do número de espécies extintas e taxas de extinção (tópico 11.4 da publicação *Guidelines for Using the IUCN Red List Categories and Criteria*).
+
+:::
+
+## Extinto na Natureza (EW)
+
+Um táxon está Extinto na Natureza quando se sabe que sobrevive apenas em cultivo, em cativeiro ou numa população (ou populações) naturalizada(s), claramente fora de sua área de distribuição anterior (nativa ou natural). Supõese que um táxon está Extinto na Natureza quando pesquisas extensas conduzidas em seu habitat conhecido ou presumido, nos períodos adequados (diários, sazonais, anuais) e por toda sua área de distribuição histórica não registram a presença de indivíduo algum. Tais pesquisas devem ser realizadas durante um período compatível com as formas e o ciclo de vida do táxon.
+
+Esta categoria pode ser aplicada quando os táxons de plantas ou fungos são representados apenas por propágulos viáveis (por exemplo, sementes ou esporos) em instalações de armazenamento adequadas, se protocolos eficazes foram desenvolvidos para o táxon para garantir que haja o potencial para esses propágulos se desenvolverem em descendência reprodutiva e realizar a recuperação das espécies *in situ*.
+
+**Exemplo:** 

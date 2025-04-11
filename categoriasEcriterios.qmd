@@ -1,4 +1,10 @@
 # Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha
 
+{{< pdf IUCN-categories.pdf width=100% height=800 >}}
+
 - *Guidelines for Using the IUCN Red List Categories and Criteria*
     - Em português: [Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha](https://nc.iucnredlist.org/redlist/content/attachment_files/Red_List_Guidelines_v16_PORTUGUES_20250326.pdf)
+
+- *Supporting Information Guidelines*
+    - [*Documentation Standards and Consistency Checks for IUCN Red List Assessments and Species Accounts*](https://nc.iucnredlist.org/redlist/content/attachment_files/RL_Standards_Consistency.pdf)
+    
