@@ -130,7 +130,10 @@ O equilíbrio entre essas abordagens envolve considerar:
 - a detectabilidade do táxon;
 - e os custos ecológicos, sociais e políticos de cada tipo de erro.
 
+::: {style="background-color: #fffcec; padding: 1.5em; text-align: center; border-radius: 8px; margin: 1em 0;"}
 Em síntese: não se trata apenas de uma escolha binária, mas de um espectro de decisões informadas por dados, contexto e critérios transparentes.
+:::
+
 :::
 
 ::: {.callout-note}
@@ -150,7 +153,7 @@ Essas questões são tratadas pela IUCN:
 
 ## Extinto na Natureza (EW)
 
-Um táxon está Extinto na Natureza quando se sabe que sobrevive apenas em cultivo, em cativeiro ou numa população (ou populações) naturalizada(s), claramente fora de sua área de distribuição anterior (nativa ou natural). Supõese que um táxon está Extinto na Natureza quando pesquisas extensas conduzidas em seu habitat conhecido ou presumido, nos períodos adequados (diários, sazonais, anuais) e por toda sua área de distribuição histórica não registram a presença de indivíduo algum. Tais pesquisas devem ser realizadas durante um período compatível com as formas e o ciclo de vida do táxon.
+Um táxon está `Extinto na Natureza (EW)` quando se sabe que sobrevive apenas em cultivo, em cativeiro ou numa população (ou populações) naturalizada(s), claramente fora de sua área de distribuição anterior (nativa ou natural). Supõese que um táxon está `EW` quando pesquisas extensas conduzidas em seu habitat conhecido ou presumido, nos períodos adequados (diários, sazonais, anuais) e por toda sua área de distribuição histórica não registram a presença de indivíduo algum. Tais pesquisas devem ser realizadas durante um período compatível com as formas e o ciclo de vida do táxon.
 
 Esta categoria pode ser aplicada quando os táxons de plantas ou fungos são representados apenas por propágulos viáveis (por exemplo, sementes ou esporos) em instalações de armazenamento adequadas, se protocolos eficazes foram desenvolvidos para o táxon para garantir que haja o potencial para esses propágulos se desenvolverem em descendência reprodutiva e realizar a recuperação das espécies *in situ*.
 
