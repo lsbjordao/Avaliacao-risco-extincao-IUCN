@@ -9,7 +9,7 @@ A **IUCN** (União Internacional para a Conservação da Natureza) é uma união
 :::
 
 ::: {#second-column style="display: flex; justify-content: center;"}
-![](https://iucn.org/themes/custom/iucn_revamp/logo.svg){width=60%}
+![](https://iucn.org/themes/custom/iucn_revamp/logo.svg){width=100px}
 :::
 
 :::
