@@ -144,7 +144,7 @@
     "href": "categorias.html#extinto-na-natureza-ew",
     "title": "Categorias",
     "section": "Extinto na Natureza (EW)",
-    "text": "Extinto na Natureza (EW)\nUm táxon está Extinto na Natureza (EW) quando se sabe que sobrevive apenas em cultivo, em cativeiro ou numa população (ou populações) naturalizada(s), claramente fora de sua área de distribuição anterior (nativa ou natural). Supõese que um táxon está EW quando pesquisas extensas conduzidas em seu habitat conhecido ou presumido, nos períodos adequados (diários, sazonais, anuais) e por toda sua área de distribuição histórica não registram a presença de indivíduo algum. Tais pesquisas devem ser realizadas durante um período compatível com as formas e o ciclo de vida do táxon.\nEsta categoria pode ser aplicada quando os táxons de plantas ou fungos são representados apenas por propágulos viáveis (por exemplo, sementes ou esporos) em instalações de armazenamento adequadas, se protocolos eficazes foram desenvolvidos para o táxon para garantir que haja o potencial para esses propágulos se desenvolverem em descendência reprodutiva e realizar a recuperação das espécies in situ.\nExemplo:\n\n\n\n\nAkçakaya, H. R., David A. Keith, Mark Burgman, Stuart H. M. Butchart, Michael Hoffmann, Helen M. Regan, Ian Harrison, e Elizabeth Boakes. 2017. «Inferring extinctions III: A cost-benefit framework for listing extinct species». Biological Conservation 214: 336–42. https://doi.org/10.1016/j.biocon.2017.07.027.\n\n\nCollar, N. J. 1998. «Extinction by assumption; or, the Romeo Error on Cebu». Oryx 32 (4): 239–44. https://doi.org/10.1046/j.1365-3008.1998.d01-51.x.\n\n\nPenedo, Thiago Serrano de Almeida, Miguel d’Ávila de Moraes, Rafael Augusto Xavier Borges, Daniel Maurenza, Diogo Marcilio Judice, e Gustavo Martinelli. 2015. «Considerations on extinct species of Brazilian flora». Rodriguésia 66 (3): 711–15. https://doi.org/10.1590/2175-7860201566304.\n\n\nTurvey, Samuel T, Robert L Pitman, Barbara L Taylor, Jay Barlow, Tomonari Akamatsu, Leigh A Barrett, Xiujiang Zhao, et al. 2007. «First human-caused extinction of a cetacean species?» Biology Letters 3 (5): 537–40. https://doi.org/10.1098/rsbl.2007.0292.\n\n\nWickramasinghe, L. J. Mendis, Dulan Ranga Vidanapathirana, Sameera Airyarathne, Gehan Rajeev, Amila Chanaka, Jennifer Pastorini, Gayan Chathuranga, e Nethu Wickramasinghe. 2013. «Lost and found: One of the world’s most elusive amphibians, Pseudophilautus stellatus (Kelaart 1853) rediscovered». Zootaxa 3620 (1). https://doi.org/10.11646/zootaxa.3620.1.5.",
+    "text": "Extinto na Natureza (EW)\nUm táxon está Extinto na Natureza (EW) quando se sabe que sobrevive apenas em cultivo, em cativeiro ou numa população (ou populações) naturalizada(s), claramente fora de sua área de distribuição anterior (nativa ou natural). Supõese que um táxon está EW quando pesquisas extensas conduzidas em seu habitat conhecido ou presumido, nos períodos adequados (diários, sazonais, anuais) e por toda sua área de distribuição histórica não registram a presença de indivíduo algum. Tais pesquisas devem ser realizadas durante um período compatível com as formas e o ciclo de vida do táxon.\nEsta categoria pode ser aplicada quando os táxons de plantas ou fungos são representados apenas por propágulos viáveis (por exemplo, sementes ou esporos) em instalações de armazenamento adequadas, se protocolos eficazes foram desenvolvidos para o táxon para garantir que haja o potencial para esses propágulos se desenvolverem em descendência reprodutiva e realizar a recuperação das espécies in situ.\nExemplo:\n\n\n\n\n\n\n\n\n\nFigura 4.3: Abutilon pitcairnense (Malvaceae) é avaliada como EW.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 4.4: Ilha Pitcairn, no Oceano Pacífico.\n\n\n\n\n\nYellow Fatu (Abutilon pitcairnense, Figura 4.3)\n\nOrigem e Distribuição\n\nEndêmica da Ilha Pitcairn (Figura 4.4, Oceano Pacífico), uma das ilhas habitadas mais remotas do mundo, com apenas 4 km² de área.\n\nHistórico de Descoberta e Conservação\n\n1898: Primeira descrição científica.\n1934: Última coleta documentada em habitat natural.\n1955: Último avistamento na natureza.\n2003: Tentativa de reprodução in situ (via estacas e sementes), interrompida por um deslizamento de terra que eliminou a população remanescente.\n\nStatus Atual\n\nExtinta na natureza (EW, segundo critérios da IUCN).\nSobrevive apenas em coleções ex-situ (jardins botânicos e bancos de germoplasma).\n\nCaracterísticas Notáveis\n\nArbusto da família Malvaceae, com flores amarelas vibrantes (daí o nome popular).\nSímbolo da fragilidade de espécies insulares frente a desastres naturais e atividade humana.\n\nAmeaças Críticas\n\nDestruição de habitat por erosão.\nPopulação mínima original (provavelmente &lt; 50 indivíduos maduros).\nDependência exclusiva de cultivo humano para preservação.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
     ]
@@ -165,6 +165,76 @@
     "title": "Categorias",
     "section": "Meios de confirmação de extinção de espécies",
     "text": "Meios de confirmação de extinção de espécies\nEssas questões são tratadas pela IUCN:\n\nDefinir uma etiqueta (Possivelmente Extinta) para espécies listadas como CR, mas que provavelmente são extintas;\nUsar métodos que calculam a probabilidade de extinção da espécie e comparar essa probabilidade aos limites recomendados (em https://www.iucn-redlist.org/resources/ex-probability)\n\nSegundo as direrizes da IUCN, é altamente recomendável que os métodos e limites descritos em https://www.iucnredlist.org/resources/ex-probability sejam aplicados a qualquer espécie que não tenha sido registrada desde a última avaliação, ou que se suspeite que tenha se extinguido.\n\nUsando a probabilidade de que uma espécie está extinta no cálculo do número de espécies extintas e taxas de extinção (tópico 11.4 da publicação Guidelines for Using the IUCN Red List Categories and Criteria).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#criticamente-em-perigo-cr",
+    "href": "categorias.html#criticamente-em-perigo-cr",
+    "title": "Categorias",
+    "section": "Criticamente em Perigo (CR)",
+    "text": "Criticamente em Perigo (CR)\nUm táxon é categorizado como CR quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para CR e, portanto, considera-se que esteja sob risco extremamente alto de extinção na natureza.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#em-perigo-en",
+    "href": "categorias.html#em-perigo-en",
+    "title": "Categorias",
+    "section": "Em Perigo (EN)",
+    "text": "Em Perigo (EN)\nUm táxon é categorizado como EN quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para EN e, portanto, considera-se que esteja sob risco muito alto de extinção na natureza.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#vulnerável-vu",
+    "href": "categorias.html#vulnerável-vu",
+    "title": "Categorias",
+    "section": "Vulnerável (VU)",
+    "text": "Vulnerável (VU)\nUm táxon é categorizado como VU quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para VU e, portanto, considera-se que esteja sob risco alto de extinção na natureza.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#quase-ameaçado-nt",
+    "href": "categorias.html#quase-ameaçado-nt",
+    "title": "Categorias",
+    "section": "Quase Ameaçado (NT)",
+    "text": "Quase Ameaçado (NT)\nUm táxon é categorizado como NT quando foi avaliado pelos critérios, mas não se qualificou como CR, EN ou VU neste momento, estando, porém, próximo ou passível de ser categorizado em uma das categorias de ameaça em um futuro próximo.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#menos-preocupante-lc",
+    "href": "categorias.html#menos-preocupante-lc",
+    "title": "Categorias",
+    "section": "Menos Preocupante (LC)",
+    "text": "Menos Preocupante (LC)\nUm táxon é categorizado como LC quando foi avaliado de acordo com os critérios e não se qualificou como CR, EN, VU ou NT. Táxons de ampla distribuição e abundantes são geralmente incluídos nesta categoria.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#menos-preocupante-dd",
+    "href": "categorias.html#menos-preocupante-dd",
+    "title": "Categorias",
+    "section": "Menos Preocupante (DD)",
+    "text": "Menos Preocupante (DD)\nUm táxon é categorizado em DD quando não há informações adequadas para fazer uma avaliação direta ou indireta de seu risco de extinção com base em sua distribuição e/ou status populacional. Um táxon nesta categoria pode ser bem estudado e ter sua biologia bem conhecida, mas faltam dados apropriados sobre abundância e/ou distribuição. A insuficiência de dados não é, portanto, uma categoria de ameaça. A inclusão nesta categoria indica que mais informações são necessárias e reconhece que pesquisas futuras poderão demonstrar que a inclusão em categorias de ameaça é apropriada. É importante fazer uso positivo de todos os dados disponíveis. Em muitos casos, deve-se ter muito cuidado ao escolher entre DD e uma categoria de ameaça. Se houver suspeita de que a distribuição de um táxon é relativamente restrita, ou se houver transcorrido um tempo considerável desde o último registro do táxon, um status de ameaça pode muito bem ser justificado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "categorias.html#não-avaliado-ne",
+    "href": "categorias.html#não-avaliado-ne",
+    "title": "Categorias",
+    "section": "Não Avaliado (NE)",
+    "text": "Não Avaliado (NE)\nUm táxon é categorizado como NE se ainda não foi avaliado em relação aos critérios.\n\n\n\n\nAkçakaya, H. R., David A. Keith, Mark Burgman, Stuart H. M. Butchart, Michael Hoffmann, Helen M. Regan, Ian Harrison, e Elizabeth Boakes. 2017. «Inferring extinctions III: A cost-benefit framework for listing extinct species». Biological Conservation 214: 336–42. https://doi.org/10.1016/j.biocon.2017.07.027.\n\n\nCollar, N. J. 1998. «Extinction by assumption; or, the Romeo Error on Cebu». Oryx 32 (4): 239–44. https://doi.org/10.1046/j.1365-3008.1998.d01-51.x.\n\n\nPenedo, Thiago Serrano de Almeida, Miguel d’Ávila de Moraes, Rafael Augusto Xavier Borges, Daniel Maurenza, Diogo Marcilio Judice, e Gustavo Martinelli. 2015. «Considerations on extinct species of Brazilian flora». Rodriguésia 66 (3): 711–15. https://doi.org/10.1590/2175-7860201566304.\n\n\nTurvey, Samuel T, Robert L Pitman, Barbara L Taylor, Jay Barlow, Tomonari Akamatsu, Leigh A Barrett, Xiujiang Zhao, et al. 2007. «First human-caused extinction of a cetacean species?» Biology Letters 3 (5): 537–40. https://doi.org/10.1098/rsbl.2007.0292.\n\n\nWickramasinghe, L. J. Mendis, Dulan Ranga Vidanapathirana, Sameera Airyarathne, Gehan Rajeev, Amila Chanaka, Jennifer Pastorini, Gayan Chathuranga, e Nethu Wickramasinghe. 2013. «Lost and found: One of the world’s most elusive amphibians, Pseudophilautus stellatus (Kelaart 1853) rediscovered». Zootaxa 3620 (1). https://doi.org/10.11646/zootaxa.3620.1.5.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
     ]

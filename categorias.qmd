@@ -158,3 +158,68 @@ Um táxon está `Extinto na Natureza (EW)` quando se sabe que sobrevive apenas e
 Esta categoria pode ser aplicada quando os táxons de plantas ou fungos são representados apenas por propágulos viáveis (por exemplo, sementes ou esporos) em instalações de armazenamento adequadas, se protocolos eficazes foram desenvolvidos para o táxon para garantir que haja o potencial para esses propágulos se desenvolverem em descendência reprodutiva e realizar a recuperação das espécies *in situ*.
 
 **Exemplo:** 
+
+```{r}
+#| label: fig-Abutilon-pitcairnense
+#| fig-cap: "*Abutilon pitcairnense* (Malvaceae) é avaliada como `EW`."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("https://botanicgardens.ie/wp-content/uploads/2018/02/abutpitc.gif")
+```
+
+```{r}
+#| label: fig-pitcain
+#| fig-cap: "Ilha Pitcairn, no Oceano Pacífico."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("https://botanicgardens.ie/wp-content/uploads/2018/02/pitcisl2.gif")
+```
+
+- **Yellow Fatu** (*Abutilon pitcairnense*, @fig-Abutilon-pitcairnense)
+    - Origem e Distribuição
+        - Endêmica da Ilha Pitcairn (@fig-pitcain, Oceano Pacífico), uma das ilhas habitadas mais remotas do mundo, com apenas 4 km² de área.
+    - Histórico de Descoberta e Conservação
+        - 1898: Primeira descrição científica.
+        - 1934: Última coleta documentada em habitat natural.
+        - 1955: Último avistamento na natureza.
+        - 2003: Tentativa de reprodução in situ (via estacas e sementes), interrompida por um deslizamento de terra que eliminou a população remanescente.
+    - Status Atual
+        - Extinta na natureza (EW, segundo critérios da IUCN).
+        - Sobrevive apenas em coleções ex-situ (jardins botânicos e bancos de germoplasma).
+    - Características Notáveis
+        - Arbusto da família Malvaceae, com flores amarelas vibrantes (daí o nome popular).
+        - Símbolo da fragilidade de espécies insulares frente a desastres naturais e atividade humana.
+    - Ameaças Críticas
+        - Destruição de habitat por erosão.
+        - População mínima original (provavelmente < 50 indivíduos maduros).
+        - Dependência exclusiva de cultivo humano para preservação.
+
+## Criticamente em Perigo (CR)
+
+Um táxon é categorizado como `CR` quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para `CR` e, portanto, considera-se que esteja sob **risco extremamente alto** de extinção na natureza.
+
+## Em Perigo (EN)
+
+Um táxon é categorizado como `EN` quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para `EN` e, portanto, considera-se que esteja sob **risco muito alto** de extinção na natureza.
+
+## Vulnerável (VU)
+
+Um táxon é categorizado como `VU` quando a melhor evidência disponível indica que ele atende a qualquer um dos critérios de A a E para `VU` e, portanto, considera-se que esteja sob **risco alto** de extinção na natureza. 
+
+## Quase Ameaçado (NT)
+
+Um táxon é categorizado como `NT` quando foi avaliado pelos critérios, mas não se qualificou como `CR`, `EN` ou `VU` neste momento, estando, porém, próximo ou passível de ser categorizado em uma das categorias de ameaça em um futuro próximo.
+
+## Menos Preocupante (LC)
+
+Um táxon é categorizado como `LC` quando foi avaliado de acordo com os critérios e não se qualificou como `CR`, `EN`, `VU` ou `NT`. Táxons de ampla distribuição e abundantes são geralmente incluídos nesta categoria.
+
+## Menos Preocupante (DD)
+
+Um táxon é categorizado em `DD` quando não há informações adequadas para fazer uma avaliação direta ou indireta de seu risco de extinção com base em sua distribuição e/ou status populacional. Um táxon nesta categoria pode ser bem estudado e ter sua biologia bem conhecida, mas faltam dados apropriados sobre abundância e/ou distribuição. A insuficiência de dados não é, portanto, uma categoria de ameaça. A inclusão nesta categoria indica que mais informações são necessárias e reconhece que pesquisas futuras poderão demonstrar que a inclusão em categorias de ameaça é apropriada. É importante fazer uso positivo de todos os dados disponíveis. Em muitos casos, deve-se ter muito cuidado ao escolher entre DD e uma categoria de ameaça. Se houver suspeita de que a distribuição de um táxon é relativamente restrita, ou se houver transcorrido um tempo considerável desde o último registro do táxon, um status de ameaça pode muito bem ser justificado.
+
+## Não Avaliado (NE)
+
+Um táxon é categorizado como `NE` se ainda não foi avaliado em relação aos critérios.
