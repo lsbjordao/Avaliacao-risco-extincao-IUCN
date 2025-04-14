@@ -61,3 +61,20 @@ Além disso, a equipe da **Unidade da Lista Vermelha** (*Red List Unit*), junto 
 ### CNCFlora/JBRJ é autoridade brasileira em plantas
 
 No Brasil, o CNCFlora/JBRJ ([https://cncflora.jbrj.gov.br/](https://cncflora.jbrj.gov.br/)), é reconhecido como a autoridade nacional para a elaboração de listas vermelhas de espécies da flora nativa, conforme estabelecido oficialmente através das Portaria MMA nº 43/14 e Portaria MMA nº 443/14, e  internacionalmente, a partir da designação do CNCFlora pela Comissão de Sobrevivência de Espécies - SSC da IUCN como a autoridade global em avaliação de risco de extinção de plantas brasileiras (*Brazil Plants Red List Authority* - BP-RLA) [](https://iucn.org/our-union/commissions/group/iucn-ssc-brazil-plant-red-list-authority).
+
+## Categorias e critérios
+
+As avaliações do risco de extinção de espécies seguem as diretrizes da IUCN, que estabelece um sistema padronizado de **categorias** e **critérios** quantitativos. A atribuição das categorias deve ser baseada na aplicação criteriosa e fundamentada desses critérios.
+
+## Documentos oficiais da IUCN
+
+{{< pdf IUCN-categories.pdf width=100% height=800 >}}
+
+- ***Guidelines for Using the IUCN Red List Categories and Criteria***
+    - Em português: [Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha](https://nc.iucnredlist.org/redlist/content/attachment_files/Red_List_Guidelines_v16_PORTUGUES_20250326.pdf)
+
+- ***Supporting Information Guidelines***
+    - [*Documentation Standards and Consistency Checks for IUCN Red List Assessments and Species Accounts*](https://nc.iucnredlist.org/redlist/content/attachment_files/RL_Standards_Consistency.pdf)
+
+- **Esquemas de classificação de informações:** [Classification Schemes](https://www.iucnredlist.org/resources/classification-schemes)
+    - Um dos alicerces fundamentais de qualquer ciência é uma nomenclatura comum (interoperabilidade semântica), que permita aos profissionais descrever seus objetos de investigação de maneira mutuamente compreensível [@Salafsky2008].

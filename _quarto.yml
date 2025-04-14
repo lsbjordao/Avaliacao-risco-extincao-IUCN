@@ -9,9 +9,10 @@ book:
     - index.qmd
     - iucn.qmd
     - lista-vermelha.qmd
-    - categoriasEcriterios.qmd
+    - qualidade-dos-dados.qmd
     - categorias.qmd
     - criterios.qmd
+    - avaliacao.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -19,8 +20,8 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: lux
-      dark: cyborg
+      light: litera
+      dark: morph
     number-sections: false
     crossref:
       fig-prefix: "Figura"

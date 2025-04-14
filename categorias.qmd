@@ -42,8 +42,7 @@ Diamond1987 <- format_article(bib["Diamond1987"])
 
 # Categorias
 
-- As categorias do sistema de avaliação do risco de extinção da Lista
-Vermelha da IUCN são:
+- As categorias do sistema de avaliação do risco de extinção da Lista Vermelha da IUCN são:
 
 <iframe src="./tree-categories.html" width="100%" height="600" style="border:none;"></iframe>
 
@@ -211,6 +210,45 @@ Um táxon é categorizado como `VU` quando a melhor evidência disponível indic
 ## Quase Ameaçado (NT)
 
 Um táxon é categorizado como `NT` quando foi avaliado pelos critérios, mas não se qualificou como `CR`, `EN` ou `VU` neste momento, estando, porém, próximo ou passível de ser categorizado em uma das categorias de ameaça em um futuro próximo.
+
+### Quando categorizar como `NT`
+
+Para se qualificar para a categoria `NT`, o táxon deve estar perto de se qualificar na categoria `VU`. As estimativas do tamanho da população ou do intervalo devem estar perto dos limiares vulneráveis, especialmente quando há um alto grau de incerteza, ou possivelmente atender a alguns dos subcritérios. Isso pode ser combinado com suscetibilidade e ameaça biológicas. A categoria `NT` não é especificada por seus próprios critérios, mas sim pela proximidade de uma espécie aos critérios da categoria `VU`. Para táxons listados como NT na Lista Vermelha da IUCN, os avaliadores são solicitados a indicar como parte da justificativa,
+quais critérios foram quase atendidos. Por exemplo, o enquadramento como
+NT seria justificado nos seguintes casos (em cada caso, quaisquer  critérios não mencionados especificamente não são atendidos e não são quase atendidos):
+
+- A população diminuiu cerca de 20–25% nas últimas três gerações.
+- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e está diminuindo, mas a população não está gravemente fragmentada, ocorre em muito mais de 10 locais e não há extremos flutuações.
+- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e está gravemente fragmentado, mas a população não está diminuindo, ocorre em muito mais de 10 locais e não há extremos flutuações.
+- O táxon está diminuindo e ocorre em dez locais, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.
+- O táxon está diminuindo e severamente fragmentado, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.
+- O táxon está diminuindo e severamente fragmentado, mas tem um EOO de 22.000 km2 e/ou um AOO de 3.000 km2, que são estimativas altamente certas.
+- A população diminuiu cerca de 10% nas últimas três gerações e continua diminuindo, com cerca de 15.000 indivíduos maduros.
+- O táxon existe em uma única subpopulação de cerca de 15.000 indivíduos e está diminuindo.
+- A população possui cerca de 1.500 indivíduos maduros. 
+- A melhor estimativa do tamanho da população é de 2.000 indivíduos maduros, mas essa estimativa é muito incerta e não pode ser descartada apenas 1.000 indivíduos maduros.
+- O táxon existe em três sites, ocupando uma área de 12 km2; a população está sendo colhida, mas não está diminuindo; não há ameaças atuais, mas há eventos plausíveis que podem causar o declínio da espécie, mas é improvável que a extingam ou em perigo crítico em um curto espaço de tempo.
+- A população diminuiu 40% nas últimas três gerações, mas o declínio parou e as causas do declínio foram compreendidas.
+
+Um táxon também pode ser categorizado como `NT` se o mesmo estiver fazendo parte de um programa contínuo de conservação ou manejo específico (do táxon em questão ou do habitat), cuja cessação resultaria na qualificação do táxon para um dos categorias ameaçadas em um período de cinco anos. Nestes casos, a justificativa de listagem deve declarar explicitamente que o táxon está categorizado como `NT` porque é dependente da conservação. Os programas de conservação ou manejo que enfocam o táxon devem ser citados ou descritos como parte dos requisitos de documentação. Um programa de conservação ou manejo específico para táxons ou habitats é aquele que:
+
+- Tem a conservação como seu objetivo, ou um de seus objetivos, ou tem um objetivo que seja consistente com a conservação e não esteja em conflito com ela;
+- Identifica o táxon alvo, ou um grupo de espécies ao qual o alvo pertence, ou um tipo de habitat do qual o táxon depende;
+- É ativamente implementado e eficaz na redução das ameaças identificadas que podem resultar na elevação do táxon a uma categoria ameaçada se a implementação do programa cessar; e
+- Possui documentação disponível publicamente.
+
+### Quando não categorizar como `NT`
+
+A seguir estão exemplos de espécies que não devem ser categorizados como
+NT (ou qualquer uma das categorias de ameaça), a menos que outros critérios
+se apliquem:
+
+- A população diminuiu cerca de 10% nas últimas três gerações, e há mais de 20.000 indivíduos maduros.
+- A população diminuiu cerca de 30% como parte das flutuações.
+- O táxon atende aos requisitos de área sob o critério B para CR (EOO − 100 km2 e/ou AOO − 10 km2), mas não está diminuindo, não está severamente fragmentado, não há flutuações extremas e não há ameaças óbvias.
+- O táxon tem vida longa e crescimento lento, mas não atende a nenhum critério A–E.
+- A população tem mais de 2.000 indivíduos maduros.
+- O táxon existe em três sites, ocupando uma área de 30 km2; a população não está diminuindo; não há ameaças atuais, e é muito improvável que a espécie se torne EX ou CR em um curto espaço de tempo.
 
 ## Menos Preocupante (LC)
 

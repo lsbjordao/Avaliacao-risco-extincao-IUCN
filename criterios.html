@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.22">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.7.22" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
-<title>IUCN – Avaliação do Risco de Extinção de Espécies</title>
+<title>Critérios – Avaliação do Risco de Extinção de Espécies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,28 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./lista-vermelha.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a5cd134f9b40a21b85be3e62cd27a8fe.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b4406b7675125bc2ba204020e191172.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dark-bf582dcb9c40fea5d67d787f45fe9ab8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-c6fca75d371534c4b0f551b81947454d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,21 +54,55 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="nav-arrows.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./iucn.html"><span class="chapter-title">IUCN</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -101,7 +116,9 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Avaliação do Risco de Extinção de Espécies</a> 
+      <a href="/">
+      Avaliação do Risco de Extinção de Espécies
+      </a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
 </div>
@@ -116,64 +133,63 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Apresentação</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iucn.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">IUCN</span></a>
+  <a href="/iucn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>1</span>  <span class='chapter-title'>IUCN</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lista-vermelha.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista Vermelha da IUCN</span></a>
+  <a href="/lista-vermelha.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha da IUCN</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./qualidade-dos-dados.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Qualidade dos dados</span></a>
+  <a href="/qualidade-dos-dados.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./categorias.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Categorias</span></a>
+  <a href="/categorias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./criterios.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Critérios</span></a>
+  <a href="/criterios.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./avaliacao.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Avaliação do Risco de Extinção</span></a>
+  <a href="/avaliacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Referências</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
-   
-  <ul>
-  <li><a href="#missão" id="toc-missão" class="nav-link active" data-scroll-target="#missão">Missão</a></li>
-  <li><a href="#história-e-atualidade" id="toc-história-e-atualidade" class="nav-link" data-scroll-target="#história-e-atualidade">História e atualidade</a></li>
-  </ul>
-</nav>
+        <div id="quarto-toc-target"></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<script id="quarto-html-before-body" type="application/javascript">
+<script id = "quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -335,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">IUCN</span></h1>
+<h1 class="title"><span class="chapter-title">Critérios</span></h1>
 </div>
 
 
@@ -351,38 +367,150 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>A <strong>IUCN</strong> (União Internacional para a Conservação da Natureza) é uma união composta por membros de organizações governamentais e da sociedade civil. Juntas, essas entidades trabalham para promover o desenvolvimento sustentável e construir um mundo mais justo, que valorize e conserve a natureza.</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://iucn.org/themes/custom/iucn_revamp/logo.svg" class="img-fluid" width="200"></p>
-</div>
-</div>
-</div>
-<section id="missão" class="level2">
-<h2 class="anchored" data-anchor-id="missão">Missão</h2>
-<p>Influenciar, encorajar e apoiar a sociedade global na conservação da integridade e da diversidade biológica, assegurando que o uso dos recursos naturais seja equitativo e ecologicamente sustentável.</p>
-</section>
-<section id="história-e-atualidade" class="level2">
-<h2 class="anchored" data-anchor-id="história-e-atualidade">História e atualidade</h2>
-<p>Fundada em <strong>1948</strong>, a IUCN reúne:</p>
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#os-cinco-critérios" id="toc-os-cinco-critérios">Os cinco critérios</a></li>
+  <li><a href="#documentação" id="toc-documentação">Documentação</a></li>
+  <li><a href="#critério-a" id="toc-critério-a">Critério A</a></li>
+  <li><a href="#critério-b" id="toc-critério-b">Critério B</a>
+  <ul>
+  <li><a href="#fragmentação-severa" id="toc-fragmentação-severa">Fragmentação severa</a></li>
+  <li><a href="#localizações-condicionadas-à-ameaça" id="toc-localizações-condicionadas-à-ameaça">Localizações condicionadas à ameaça</a></li>
+  <li><a href="#declínio-contínuo" id="toc-declínio-contínuo">Declínio contínuo</a></li>
+  </ul></li>
+  <li><a href="#critério-c" id="toc-critério-c">Critério C</a></li>
+  <li><a href="#critério-d" id="toc-critério-d">Critério D</a></li>
+  <li><a href="#critério-e" id="toc-critério-e">Critério E</a></li>
+  </ul>
+</nav>
+<section id="os-cinco-critérios" class="level2">
+<h2>Os cinco critérios</h2>
+<p>O protocolo da Lista Vermelha apresenta cinco critérios (<span class="math inline">\(A\)</span>–<span class="math inline">\(E\)</span>):</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline  icon="streamline:graph-arrow-decrease-solid" aria-label="Icon graph-arrow-decrease-solid from streamline Iconify.design set." title="Icon graph-arrow-decrease-solid from streamline Iconify.design set."></iconify-icon></span> <span class="math inline">\(A\)</span>: Redução do tamanho da população (passado, presente e/ou projetado)</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline  icon="tdesign:map-bubble" aria-label="Icon map-bubble from tdesign Iconify.design set." title="Icon map-bubble from tdesign Iconify.design set."></iconify-icon></span> <span class="math inline">\(B\)</span>: Tamanho da distribuição geográfica e fragmentação, poucas localizações condicionadas à ameaça, declínio ou flutuações</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline  icon="ant-design:heat-map-outlined" aria-label="Icon heat-map-outlined from ant-design Iconify.design set." title="Icon heat-map-outlined from ant-design Iconify.design set."></iconify-icon></span> <span class="math inline">\(C\)</span>: Tamanho populacional pequeno e com declínio e fragmentação, flutuações ou poucas subpopulações</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline  icon="mdi:map-marker-radius-outline" aria-label="Icon map-marker-radius-outline from mdi Iconify.design set." title="Icon map-marker-radius-outline from mdi Iconify.design set."></iconify-icon></span> <span class="math inline">\(D\)</span>: Tamanho de população muito pequeno ou distribuição muito restrita</p>
+<p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline  icon="mdi:graph-bar" aria-label="Icon graph-bar from mdi Iconify.design set." title="Icon graph-bar from mdi Iconify.design set."></iconify-icon></span> <span class="math inline">\(E\)</span>: Análise quantitativa de risco de extinção (exemplo: Análise de Viabilidade da População)</p>
+<hr />
+<p>Os critérios <span class="math inline">\(A\)</span>–<span class="math inline">\(D\)</span> são subdivididos em subcritérios:</p>
 <ul>
-<li>Mais de <strong>1.500 membros organizacionais</strong>, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de <strong>170 países</strong>.</li>
-<li>Aproximadamente <strong>1.000 funcionários</strong>, atuando em escritórios regionais e nacionais.</li>
-<li>Cerca de <strong>18.000 membros de comissões</strong>, entre cientistas e especialistas.</li>
-<li>Aproximadamente <strong>5.000 representantes de organizações parceiras</strong>.</li>
-<li>Diversos especialistas que colaboram mesmo sem integrar formalmente as comissões.</li>
+<li><span class="math inline">\(A1\)</span>, <span class="math inline">\(A2\)</span>, <span class="math inline">\(A3\)</span>, <span class="math inline">\(A4\)</span>, <span class="math inline">\(B1\)</span>, <span class="math inline">\(B2\)</span>, <span class="math inline">\(C1\)</span>, <span class="math inline">\(C2\)</span>, <span class="math inline">\(D1\)</span>, <span class="math inline">\(D2\)</span>.</li>
 </ul>
-<p>A IUCN também atua como <strong>observadora oficial</strong> na Assembleia Geral das Nações Unidas.</p>
+<p>Além dos subcritérios supracitados, os critérios <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span>, e o subcritério <span class="math inline">\(C2\)</span>, se subdividem em condições:</p>
+<ul>
+<li>Do critério <span class="math inline">\(A\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span>, <span class="math inline">\(e\)</span>;</li>
+<li>Do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>;</li>
+<li>Do subcritério <span class="math inline">\(C2\)</span>: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>.</li>
+</ul>
+<p>Por sua vez, as condições <span class="math inline">\(b\)</span> e <span class="math inline">\(c\)</span> do critério <span class="math inline">\(B\)</span> e a condição a do subcritério <span class="math inline">\(C2\)</span> também se apresentam subdidividas em subcondições:</p>
+<ul>
+<li>Da condição <span class="math inline">\(b\)</span> do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>, <span class="math inline">\(iii\)</span>, <span class="math inline">\(iv\)</span>, <span class="math inline">\(v\)</span>;</li>
+<li>Da condição <span class="math inline">\(c\)</span> do critério <span class="math inline">\(B\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>, <span class="math inline">\(iii\)</span>, <span class="math inline">\(iv\)</span>;</li>
+<li>Da condição <span class="math inline">\(a\)</span> do subcritério <span class="math inline">\(C2\)</span>: <span class="math inline">\(i\)</span>, <span class="math inline">\(ii\)</span>.</li>
+</ul>
+<p>Os critérios, subcritérios, condições e subcondições apresentam <a title="Valor numérico que serve como fronteira ou critério objetivo para tomar uma decisão, classificar algo ou indicar uma mudança significativa em um estado">limiares quantitativos</a> (<em>threshold</em> em inglês) que precisam ser atendidos para o devido enquadramento.</p>
+<p>O termo <strong>enquadramento</strong> refere-se ao atendimento dos requisitos que justificam a aplicação dos (sub)critérios e (sub)condições.</p>
+<p>Dessa maneira, citamos alguns exemplos sobre a utilização dos termos “categorização” e “enquadramento”:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>A afirmação: — um táxon foi “enquadrado” na categoria <code>VU</code> — poderia ser evitada. O adequado seria dizer: — “um táxon foi categorizado como <code>VU</code>”.</p></li>
+<li><p>A afirmação: — “Categorizar” um táxon no critério <span class="math inline">\(B\)</span> — seria uma afirmativa inadequada. O melhor termo seria dizer: — o “enquadramento” no critério <span class="math inline">\(B\)</span> foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — “os requisitos para o enquadramento no critério <span class="math inline">\(B\)</span> foram atendidos”.</p></li>
+<li><p>A afirmação: — Os requisitos de verificação das subcondições <span class="math inline">\(i\)</span> e <span class="math inline">\(ii\)</span> para enquadramento na condição <span class="math inline">\(b\)</span> do critério <span class="math inline">\(B\)</span> foram atendidos — está adequada.</p></li>
+<li><p>Para fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como <code>CR</code> empregando o critério <span class="math inline">\(B1ab(i,ii,iii,iv)\)</span>.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="documentação" class="level2">
+<h2>Documentação</h2>
+<p>Todas as avaliações devem ser devidamente documentadas. A regra geral é que o enquadramento em critérios, subcritérios, condições e subcondições seja sempre justificado com base em documentação.</p>
+<p>Embora os (sub)critérios e (sub)condições de cada categoria de ameaça sejam definidos por limiares quantitativos, o sistema permanece relativamente flexível, permitindo a avaliação de táxons mesmo quando há escassez de informações. Isso é possível graças à incorporação de elementos como inferência, suspeita e projeção no processo de avaliação.</p>
+<p>Espera-se, portanto, que a pessoa responsável pela avaliação utilize as <strong>melhores informações disponíveis</strong>, complementadas por inferência, suspeita e projeção, para aplicar os critérios ao táxon em questão. No entanto, sempre que esses elementos forem utilizados, as suposições feitas devem ser claramente documentadas.</p>
+<p>Se houver qualquer preocupação razoável de que um táxon possa estar ameaçado de extinção num futuro próximo, ele deve ser considerado elegível para uma das categorias de ameaça. Ainda que não existam fontes formais de documentação, a justificativa precisa estar explicitamente descrita no texto final da avaliação, ainda que fundamentada apenas por inferência ou suspeição.</p>
+</section>
+<section id="critério-a" class="level2">
+<h2>Critério A</h2>
+<iframe id="iframeA" src="./criterio-a.html" width="100%" style="border: none;">
+</iframe>
+</section>
+<section id="critério-b" class="level2">
+<h2>Critério B</h2>
+<iframe id="iframeB" src="./criterio-b.html" width="100%" style="border: none;">
+</iframe>
+<section id="fragmentação-severa" class="level3">
+<h3>Fragmentação severa</h3>
+<p>Para ser enquadrado nessa definição, a população de um táxon precisa ter mais da metade dos seus indivíduos (ou de sua área de ocupação) isolados em pequenos núcleos.</p>
+<p>A <strong>Fragmentação severa</strong> é um conceito fundamental na avaliação do risco de extinção, especialmente no Critério <code>B</code>, mas também pode ser considerado nos subcritérios <code>C2</code> e <code>A3</code>, quando a divisão do habitat em pequenos e isolados fragmentos pode levar à extinção local de subpopulações. Quando a densidade populacional e a distribuição dos fragmentos indicam um aumento provável nas taxas de extinções locais, essa condição pode ser usada para inferir um <strong>declínio futuro continuado</strong> no tamanho da população.</p>
+<p>As mesmas condições que indicam fragmentação severa também podem ser usadas para inferir uma redução populacional sob o subcritério <code>A3</code>, desde que haja uma previsão quantitativa: - Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para Vulnerável), a espécie pode ser listada como ameaçada.</p>
+</section>
+<section id="localizações-condicionadas-à-ameaça" class="level3">
+<h3>Localizações condicionadas à ameaça</h3>
+<p>O conceito de <strong>localizações condicionadas à ameaça</strong> (<em>locations</em> em inglês) é definido com base na área de impacto de ameaças específicas, segundo os critérios da IUCN.</p>
+</section>
+<section id="declínio-contínuo" class="level3">
+<h3>Declínio contínuo</h3>
+<p>Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso medidas corretivas ou mitigadoras não sejam tomadas. <strong>Declínio observado</strong> não deve ser encarado como declínio contínuo.</p>
+<p>Declínios contínuos são utilizados apenas como parâmetros dos critérios B e C (subcritério C2). O critério B é caracterizado pela distribuição restrita e o C como pequeno tamanho populacional. O declínio contínuo não é aplicável ao subcritério C1, que deve ser avaliado por parâmetros quantitativos através de método semelhante ao aplicado para redução populacional.</p>
+</section>
+</section>
+<section id="critério-c" class="level2">
+<h2>Critério C</h2>
+<iframe id="iframeC" src="./criterio-c.html" width="100%" style="border: none;">
+</iframe>
+</section>
+<section id="critério-d" class="level2">
+<h2>Critério D</h2>
+<iframe id="iframeD" src="./criterio-d.html" width="100%" style="border: none;">
+</iframe>
+</section>
+<section id="critério-e" class="level2">
+<h2>Critério E</h2>
+<iframe id="iframeE" src="./criterio-e.html" width="100%" style="border: none;">
+</iframe>
+<script>
+  function ajustarAltura(iframeId) {
+    const iframe = document.getElementById(iframeId);
 
+    function setAltura() {
+      if (iframe.contentWindow && iframe.contentWindow.document.body) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+    }
 
+    iframe.onload = setAltura;
+
+    // Se o conteúdo mudar dinamicamente após carregamento
+    setInterval(setAltura, 500);
+  }
+
+  // Aplica para ambos os iframes
+  ajustarAltura("iframeA");
+  ajustarAltura("iframeB");
+  ajustarAltura("iframeC");
+  ajustarAltura("iframeD");
+  ajustarAltura("iframeE");
+</script>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0"><span class="chapter-number">6</span>  <span class="chapter-title">Avaliação do Risco de Extinção</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2"><span class="chapter-number">4</span>  <span class="chapter-title">Categorias</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sQXByZXNlbnRhw6fDo28=">Apresentação</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pdWNuLmh0bWw8c3Bhbi1jbGFzcz0nY2hhcHRlci1udW1iZXInPjE8L3NwYW4+LS08c3Bhbi1jbGFzcz0nY2hhcHRlci10aXRsZSc+SVVDTjwvc3Bhbj4="><span class="chapter-number">1</span>  <span class="chapter-title">IUCN</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9saXN0YS12ZXJtZWxoYS5odG1sPHNwYW4tY2xhc3M9J2NoYXB0ZXItbnVtYmVyJz4yPC9zcGFuPi0tPHNwYW4tY2xhc3M9J2NoYXB0ZXItdGl0bGUnPkxpc3RhLVZlcm1lbGhhLWRhLUlVQ048L3NwYW4+"><span class="chapter-number">2</span>  <span class="chapter-title">Lista Vermelha da IUCN</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9xdWFsaWRhZGUtZG9zLWRhZG9zLmh0bWw8c3Bhbi1jbGFzcz0nY2hhcHRlci1udW1iZXInPjM8L3NwYW4+LS08c3Bhbi1jbGFzcz0nY2hhcHRlci10aXRsZSc+UXVhbGlkYWRlLWRvcy1kYWRvczwvc3Bhbj4="><span class="chapter-number">3</span>  <span class="chapter-title">Qualidade dos dados</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jYXRlZ29yaWFzLmh0bWw8c3Bhbi1jbGFzcz0nY2hhcHRlci1udW1iZXInPjQ8L3NwYW4+LS08c3Bhbi1jbGFzcz0nY2hhcHRlci10aXRsZSc+Q2F0ZWdvcmlhczwvc3Bhbj4="><span class="chapter-number">4</span>  <span class="chapter-title">Categorias</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jcml0ZXJpb3MuaHRtbDxzcGFuLWNsYXNzPSdjaGFwdGVyLW51bWJlcic+NTwvc3Bhbj4tLTxzcGFuLWNsYXNzPSdjaGFwdGVyLXRpdGxlJz5Dcml0w6lyaW9zPC9zcGFuPg=="><span class="chapter-number">5</span>  <span class="chapter-title">Critérios</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9hdmFsaWFjYW8uaHRtbDxzcGFuLWNsYXNzPSdjaGFwdGVyLW51bWJlcic+Njwvc3Bhbj4tLTxzcGFuLWNsYXNzPSdjaGFwdGVyLXRpdGxlJz5BdmFsaWHDp8Ojby1kby1SaXNjby1kZS1FeHRpbsOnw6NvPC9zcGFuPg=="><span class="chapter-number">6</span>  <span class="chapter-title">Avaliação do Risco de Extinção</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9yZWZlcmVuY2VzLmh0bWxSZWZlcsOqbmNpYXM=">Referências</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLTxzcGFuLWNsYXNzPSdjaGFwdGVyLW51bWJlcic+NTwvc3Bhbj4tLTxzcGFuLWNsYXNzPSdjaGFwdGVyLXRpdGxlJz5Dcml0w6lyaW9zPC9zcGFuPg=="><span class="chapter-number">5</span>  <span class="chapter-title">Critérios</span></span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ=="><span class="chapter-title">Critérios</span> – Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU="><span class="chapter-title">Critérios</span> – Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl"><span class="chapter-title">Critérios</span> – Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Avaliação do Risco de Extinção de Espécies</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
+</div>
 </section>
 
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script id = "quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -796,19 +924,18 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Apresentação">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Apresentação</span>
+      <a  href="/categorias.html" class="pagination-link" aria-label="Categorias">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./lista-vermelha.html" class="pagination-link" aria-label="Lista Vermelha da IUCN">
-        <span class="nav-page-text"><span class="chapter-title">Lista Vermelha da IUCN</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a  href="/avaliacao.html" class="pagination-link" aria-label="Avaliação do Risco de Extinção">
+        <span class="nav-page-text"><span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
+</body>
 
-
-
-</body></html>
+</html>

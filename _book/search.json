@@ -94,7 +94,7 @@
     "href": "criterios.html",
     "title": "Critérios",
     "section": "",
-    "text": "O protocolo da Lista Vermelha apresenta cinco critérios (A–E):\n \\(A\\): Declínio populacional\n \\(B\\): Distribuição geográfica restrita\n \\(C\\): População pequena e em declínio\n \\(D\\): População muito pequena ou restrita\n \\(E\\): Análise quantitativa\nOs critérios \\(A\\)–\\(D\\) são subdivididos em subcritérios:\n\n\\(A1\\), \\(A2\\), \\(A3\\), \\(A4\\), \\(B1\\), \\(B2\\), \\(C1\\), \\(C2\\), \\(D1\\), \\(D2\\).\n\nAlém dos subcritérios supracitados, os critérios \\(A\\) e \\(B\\), e o subcritério \\(C2\\), se subdividem em condições:\n\nDo critério \\(A\\): \\(a\\), \\(b\\), \\(c\\), \\(d\\), \\(e\\);\nDo critério \\(B\\): \\(a\\), \\(b\\), \\(c\\);\nDo subcritério \\(C2\\): \\(a\\), \\(b\\).\n\nPor sua vez, as condições \\(b\\) e \\(c\\) do critério \\(B\\) e a condição a do subcritério \\(C2\\) também se apresentam subdidividas em subcondições:\n\nDa condição \\(b\\) do critério \\(B\\): \\(i\\), \\(ii\\), \\(iii\\), \\(iv\\), \\(v\\);\nDa condição \\(c\\) do critério \\(B\\): \\(i\\), \\(ii\\), \\(iii\\), \\(iv\\);\nDa condição \\(a\\) do subcritério \\(C2\\): \\(i\\), \\(ii\\).\n\nOs critérios, subcritérios, condições e subcondições possuem requisitos que precisam ser atendidos para o devido enquadramento.\nA regra geral é a necessidade de justificação através de documentação para o enquadramento nos (sub)critérios e (sub)condições.\nAinda que não haja referências para documentação, a justificação precisa estar textualmente explícita no texto final da aplicação do sistema de categorias e critérios da IUCN, e que ao menos essa justificação seja dada por inferência ou suspeição.\nO termo categorização refere-se ao atendimento dos (sub)critérios e (sub)condições que justificam a seleção da categoria de ameaça.\nO termo enquadramento refere-se ao atendimento dos requisitos que justificam a aplicação dos (sub)critérios e (sub)condições.\nDessa maneira, citamos alguns exemplos sobre a utilização dos termos “categorização” e “enquadramento”:\n\n\n\n\n\n\nNota\n\n\n\n\nA afirmação: — um táxon foi “enquadrado” na categoria VU — seria inadequada. O adequado seria dizer: — “um táxon foi categorizado como VU”.\nA afirmação: — “Categorizar” um táxon no critério B — seria uma afirmativa inadequada. O melhor termo seria dizer: — o “enquadramento” no critério B foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — “os requisitos para o enquadramento no critério B foram atendidos”.\nA afirmação: — Os requisitos de verificação das subcondições i e ii para enquadramento na condição b do critério B foram atendidos — está adequada.\nPara fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR empregando o critério B1ab(i,ii,iii,iv).\n\n\n\nA menção aos termos “subcritério” e “subcondição” tem finalidade exclusivamente didática, sendo empregada para facilitar a compreensão da hierarquia dos requisitos para o enquadramento em um critério. No entanto, tais termos não devem ser utilizados em textos formais.\n\nCritério A\n\n\n\n\nCritério B\n\n\n\n\nCritério C\n\n\n\n\nCritério D\n\n\n\n\nCritério E",
+    "text": "Os cinco critérios\nO protocolo da Lista Vermelha apresenta cinco critérios (\\(A\\)–\\(E\\)):\n\\(A\\): Redução do tamanho da população (passado, presente e/ou projetado)\n\\(B\\): Tamanho da distribuição geográfica e fragmentação, poucas localizações condicionadas à ameaça, declínio ou flutuações\n\\(C\\): Tamanho populacional pequeno e com declínio e fragmentação, flutuações ou poucas subpopulações\n\\(D\\): Tamanho de população muito pequeno ou distribuição muito restrita\n\\(E\\): Análise quantitativa de risco de extinção (exemplo: Análise de Viabilidade da População)\nOs critérios \\(A\\)–\\(D\\) são subdivididos em subcritérios:\nAlém dos subcritérios supracitados, os critérios \\(A\\) e \\(B\\), e o subcritério \\(C2\\), se subdividem em condições:\nPor sua vez, as condições \\(b\\) e \\(c\\) do critério \\(B\\) e a condição a do subcritério \\(C2\\) também se apresentam subdidividas em subcondições:\nOs critérios, subcritérios, condições e subcondições apresentam limiares quantitativos (threshold em inglês) que precisam ser atendidos para o devido enquadramento.\nO termo enquadramento refere-se ao atendimento dos requisitos que justificam a aplicação dos (sub)critérios e (sub)condições.\nDessa maneira, citamos alguns exemplos sobre a utilização dos termos “categorização” e “enquadramento”:",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
     ]
@@ -204,7 +204,7 @@
     "href": "categorias.html#quase-ameaçado-nt",
     "title": "Categorias",
     "section": "Quase Ameaçado (NT)",
-    "text": "Quase Ameaçado (NT)\nUm táxon é categorizado como NT quando foi avaliado pelos critérios, mas não se qualificou como CR, EN ou VU neste momento, estando, porém, próximo ou passível de ser categorizado em uma das categorias de ameaça em um futuro próximo.",
+    "text": "Quase Ameaçado (NT)\nUm táxon é categorizado como NT quando foi avaliado pelos critérios, mas não se qualificou como CR, EN ou VU neste momento, estando, porém, próximo ou passível de ser categorizado em uma das categorias de ameaça em um futuro próximo.\n\nQuando categorizar como NT\nPara se qualificar para a categoria NT, o táxon deve estar perto de se qualificar na categoria VU. As estimativas do tamanho da população ou do intervalo devem estar perto dos limiares vulneráveis, especialmente quando há um alto grau de incerteza, ou possivelmente atender a alguns dos subcritérios. Isso pode ser combinado com suscetibilidade e ameaça biológicas. A categoria NT não é especificada por seus próprios critérios, mas sim pela proximidade de uma espécie aos critérios da categoria VU. Para táxons listados como NT na Lista Vermelha da IUCN, os avaliadores são solicitados a indicar como parte da justificativa, quais critérios foram quase atendidos. Por exemplo, o enquadramento como NT seria justificado nos seguintes casos (em cada caso, quaisquer critérios não mencionados especificamente não são atendidos e não são quase atendidos):\n\nA população diminuiu cerca de 20–25% nas últimas três gerações.\nO táxon atende aos requisitos de área sob o critério B para ameaça (EOO &lt; 20.000 km2 e/ou AOO &lt; 2.000 km2) e está diminuindo, mas a população não está gravemente fragmentada, ocorre em muito mais de 10 locais e não há extremos flutuações.\nO táxon atende aos requisitos de área sob o critério B para ameaça (EOO &lt; 20.000 km2 e/ou AOO &lt; 2.000 km2) e está gravemente fragmentado, mas a população não está diminuindo, ocorre em muito mais de 10 locais e não há extremos flutuações.\nO táxon está diminuindo e ocorre em dez locais, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.\nO táxon está diminuindo e severamente fragmentado, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.\nO táxon está diminuindo e severamente fragmentado, mas tem um EOO de 22.000 km2 e/ou um AOO de 3.000 km2, que são estimativas altamente certas.\nA população diminuiu cerca de 10% nas últimas três gerações e continua diminuindo, com cerca de 15.000 indivíduos maduros.\nO táxon existe em uma única subpopulação de cerca de 15.000 indivíduos e está diminuindo.\nA população possui cerca de 1.500 indivíduos maduros.\nA melhor estimativa do tamanho da população é de 2.000 indivíduos maduros, mas essa estimativa é muito incerta e não pode ser descartada apenas 1.000 indivíduos maduros.\nO táxon existe em três sites, ocupando uma área de 12 km2; a população está sendo colhida, mas não está diminuindo; não há ameaças atuais, mas há eventos plausíveis que podem causar o declínio da espécie, mas é improvável que a extingam ou em perigo crítico em um curto espaço de tempo.\nA população diminuiu 40% nas últimas três gerações, mas o declínio parou e as causas do declínio foram compreendidas.\n\nUm táxon também pode ser categorizado como NT se o mesmo estiver fazendo parte de um programa contínuo de conservação ou manejo específico (do táxon em questão ou do habitat), cuja cessação resultaria na qualificação do táxon para um dos categorias ameaçadas em um período de cinco anos. Nestes casos, a justificativa de listagem deve declarar explicitamente que o táxon está categorizado como NT porque é dependente da conservação. Os programas de conservação ou manejo que enfocam o táxon devem ser citados ou descritos como parte dos requisitos de documentação. Um programa de conservação ou manejo específico para táxons ou habitats é aquele que:\n\nTem a conservação como seu objetivo, ou um de seus objetivos, ou tem um objetivo que seja consistente com a conservação e não esteja em conflito com ela;\nIdentifica o táxon alvo, ou um grupo de espécies ao qual o alvo pertence, ou um tipo de habitat do qual o táxon depende;\nÉ ativamente implementado e eficaz na redução das ameaças identificadas que podem resultar na elevação do táxon a uma categoria ameaçada se a implementação do programa cessar; e\nPossui documentação disponível publicamente.\n\n\n\nQuando não categorizar como NT\nA seguir estão exemplos de espécies que não devem ser categorizados como NT (ou qualquer uma das categorias de ameaça), a menos que outros critérios se apliquem:\n\nA população diminuiu cerca de 10% nas últimas três gerações, e há mais de 20.000 indivíduos maduros.\nA população diminuiu cerca de 30% como parte das flutuações.\nO táxon atende aos requisitos de área sob o critério B para CR (EOO − 100 km2 e/ou AOO − 10 km2), mas não está diminuindo, não está severamente fragmentado, não há flutuações extremas e não há ameaças óbvias.\nO táxon tem vida longa e crescimento lento, mas não atende a nenhum critério A–E.\nA população tem mais de 2.000 indivíduos maduros.\nO táxon existe em três sites, ocupando uma área de 30 km2; a população não está diminuindo; não há ameaças atuais, e é muito improvável que a espécie se torne EX ou CR em um curto espaço de tempo.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
     ]
@@ -237,6 +237,196 @@
     "text": "Não Avaliado (NE)\nUm táxon é categorizado como NE se ainda não foi avaliado em relação aos critérios.\n\n\n\n\nAkçakaya, H. R., David A. Keith, Mark Burgman, Stuart H. M. Butchart, Michael Hoffmann, Helen M. Regan, Ian Harrison, e Elizabeth Boakes. 2017. «Inferring extinctions III: A cost-benefit framework for listing extinct species». Biological Conservation 214: 336–42. https://doi.org/10.1016/j.biocon.2017.07.027.\n\n\nCollar, N. J. 1998. «Extinction by assumption; or, the Romeo Error on Cebu». Oryx 32 (4): 239–44. https://doi.org/10.1046/j.1365-3008.1998.d01-51.x.\n\n\nPenedo, Thiago Serrano de Almeida, Miguel d’Ávila de Moraes, Rafael Augusto Xavier Borges, Daniel Maurenza, Diogo Marcilio Judice, e Gustavo Martinelli. 2015. «Considerations on extinct species of Brazilian flora». Rodriguésia 66 (3): 711–15. https://doi.org/10.1590/2175-7860201566304.\n\n\nTurvey, Samuel T, Robert L Pitman, Barbara L Taylor, Jay Barlow, Tomonari Akamatsu, Leigh A Barrett, Xiujiang Zhao, et al. 2007. «First human-caused extinction of a cetacean species?» Biology Letters 3 (5): 537–40. https://doi.org/10.1098/rsbl.2007.0292.\n\n\nWickramasinghe, L. J. Mendis, Dulan Ranga Vidanapathirana, Sameera Airyarathne, Gehan Rajeev, Amila Chanaka, Jennifer Pastorini, Gayan Chathuranga, e Nethu Wickramasinghe. 2013. «Lost and found: One of the world’s most elusive amphibians, Pseudophilautus stellatus (Kelaart 1853) rediscovered». Zootaxa 3620 (1). https://doi.org/10.11646/zootaxa.3620.1.5.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Categorias</span>"
+    ]
+  },
+  {
+    "objectID": "qualidade-dos-dados.html",
+    "href": "qualidade-dos-dados.html",
+    "title": "Qualidade dos dados",
+    "section": "",
+    "text": "Observação\nOs critérios da IUCN utilizam os termos Observado, Estimado, Projetado, Inferido e Suspeito para qualificar a natureza da evidência usada na avaliação do risco de extinção de uma espécie. Esses termos ajudam a indicar o grau de certeza ou a fonte da informação utilizada.\nrefere-se a registros diretos de mudanças, como contagens populacionais ou perda de habitat documentada.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span>"
+    ]
+  },
+  {
+    "objectID": "documentos-oficiais-iucn.html",
+    "href": "documentos-oficiais-iucn.html",
+    "title": "Documentos oficiais da IUCN",
+    "section": "",
+    "text": "Download PDF file.\n\nGuidelines for Using the IUCN Red List Categories and Criteria\n\nEm português: Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha\n\nSupporting Information Guidelines\n\nDocumentation Standards and Consistency Checks for IUCN Red List Assessments and Species Accounts",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Documentos oficiais da IUCN</span>"
+    ]
+  },
+  {
+    "objectID": "lista-vermelha.html#categorias-e-critérios",
+    "href": "lista-vermelha.html#categorias-e-critérios",
+    "title": "Lista Vermelha da IUCN",
+    "section": "Categorias e critérios",
+    "text": "Categorias e critérios\nAs avaliações do risco de extinção de espécies seguem as diretrizes da IUCN, que estabelece um sistema padronizado de categorias e critérios quantitativos. A atribuição das categorias deve ser baseada na aplicação criteriosa e fundamentada desses critérios.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha da IUCN</span>"
+    ]
+  },
+  {
+    "objectID": "lista-vermelha.html#documentos-oficiais-da-iucn",
+    "href": "lista-vermelha.html#documentos-oficiais-da-iucn",
+    "title": "Lista Vermelha da IUCN",
+    "section": "Documentos oficiais da IUCN",
+    "text": "Documentos oficiais da IUCN\nDownload PDF file.\n\nGuidelines for Using the IUCN Red List Categories and Criteria\n\nEm português: Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha\n\nSupporting Information Guidelines\n\nDocumentation Standards and Consistency Checks for IUCN Red List Assessments and Species Accounts\n\nEsquemas de classificação de informações: Classification Schemes\n\nUm dos alicerces fundamentais de qualquer ciência é uma nomenclatura comum (interoperabilidade semântica), que permita aos profissionais descrever seus objetos de investigação de maneira mutuamente compreensível (Salafsky et al. 2008).\n\n\n\n\n\n\nSalafsky, Nick, Daniel Salzer, Alison J. Stattersfield, Craig Hilton‐Taylor, Rachel Neugarten, Stuart H. M. Butchart, Ben Collen, et al. 2008. «A Standard Lexicon for Biodiversity Conservation: Unified Classifications of Threats and Actions». Conservation Biology 22 (4): 897–911. https://doi.org/10.1111/j.1523-1739.2008.00937.x.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista Vermelha da IUCN</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#critério-b",
+    "href": "criterios.html#critério-b",
+    "title": "Critérios",
+    "section": "Critério B",
+    "text": "Critério B\n\n\n\nFragmentação severa\nPara ser enquadrado nessa definição, a população de um táxon precisa ter mais da metade dos seus indivíduos (ou de sua área de ocupação) isolados em pequenos núcleos.\nA Fragmentação severa é um conceito fundamental na avaliação do risco de extinção, especialmente no Critério B, mas também pode ser considerado nos subcritérios C2 e A3, quando a divisão do habitat em pequenos e isolados fragmentos pode levar à extinção local de subpopulações. Quando a densidade populacional e a distribuição dos fragmentos indicam um aumento provável nas taxas de extinções locais, essa condição pode ser usada para inferir um declínio futuro continuado no tamanho da população.\nAs mesmas condições que indicam fragmentação severa também podem ser usadas para inferir uma redução populacional sob o subcritério A3, desde que haja uma previsão quantitativa: - Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para Vulnerável), a espécie pode ser listada como ameaçada.\n\n\nLocalizações condicionadas à ameaça\nO conceito de localizações condicionadas à ameaça (locations em inglês) é definido com base na área de impacto de ameaças específicas, segundo os critérios da IUCN.\n\n\nDeclínio contínuo\nDeclínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso medidas corretivas ou mitigadoras não sejam tomadas. Declínio observado não deve ser encarado como declínio contínuo.\nDeclínios contínuos são utilizados apenas como parâmetros dos critérios B e C (subcritério C2). O critério B é caracterizado pela distribuição restrita e o C como pequeno tamanho populacional. O declínio contínuo não é aplicável ao subcritério C1, que deve ser avaliado por parâmetros quantitativos através de método semelhante ao aplicado para redução populacional.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#critério-c",
+    "href": "criterios.html#critério-c",
+    "title": "Critérios",
+    "section": "Critério C",
+    "text": "Critério C",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#critério-d",
+    "href": "criterios.html#critério-d",
+    "title": "Critérios",
+    "section": "Critério D",
+    "text": "Critério D",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#critério-e",
+    "href": "criterios.html#critério-e",
+    "title": "Critérios",
+    "section": "Critério E",
+    "text": "Critério E",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "qualidade-dos-dados.html#estimação",
+    "href": "qualidade-dos-dados.html#estimação",
+    "title": "Qualidade dos dados",
+    "section": "Estimação",
+    "text": "Estimação\naplica-se quando os dados são incompletos, mas permitem inferências razoáveis com base em conhecimento técnico ou amostras.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span>"
+    ]
+  },
+  {
+    "objectID": "qualidade-dos-dados.html#projeção",
+    "href": "qualidade-dos-dados.html#projeção",
+    "title": "Qualidade dos dados",
+    "section": "Projeção",
+    "text": "Projeção\nusado para antecipar mudanças futuras, com base em ameaças em curso ou tendências identificadas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span>"
+    ]
+  },
+  {
+    "objectID": "qualidade-dos-dados.html#inferência",
+    "href": "qualidade-dos-dados.html#inferência",
+    "title": "Qualidade dos dados",
+    "section": "Inferência",
+    "text": "Inferência\nbaseia-se em evidência indireta, mas lógica, como a degradação do habitat ou desaparecimento em áreas antes ocupadas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span>"
+    ]
+  },
+  {
+    "objectID": "qualidade-dos-dados.html#suspeição",
+    "href": "qualidade-dos-dados.html#suspeição",
+    "title": "Qualidade dos dados",
+    "section": "Suspeição",
+    "text": "Suspeição\nindica uma presunção com base em conhecimento limitado ou observações preliminares, ainda que sem comprovação robusta.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Qualidade dos dados</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#critério-a",
+    "href": "criterios.html#critério-a",
+    "title": "Critérios",
+    "section": "Critério A",
+    "text": "Critério A",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "avaliacao.html",
+    "href": "avaliacao.html",
+    "title": "Avaliação do Risco de Extinção",
+    "section": "",
+    "text": "Categorizando como DD\nQuando aplicar?\nSe um táxon for conhecido, mas não houver nenhuma informação direta ou indireta sobre seu status atual ou possíveis ameaças, então ele deve ser categorizado como DD. Uma categorização com dados insuficientes não significa que um táxon não esteja ameaçado.\nQuando não aplicar?",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span>"
+    ]
+  },
+  {
+    "objectID": "avaliacao.html#diretrizes-para-processos-de-ameaça",
+    "href": "avaliacao.html#diretrizes-para-processos-de-ameaça",
+    "title": "Avaliação do Risco de Extinção",
+    "section": "Diretrizes para Processos de Ameaça",
+    "text": "Diretrizes para Processos de Ameaça\nSalafsky et al. (2008)\n\n\n\n\n\n\nThreats Classification Scheme\n\n\n\n\n\n\n1 Residential & commercial development\n\n1.1 Housing & urban areas\n1.2 Commercial & industrial areas\n1.3 Tourism & recreation areas\n\n2 Agriculture & aquaculture\n\n2.1 Annual & perennial non-timber crops\n\n2.1.1 Shifting agriculture\n2.1.2 Small-holder farming\n2.1.3 Agro-industry farming\n2.1.4 Scale Unknown/Unrecorded\n\n2.2 Wood & pulp plantations\n\n2.2.1 Small-holder plantations\n2.2.2 Agro-industry plantations\n2.2.3 Scale Unknown/Unrecorded\n\n2.3 Livestock farming & ranching\n\n2.3.1 Nomadic grazing\n2.3.2 Small-holder grazing, ranching or farming\n2.3.3 Agro-industry grazing, ranching or farming\n2.3.4 Scale Unknown/Unrecorded\n\n2.4 Marine & freshwater aquaculture\n\n2.4.1 Subsistence/artisanal aquaculture\n2.4.2 Industrial aquaculture\n2.4.3 Scale Unknown/Unrecorded\n\n\n3 Energy production & mining\n\n3.1 Oil & gas drilling\n3.2 Mining & quarrying\n3.3 Renewable energy\n\n4 Transportation & service corridors\n\n4.1 Roads & railroads\n4.2 Utility & service lines\n4.3 Shipping lanes\n4.4 Flight paths\n\n5 Biological resource use\n\n5.1 Hunting & collecting terrestrial animals\n\n5.1.1 Intentional use (species being assessed is the target)\n5.1.2 Unintentional effects (species being assessed is not the target)\n5.1.3 Persecution/control\n5.1.4 Motivation Unknown/Unrecorded\n\n5.2 Gathering terrestrial plants\n\n5.2.1 Intentional use (species being assessed is the target)\n5.2.2 Unintentional effects (species being assessed is not the target)\n5.2.3 Persecution/control\n5.2.4 Motivation Unknown/Unrecorded\n\n5.3 Logging & wood harvesting\n\n5.3.1 Intentional use: subsistence/small scale (species being assessed is the target [harvest]\n5.3.2 Intentional use: large scale (species being assessed is the target)[harvest]\n5.3.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]\n5.3.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]\n5.3.5 Motivation Unknown/Unrecorded\n5.4 Fishing & harvesting aquatic resources\n5.4.1 Intentional use: subsistence/small scale (species being assessed is the target)[harvest]\n5.4.2 Intentional use: large scale (species being assessed is the target)[harvest]\n5.4.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]\n5.4.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]\n5.4.5 Persecution/control\n5.4.6 Motivation Unknown/Unrecorded\n\n\n6 Human intrusions & disturbance\n\n6.1 Recreational activities\n6.2 War, civil unrest & military exercises\n6.3 Work & other activities\n\n7 Natural system modifications\n\n7.1 Fire & fire suppression\n\n7.1.1 Increase in fire frequency/intensity\n7.1.2 Suppression in fire frequency/intensity\n7.1.3 Trend Unknown/Unrecorded\n\n7.2 Dams & water management/use\n\n7.2.1 Abstraction of surface water (domestic use)\n7.2.2 Abstraction of surface water (commercial use)\n7.2.3 Abstraction of surface water (agricultural use)\n7.2.4 Abstraction of surface water (unknown use)\n7.2.5 Abstraction of ground water (domestic use)\n7.2.6 Abstraction of ground water (commercial use)\n7.2.7 Abstraction of ground water (agricultural use)\n7.2.8 Abstraction of ground water (unknown use)\n7.2.9 Small dams\n7.2.10 Large dams\n7.2.11 Dams (size unknown)\n\n7.3 Other ecosystem modifications\n\n8 Invasive & other problematic species, genes & diseases\n\n8.1 Invasive non-native/alien species/diseases\n\n8.1.1 Unspecified species\n8.1.2 Named species\n\n8.2 Problematic native species/diseases\n\n8.2.1 Unspecified species\n8.2.2 Named species\n\n8.3 Introduced genetic material\n8.4 Problematic species/diseases of unknown origin\n\n8.4.1 Unspecified species\n8.4.2 Named species\n\n8.5 Viral/prion-induced diseases\n\n8.5.1 Unspecified “species” (disease)\n8.5.2 Named “species” (disease)\n\n8.6 Diseases of unknown cause\n\n9 Pollution\n\n9.1 Domestic & urban waste water\n\n9.1.1 Sewage\n9.1.2 Run-off\n9.1.3 Type Unknown/Unrecorded\n\n9.2 Industrial & military effluents\n\n9.2.1 Oil spills\n9.2.2 Seepage from mining\n9.2.3 Type Unknown/Unrecorded\n\n9.3 Agricultural & forestry effluents\n\n9.3.1 Nutrient loads\n9.3.2 Soil erosion, sedimentation\n9.3.3 Herbicides & pesticides\n9.3.4 Type Unknown/Unrecorded\n\n9.4 Garbage & solid waste\n9.5 Air-borne pollutants\n\n9.5.1 Acid rain\n9.5.2 Smog\n9.5.3 Ozone\n9.5.4 Type Unknown/Unrecorded\n\n9.6 Excess energy\n\n9.6.1 Light pollution\n9.6.2 Thermal pollution\n9.6.3 Noise pollution\n9.6.4 Type Unknown/Unrecorded\n\n\n10 Geological events\n\n10.1 Volcanoes\n10.2 Earthquakes/tsunamis\n10.3 Avalanches/landslides\n\n11 Climate change & severe weather\n\n11.1 Habitat shifting & alteration\n11.2 Droughts\n11.3 Temperature extremes\n11.4 Storms & flooding\n11.5 Other impacts\n\n12 Other options\n\n12.1 Other threat",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span>"
+    ]
+  },
+  {
+    "objectID": "avaliacao.html#aplicação-dos-critérios",
+    "href": "avaliacao.html#aplicação-dos-critérios",
+    "title": "Avaliação do Risco de Extinção",
+    "section": "Aplicação dos Critérios",
+    "text": "Aplicação dos Critérios\n\nCritério A\n\n\nCritério B\n\n\nCritério C\n\n\nCritério D\n\n\nCritério E\n\n\n\n\nMace, Georgina M., Nigel J. Collar, Kevin J. Gaston, Craig Hilton‐Taylor, H. Resit Akçakaya, Nigel Leader‐Williams, E. J. Milner‐Gulland, Simon N. Stuart, e Jonathan E. M. and Baillie. 2008. «Quantification of Extinction Risk: IUCN’s System for Classifying Threatened Species». Conservation Biology 22 (6): 1424–42. https://doi.org/10.1111/j.1523-1739.2008.01044.x.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#os-cinco-critérios",
+    "href": "criterios.html#os-cinco-critérios",
+    "title": "Critérios",
+    "section": "",
+    "text": "\\(A1\\), \\(A2\\), \\(A3\\), \\(A4\\), \\(B1\\), \\(B2\\), \\(C1\\), \\(C2\\), \\(D1\\), \\(D2\\).\n\n\n\nDo critério \\(A\\): \\(a\\), \\(b\\), \\(c\\), \\(d\\), \\(e\\);\nDo critério \\(B\\): \\(a\\), \\(b\\), \\(c\\);\nDo subcritério \\(C2\\): \\(a\\), \\(b\\).\n\n\n\nDa condição \\(b\\) do critério \\(B\\): \\(i\\), \\(ii\\), \\(iii\\), \\(iv\\), \\(v\\);\nDa condição \\(c\\) do critério \\(B\\): \\(i\\), \\(ii\\), \\(iii\\), \\(iv\\);\nDa condição \\(a\\) do subcritério \\(C2\\): \\(i\\), \\(ii\\).\n\n\n\n\n\n\n\n\n\n\nNota\n\n\n\n\nA afirmação: — um táxon foi “enquadrado” na categoria VU — poderia ser evitada. O adequado seria dizer: — “um táxon foi categorizado como VU”.\nA afirmação: — “Categorizar” um táxon no critério \\(B\\) — seria uma afirmativa inadequada. O melhor termo seria dizer: — o “enquadramento” no critério \\(B\\) foi justificado pelo atendimento dos requisitos. Ou seja, estaria textualmente adequado dizer que: — “os requisitos para o enquadramento no critério \\(B\\) foram atendidos”.\nA afirmação: — Os requisitos de verificação das subcondições \\(i\\) e \\(ii\\) para enquadramento na condição \\(b\\) do critério \\(B\\) foram atendidos — está adequada.\nPara fins de concisão e objetividade, também é adequado afirmar que: — Um táxon foi categorizado como CR empregando o critério \\(B1ab(i,ii,iii,iv)\\).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "criterios.html#documentação",
+    "href": "criterios.html#documentação",
+    "title": "Critérios",
+    "section": "Documentação",
+    "text": "Documentação\nTodas as avaliações devem ser devidamente documentadas. A regra geral é que o enquadramento em critérios, subcritérios, condições e subcondições seja sempre justificado com base em documentação.\nEmbora os (sub)critérios e (sub)condições de cada categoria de ameaça sejam definidos por limiares quantitativos, o sistema permanece relativamente flexível, permitindo a avaliação de táxons mesmo quando há escassez de informações. Isso é possível graças à incorporação de elementos como inferência, suspeita e projeção no processo de avaliação.\nEspera-se, portanto, que a pessoa responsável pela avaliação utilize as melhores informações disponíveis, complementadas por inferência, suspeita e projeção, para aplicar os critérios ao táxon em questão. No entanto, sempre que esses elementos forem utilizados, as suposições feitas devem ser claramente documentadas.\nSe houver qualquer preocupação razoável de que um táxon possa estar ameaçado de extinção num futuro próximo, ele deve ser considerado elegível para uma das categorias de ameaça. Ainda que não existam fontes formais de documentação, a justificativa precisa estar explicitamente descrita no texto final da avaliação, ainda que fundamentada apenas por inferência ou suspeição.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Critérios</span>"
+    ]
+  },
+  {
+    "objectID": "avaliacao.html#diretrizes-para-documentação-de-ameaça",
+    "href": "avaliacao.html#diretrizes-para-documentação-de-ameaça",
+    "title": "Avaliação do Risco de Extinção",
+    "section": "Diretrizes para Documentação de Ameaça",
+    "text": "Diretrizes para Documentação de Ameaça\nOs critérios têm como objetivo detectar sintomas de risco, e não suas causas (Mace et al. 2008). Em outras palavras, buscam identificar os padrões das ameaças, independentemente dos processos que deram origem a esses padrões objetivos.\nOs critérios são aplicáveis a qualquer processo de ameaça que resulte em sintomas como declínio populacional, tamanhos populacionais pequenos e pequenas distribuições geográficas.\nVide abaixo o esquema de classificação das ameaças:\n\n\n\n\n\n\nThreats Classification Scheme\n\n\n\n\n\n\n1 Residential & commercial development\n\n1.1 Housing & urban areas\n1.2 Commercial & industrial areas\n1.3 Tourism & recreation areas\n\n2 Agriculture & aquaculture\n\n2.1 Annual & perennial non-timber crops\n\n2.1.1 Shifting agriculture\n2.1.2 Small-holder farming\n2.1.3 Agro-industry farming\n2.1.4 Scale Unknown/Unrecorded\n\n2.2 Wood & pulp plantations\n\n2.2.1 Small-holder plantations\n2.2.2 Agro-industry plantations\n2.2.3 Scale Unknown/Unrecorded\n\n2.3 Livestock farming & ranching\n\n2.3.1 Nomadic grazing\n2.3.2 Small-holder grazing, ranching or farming\n2.3.3 Agro-industry grazing, ranching or farming\n2.3.4 Scale Unknown/Unrecorded\n\n2.4 Marine & freshwater aquaculture\n\n2.4.1 Subsistence/artisanal aquaculture\n2.4.2 Industrial aquaculture\n2.4.3 Scale Unknown/Unrecorded\n\n\n3 Energy production & mining\n\n3.1 Oil & gas drilling\n3.2 Mining & quarrying\n3.3 Renewable energy\n\n4 Transportation & service corridors\n\n4.1 Roads & railroads\n4.2 Utility & service lines\n4.3 Shipping lanes\n4.4 Flight paths\n\n5 Biological resource use\n\n5.1 Hunting & collecting terrestrial animals\n\n5.1.1 Intentional use (species being assessed is the target)\n5.1.2 Unintentional effects (species being assessed is not the target)\n5.1.3 Persecution/control\n5.1.4 Motivation Unknown/Unrecorded\n\n5.2 Gathering terrestrial plants\n\n5.2.1 Intentional use (species being assessed is the target)\n5.2.2 Unintentional effects (species being assessed is not the target)\n5.2.3 Persecution/control\n5.2.4 Motivation Unknown/Unrecorded\n\n5.3 Logging & wood harvesting\n\n5.3.1 Intentional use: subsistence/small scale (species being assessed is the target [harvest]\n5.3.2 Intentional use: large scale (species being assessed is the target)[harvest]\n5.3.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]\n5.3.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]\n5.3.5 Motivation Unknown/Unrecorded\n5.4 Fishing & harvesting aquatic resources\n5.4.1 Intentional use: subsistence/small scale (species being assessed is the target)[harvest]\n5.4.2 Intentional use: large scale (species being assessed is the target)[harvest]\n5.4.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]\n5.4.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]\n5.4.5 Persecution/control\n5.4.6 Motivation Unknown/Unrecorded\n\n\n6 Human intrusions & disturbance\n\n6.1 Recreational activities\n6.2 War, civil unrest & military exercises\n6.3 Work & other activities\n\n7 Natural system modifications\n\n7.1 Fire & fire suppression\n\n7.1.1 Increase in fire frequency/intensity\n7.1.2 Suppression in fire frequency/intensity\n7.1.3 Trend Unknown/Unrecorded\n\n7.2 Dams & water management/use\n\n7.2.1 Abstraction of surface water (domestic use)\n7.2.2 Abstraction of surface water (commercial use)\n7.2.3 Abstraction of surface water (agricultural use)\n7.2.4 Abstraction of surface water (unknown use)\n7.2.5 Abstraction of ground water (domestic use)\n7.2.6 Abstraction of ground water (commercial use)\n7.2.7 Abstraction of ground water (agricultural use)\n7.2.8 Abstraction of ground water (unknown use)\n7.2.9 Small dams\n7.2.10 Large dams\n7.2.11 Dams (size unknown)\n\n7.3 Other ecosystem modifications\n\n8 Invasive & other problematic species, genes & diseases\n\n8.1 Invasive non-native/alien species/diseases\n\n8.1.1 Unspecified species\n8.1.2 Named species\n\n8.2 Problematic native species/diseases\n\n8.2.1 Unspecified species\n8.2.2 Named species\n\n8.3 Introduced genetic material\n8.4 Problematic species/diseases of unknown origin\n\n8.4.1 Unspecified species\n8.4.2 Named species\n\n8.5 Viral/prion-induced diseases\n\n8.5.1 Unspecified “species” (disease)\n8.5.2 Named “species” (disease)\n\n8.6 Diseases of unknown cause\n\n9 Pollution\n\n9.1 Domestic & urban waste water\n\n9.1.1 Sewage\n9.1.2 Run-off\n9.1.3 Type Unknown/Unrecorded\n\n9.2 Industrial & military effluents\n\n9.2.1 Oil spills\n9.2.2 Seepage from mining\n9.2.3 Type Unknown/Unrecorded\n\n9.3 Agricultural & forestry effluents\n\n9.3.1 Nutrient loads\n9.3.2 Soil erosion, sedimentation\n9.3.3 Herbicides & pesticides\n9.3.4 Type Unknown/Unrecorded\n\n9.4 Garbage & solid waste\n9.5 Air-borne pollutants\n\n9.5.1 Acid rain\n9.5.2 Smog\n9.5.3 Ozone\n9.5.4 Type Unknown/Unrecorded\n\n9.6 Excess energy\n\n9.6.1 Light pollution\n9.6.2 Thermal pollution\n9.6.3 Noise pollution\n9.6.4 Type Unknown/Unrecorded\n\n\n10 Geological events\n\n10.1 Volcanoes\n10.2 Earthquakes/tsunamis\n10.3 Avalanches/landslides\n\n11 Climate change & severe weather\n\n11.1 Habitat shifting & alteration\n11.2 Droughts\n11.3 Temperature extremes\n11.4 Storms & flooding\n11.5 Other impacts\n\n12 Other options\n\n12.1 Other threat",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Avaliação do Risco de Extinção</span>"
     ]
   }
 ]
