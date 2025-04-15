@@ -64,6 +64,40 @@ Se houver qualquer preocupação razoável de que um táxon possa estar ameaçad
 
 <iframe id="iframeA" src="./criterio-a.html" width="100%" style="border: none;"></iframe>
 
+### População
+
+O conceito de **população** tem significado específico segundo a IUCN, que é diferente daquele aplicado comumente na área da biologia. População conforme a IUCN é definida como o **número total de indivíduos de um táxon**, incluindo indivíduos maduros e imaturos.
+
+O conceito de **população** e **tamanho populacional** (do inglês *population* e *population size*, respectivamente) não são sinônimos.
+
+Ambos os conceitos referem-se ao conjunto de todas as populações de um certo táxon em toda sua área de ocorrência. Ainda que haja subpopulações (o que comumente ocorre na natureza), ambos os conceitos abrangem todas as subpopulações. Porém, o conceito de tamanho populacional se fundamenta na definição de outro conceito: o de indivíduos maduros.
+
+| Termo               | Definição                                 |
+|---------------------|--------------------------------------------|
+| População           | Todos os indivíduos de um táxon            |
+| Tamanho populacional| Apenas os indivíduos maduros de um táxon   |
+
+### Indivíduos maduros
+
+Indivíduos maduros são aqueles considerados potencialmente reprodutivos ou capazes de se reproduzir.
+
+Via de regra, segundo o conceito da IUCN, indivíduos reprodutivos ou capazes de se reproduzir são aqueles que produzem novos indivíduos não apenas via reprodução sexuada, mas também via reprodução assexuada. 
+
+Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários, como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.
+
+Portanto, no caso das plantas, "indivíduo maduro" deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um "indivíduo maduro" também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um "indivíduo maduro" para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:
+
+- uma moita de uma gramínea seria considerado um indivíduo;
+- tufo de briófitas seria considerados um indivíduo;
+- uma herbácea crescendo sobre uma rocha;
+- uma monilófita epífita crescendo sobre o tronco de uma árvore;
+- cada brotamento de uma monocotiledônea que se propaga por estolões seriam considerados como um indivíduos, desde que tenham a capacidade de se reproduzir independentemente;
+- um indivíduo arbóreo que não possui capacidade de se reproduzir via reprodução sexuada, isto é, produzir sementes, não é considerado um indivíduo maduro, como no caso de árvores que não alcançou a idade reprodutiva levando um longo tempo para produzir a floração.
+
+### Redução
+
+Redução da população, para fins de aplicação do critério `A`, é o declínio do número de indivíduos maduros a uma porcentagem (%) maior ou igual àquela definida pelos limiares do critério `A` e ao longo do período especificado (anos). Contudo, o declínio não deve ser continuado. As fases descendentes normais de flutuações da população não devem ser consideradas como redução, a menos que haja evidência suficiente para considerá-las como uma redução anormal.
+
 ## Critério B
 
 <iframe id="iframeB" src="./criterio-b.html" width="100%" style="border: none;"></iframe>
@@ -83,10 +117,19 @@ O conceito de **localizações condicionadas à ameaça** (*locations* em inglê
 
 ### Declínio contínuo
 
-Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso
-medidas corretivas ou mitigadoras não sejam tomadas. **Declínio observado** não deve ser encarado como declínio contínuo.
+Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso medidas corretivas ou mitigadoras não sejam tomadas. **Declínio observado** não deve ser encarado como declínio contínuo.
 
-Declínios contínuos são utilizados apenas como parâmetros dos critérios B e C (subcritério C2). O critério B é caracterizado pela distribuição restrita e o C como pequeno tamanho populacional. O declínio contínuo não é aplicável ao subcritério C1, que deve ser avaliado por parâmetros quantitativos através de método semelhante ao aplicado para redução populacional.
+### Subpopulação
+
+O conceito de **subpopulação** é definido como agrupamentos distintos separados geograficamente como populações isoladas nas quais há pouco fluxo demográfico ou baixo fluxo gênico (em geral um indivíduo ou gameta migrante bem-sucedido por aproximadamente um ano).
+
+Métodos operacionais para determinação do número de subpopulações varia de acordo com o táxon. No caso de plantas, por exemplo, uma subpopulação pode ser definida como um agrupamento de indivíduos distantes o bastante que seus indivíduos não são capazes de migrar para outra subpopulação ou cujos gametas (grãos de pólen) não alcançam efetivamente indivíduos de outra subpopulação.
+
+Contudo, vale destacar que embora as subpopulações sejam agrupamentos distintos, elas podem estar completamente isoladas ou não.
+
+### Flutuação extrema
+
+Flutuações extremas ocorrem quando o tamanho populacional ou de sua área de distribuição varia de forma acentuada, rápida ou frequente, e cuja variação é maior do que aproximadamente 10 vezes.
 
 ## Critério C
 
