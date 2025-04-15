@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IUCN – Avaliação do Risco de Extinção de Espécies</title>
+<title>Avaliação do Risco de Extinção – Avaliação do Risco de Extinção de Espécies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./lista-vermelha.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./criterios.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="nav-arrows.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -86,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./iucn.html"><span class="chapter-title">IUCN</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./avaliacao.html"><span class="chapter-title">Avaliação do Risco de Extinção</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -122,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./iucn.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">IUCN</span></a>
+  <a href="./iucn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IUCN</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -147,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./avaliacao.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Avaliação do Risco de Extinção</span></a>
+  <a href="./avaliacao.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Avaliação do Risco de Extinção</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -166,8 +215,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#missão" id="toc-missão" class="nav-link active" data-scroll-target="#missão">Missão</a></li>
-  <li><a href="#história-e-atualidade" id="toc-história-e-atualidade" class="nav-link" data-scroll-target="#história-e-atualidade">História e atualidade</a></li>
+  <li><a href="#categorizando-como-dd" id="toc-categorizando-como-dd" class="nav-link active" data-scroll-target="#categorizando-como-dd">Categorizando como <code>DD</code></a></li>
+  <li><a href="#diretrizes-para-documentação-de-ameaça" id="toc-diretrizes-para-documentação-de-ameaça" class="nav-link" data-scroll-target="#diretrizes-para-documentação-de-ameaça">Diretrizes para Documentação de Ameaça</a></li>
+  <li><a href="#aplicação-dos-critérios" id="toc-aplicação-dos-critérios" class="nav-link" data-scroll-target="#aplicação-dos-critérios">Aplicação dos Critérios</a>
+  <ul class="collapse">
+  <li><a href="#critério-a" id="toc-critério-a" class="nav-link" data-scroll-target="#critério-a">Critério <code>A</code></a></li>
+  <li><a href="#critério-b" id="toc-critério-b" class="nav-link" data-scroll-target="#critério-b">Critério <code>B</code></a></li>
+  <li><a href="#critério-c" id="toc-critério-c" class="nav-link" data-scroll-target="#critério-c">Critério <code>C</code></a></li>
+  <li><a href="#critério-d" id="toc-critério-d" class="nav-link" data-scroll-target="#critério-d">Critério <code>D</code></a></li>
+  <li><a href="#critério-e" id="toc-critério-e" class="nav-link" data-scroll-target="#critério-e">Critério <code>E</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +392,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">IUCN</span></h1>
+<h1 class="title"><span class="chapter-title">Avaliação do Risco de Extinção</span></h1>
 </div>
 
 
@@ -352,33 +409,259 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>A <strong>IUCN</strong> (União Internacional para a Conservação da Natureza) é uma união composta por membros de organizações governamentais e da sociedade civil. Juntas, essas entidades trabalham para promover o desenvolvimento sustentável e construir um mundo mais justo, que valorize e conserve a natureza.</p>
-</div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://iucn.org/themes/custom/iucn_revamp/logo.svg" class="img-fluid" width="200"></p>
-</div>
-</div>
-</div>
-<section id="missão" class="level2">
-<h2 class="anchored" data-anchor-id="missão">Missão</h2>
-<p>Influenciar, encorajar e apoiar a sociedade global na conservação da integridade e da diversidade biológica, assegurando que o uso dos recursos naturais seja equitativo e ecologicamente sustentável.</p>
-</section>
-<section id="história-e-atualidade" class="level2">
-<h2 class="anchored" data-anchor-id="história-e-atualidade">História e atualidade</h2>
-<p>Fundada em <strong>1948</strong>, a IUCN reúne:</p>
 <ul>
-<li>Mais de <strong>1.500 membros organizacionais</strong>, incluindo Estados, agências governamentais e ONGs, distribuídos por mais de <strong>170 países</strong>.</li>
-<li>Aproximadamente <strong>1.000 funcionários</strong>, atuando em escritórios regionais e nacionais.</li>
-<li>Cerca de <strong>18.000 membros de comissões</strong>, entre cientistas e especialistas.</li>
-<li>Aproximadamente <strong>5.000 representantes de organizações parceiras</strong>.</li>
-<li>Diversos especialistas que colaboram mesmo sem integrar formalmente as comissões.</li>
+<li><p>Para que um táxon seja incluído em qualquer uma das categorias de ameaça, basta que atenda a um dos critérios. No entanto, ele deve ser avaliado em relação a todos os critérios possíveis, de acordo com a disponibilidade de dados, e a listagem deve indicar todos os critérios aplicáveis à categoria de ameaça mais elevada.</p></li>
+<li><p>Apenas os critérios relativos à categoria mais alta de ameaça para a qual o táxon se qualifica devem ser listados.</p>
+<ul>
+<li>Por exemplo, se um táxon atende aos critérios <span class="math inline">\(A\)</span>, <span class="math inline">\(C\)</span> e <span class="math inline">\(D\)</span> nas categorias <code>VU</code> e <code>EN</code>, e apenas ao critério <span class="math inline">\(A\)</span> na categoria <code>CR</code>, então somente o critério <span class="math inline">\(A\)</span> atendido na categoria <code>CR</code> deve ser listado, por se tratar da categoria mais elevada de ameaça.
+<ul>
+<li>Ainda assim, recomenda-se que os avaliadores documentem também os critérios sob os quais o táxon se enquadra em categorias de menor ameaça, pois essas informações são fundamentais para o planejamento de ações de conservação e recuperação da espécie.</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>A IUCN também atua como <strong>observadora oficial</strong> na Assembleia Geral das Nações Unidas.</p>
+<section id="categorizando-como-dd" class="level2">
+<h2 class="anchored" data-anchor-id="categorizando-como-dd">Categorizando como <code>DD</code></h2>
+<p><strong>Quando aplicar?</strong></p>
+<p>Se um táxon for conhecido, mas não houver nenhuma informação direta ou indireta sobre seu status atual ou possíveis ameaças, então ele deve ser categorizado como <code>DD</code>. Uma categorização com dados insuficientes não significa que um táxon não esteja ameaçado.</p>
+<p><strong>Quando não aplicar?</strong></p>
+</section>
+<section id="diretrizes-para-documentação-de-ameaça" class="level2">
+<h2 class="anchored" data-anchor-id="diretrizes-para-documentação-de-ameaça">Diretrizes para Documentação de Ameaça</h2>
+<p>Os critérios têm como objetivo detectar sintomas de risco, e não suas causas <span class="citation" data-cites="Mace2008">(<a href="references.html#ref-Mace2008" role="doc-biblioref">Mace et al. 2008</a>)</span>. Em outras palavras, buscam identificar os padrões das ameaças, independentemente dos processos que deram origem a esses padrões objetivos.</p>
+<p>Os critérios são aplicáveis a qualquer processo de ameaça que resulte em sintomas como declínio populacional, tamanhos populacionais pequenos e pequenas distribuições geográficas.</p>
+<p><strong>Vide abaixo o esquema de classificação das ameaças:</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<em>Threats Classification Scheme</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>1 Residential &amp; commercial development
+<ul>
+<li>1.1 Housing &amp; urban areas</li>
+<li>1.2 Commercial &amp; industrial areas</li>
+<li>1.3 Tourism &amp; recreation areas</li>
+</ul></li>
+<li>2 Agriculture &amp; aquaculture
+<ul>
+<li>2.1 Annual &amp; perennial non-timber crops
+<ul>
+<li>2.1.1 Shifting agriculture</li>
+<li>2.1.2 Small-holder farming</li>
+<li>2.1.3 Agro-industry farming</li>
+<li>2.1.4 Scale Unknown/Unrecorded</li>
+</ul></li>
+<li>2.2 Wood &amp; pulp plantations
+<ul>
+<li>2.2.1 Small-holder plantations</li>
+<li>2.2.2 Agro-industry plantations</li>
+<li>2.2.3 Scale Unknown/Unrecorded</li>
+</ul></li>
+<li>2.3 Livestock farming &amp; ranching
+<ul>
+<li>2.3.1 Nomadic grazing</li>
+<li>2.3.2 Small-holder grazing, ranching or farming</li>
+<li>2.3.3 Agro-industry grazing, ranching or farming</li>
+<li>2.3.4 Scale Unknown/Unrecorded</li>
+</ul></li>
+<li>2.4 Marine &amp; freshwater aquaculture
+<ul>
+<li>2.4.1 Subsistence/artisanal aquaculture</li>
+<li>2.4.2 Industrial aquaculture</li>
+<li>2.4.3 Scale Unknown/Unrecorded</li>
+</ul></li>
+</ul></li>
+<li>3 Energy production &amp; mining
+<ul>
+<li>3.1 Oil &amp; gas drilling</li>
+<li>3.2 Mining &amp; quarrying</li>
+<li>3.3 Renewable energy</li>
+</ul></li>
+<li>4 Transportation &amp; service corridors
+<ul>
+<li>4.1 Roads &amp; railroads</li>
+<li>4.2 Utility &amp; service lines</li>
+<li>4.3 Shipping lanes</li>
+<li>4.4 Flight paths</li>
+</ul></li>
+<li>5 Biological resource use
+<ul>
+<li>5.1 Hunting &amp; collecting terrestrial animals
+<ul>
+<li>5.1.1 Intentional use (species being assessed is the target)</li>
+<li>5.1.2 Unintentional effects (species being assessed is not the target)</li>
+<li>5.1.3 Persecution/control</li>
+<li>5.1.4 Motivation Unknown/Unrecorded</li>
+</ul></li>
+<li>5.2 Gathering terrestrial plants
+<ul>
+<li>5.2.1 Intentional use (species being assessed is the target)</li>
+<li>5.2.2 Unintentional effects (species being assessed is not the target)</li>
+<li>5.2.3 Persecution/control</li>
+<li>5.2.4 Motivation Unknown/Unrecorded</li>
+</ul></li>
+<li>5.3 Logging &amp; wood harvesting
+<ul>
+<li>5.3.1 Intentional use: subsistence/small scale (species being assessed is the target [harvest]</li>
+<li>5.3.2 Intentional use: large scale (species being assessed is the target)[harvest]</li>
+<li>5.3.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]</li>
+<li>5.3.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]</li>
+<li>5.3.5 Motivation Unknown/Unrecorded</li>
+<li>5.4 Fishing &amp; harvesting aquatic resources</li>
+<li>5.4.1 Intentional use: subsistence/small scale (species being assessed is the target)[harvest]</li>
+<li>5.4.2 Intentional use: large scale (species being assessed is the target)[harvest]</li>
+<li>5.4.3 Unintentional effects: subsistence/small scale (species being assessed is not the target)[harvest]</li>
+<li>5.4.4 Unintentional effects: large scale (species being assessed is not the target)[harvest]</li>
+<li>5.4.5 Persecution/control</li>
+<li>5.4.6 Motivation Unknown/Unrecorded</li>
+</ul></li>
+</ul></li>
+<li>6 Human intrusions &amp; disturbance
+<ul>
+<li>6.1 Recreational activities</li>
+<li>6.2 War, civil unrest &amp; military exercises</li>
+<li>6.3 Work &amp; other activities</li>
+</ul></li>
+<li>7 Natural system modifications
+<ul>
+<li>7.1 Fire &amp; fire suppression
+<ul>
+<li>7.1.1 Increase in fire frequency/intensity</li>
+<li>7.1.2 Suppression in fire frequency/intensity</li>
+<li>7.1.3 Trend Unknown/Unrecorded</li>
+</ul></li>
+<li>7.2 Dams &amp; water management/use
+<ul>
+<li>7.2.1 Abstraction of surface water (domestic use)</li>
+<li>7.2.2 Abstraction of surface water (commercial use)</li>
+<li>7.2.3 Abstraction of surface water (agricultural use)</li>
+<li>7.2.4 Abstraction of surface water (unknown use)</li>
+<li>7.2.5 Abstraction of ground water (domestic use)</li>
+<li>7.2.6 Abstraction of ground water (commercial use)</li>
+<li>7.2.7 Abstraction of ground water (agricultural use)</li>
+<li>7.2.8 Abstraction of ground water (unknown use)</li>
+<li>7.2.9 Small dams</li>
+<li>7.2.10 Large dams</li>
+<li>7.2.11 Dams (size unknown)</li>
+</ul></li>
+<li>7.3 Other ecosystem modifications</li>
+</ul></li>
+<li>8 Invasive &amp; other problematic species, genes &amp; diseases
+<ul>
+<li>8.1 Invasive non-native/alien species/diseases
+<ul>
+<li>8.1.1 Unspecified species</li>
+<li>8.1.2 Named species</li>
+</ul></li>
+<li>8.2 Problematic native species/diseases
+<ul>
+<li>8.2.1 Unspecified species</li>
+<li>8.2.2 Named species</li>
+</ul></li>
+<li>8.3 Introduced genetic material</li>
+<li>8.4 Problematic species/diseases of unknown origin
+<ul>
+<li>8.4.1 Unspecified species</li>
+<li>8.4.2 Named species</li>
+</ul></li>
+<li>8.5 Viral/prion-induced diseases
+<ul>
+<li>8.5.1 Unspecified “species” (disease)</li>
+<li>8.5.2 Named “species” (disease)</li>
+</ul></li>
+<li>8.6 Diseases of unknown cause</li>
+</ul></li>
+<li>9 Pollution
+<ul>
+<li>9.1 Domestic &amp; urban waste water
+<ul>
+<li>9.1.1 Sewage</li>
+<li>9.1.2 Run-off</li>
+<li>9.1.3 Type Unknown/Unrecorded</li>
+</ul></li>
+<li>9.2 Industrial &amp; military effluents
+<ul>
+<li>9.2.1 Oil spills</li>
+<li>9.2.2 Seepage from mining</li>
+<li>9.2.3 Type Unknown/Unrecorded</li>
+</ul></li>
+<li>9.3 Agricultural &amp; forestry effluents
+<ul>
+<li>9.3.1 Nutrient loads</li>
+<li>9.3.2 Soil erosion, sedimentation</li>
+<li>9.3.3 Herbicides &amp; pesticides</li>
+<li>9.3.4 Type Unknown/Unrecorded</li>
+</ul></li>
+<li>9.4 Garbage &amp; solid waste</li>
+<li>9.5 Air-borne pollutants
+<ul>
+<li>9.5.1 Acid rain</li>
+<li>9.5.2 Smog</li>
+<li>9.5.3 Ozone</li>
+<li>9.5.4 Type Unknown/Unrecorded</li>
+</ul></li>
+<li>9.6 Excess energy
+<ul>
+<li>9.6.1 Light pollution</li>
+<li>9.6.2 Thermal pollution</li>
+<li>9.6.3 Noise pollution</li>
+<li>9.6.4 Type Unknown/Unrecorded</li>
+</ul></li>
+</ul></li>
+<li>10 Geological events
+<ul>
+<li>10.1 Volcanoes</li>
+<li>10.2 Earthquakes/tsunamis</li>
+<li>10.3 Avalanches/landslides</li>
+</ul></li>
+<li>11 Climate change &amp; severe weather
+<ul>
+<li>11.1 Habitat shifting &amp; alteration</li>
+<li>11.2 Droughts</li>
+<li>11.3 Temperature extremes</li>
+<li>11.4 Storms &amp; flooding</li>
+<li>11.5 Other impacts</li>
+</ul></li>
+<li>12 Other options
+<ul>
+<li>12.1 Other threat</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="aplicação-dos-critérios" class="level2">
+<h2 class="anchored" data-anchor-id="aplicação-dos-critérios">Aplicação dos Critérios</h2>
+<section id="critério-a" class="level3">
+<h3 class="anchored" data-anchor-id="critério-a">Critério <code>A</code></h3>
+</section>
+<section id="critério-b" class="level3">
+<h3 class="anchored" data-anchor-id="critério-b">Critério <code>B</code></h3>
+</section>
+<section id="critério-c" class="level3">
+<h3 class="anchored" data-anchor-id="critério-c">Critério <code>C</code></h3>
+</section>
+<section id="critério-d" class="level3">
+<h3 class="anchored" data-anchor-id="critério-d">Critério <code>D</code></h3>
+</section>
+<section id="critério-e" class="level3">
+<h3 class="anchored" data-anchor-id="critério-e">Critério <code>E</code></h3>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Mace2008" class="csl-entry" role="listitem">
+Mace, Georgina M., Nigel J. Collar, Kevin J. Gaston, Craig Hilton‐Taylor, H. Resit Akçakaya, Nigel Leader‐Williams, E. J. Milner‐Gulland, Simon N. Stuart, e Jonathan E. M. and Baillie. 2008. <span>«Quantification of Extinction Risk: IUCN’s System for Classifying Threatened Species»</span>. <em>Conservation Biology</em> 22 (6): 1424–42. <a href="https://doi.org/10.1111/j.1523-1739.2008.01044.x">https://doi.org/10.1111/j.1523-1739.2008.01044.x</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -796,13 +1079,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Apresentação">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Apresentação</span>
+      <a href="./criterios.html" class="pagination-link" aria-label="Critérios">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Critérios</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./lista-vermelha.html" class="pagination-link" aria-label="Lista Vermelha da IUCN">
-        <span class="nav-page-text"><span class="chapter-title">Lista Vermelha da IUCN</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="Referências">
+        <span class="nav-page-text">Referências</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

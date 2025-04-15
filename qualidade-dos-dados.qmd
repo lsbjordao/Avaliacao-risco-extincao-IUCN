@@ -1,0 +1,23 @@
+# Qualidade dos dados
+
+Os critérios da IUCN utilizam os termos **Observado**, **Estimado**, **Projetado**, **Inferido** e **Suspeito** para qualificar a natureza da evidência usada na avaliação do risco de extinção de uma espécie. Esses termos ajudam a indicar o grau de certeza ou a fonte da informação utilizada.
+
+## Observação
+
+refere-se a registros diretos de mudanças, como contagens populacionais ou perda de habitat documentada.
+
+## Estimação
+
+aplica-se quando os dados são incompletos, mas permitem inferências razoáveis com base em conhecimento técnico ou amostras.
+
+## Projeção
+
+usado para antecipar mudanças futuras, com base em ameaças em curso ou tendências identificadas.
+
+## Inferência
+
+baseia-se em evidência indireta, mas lógica, como a degradação do habitat ou desaparecimento em áreas antes ocupadas.
+
+## Suspeição
+
+indica uma presunção com base em conhecimento limitado ou observações preliminares, ainda que sem comprovação robusta.
