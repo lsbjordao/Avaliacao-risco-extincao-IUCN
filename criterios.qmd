@@ -1,5 +1,21 @@
 # Critérios
 
+Os critérios da Lista Vermelha da IUCN incorporam dois problemas centrais do risco de extinção, reconhecidas como paradigmas da biologia da conservação: **populações em declínio** e **pequenas populações** [@Caughley1994].
+
+O declínio populacional é frequentemente associado a ameaças como perda de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies. 
+
+O problema de pequenas populações foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo. 
+
+O trabalho discute as implicações dessas duas dimensões para a conservação das espécies, enfatizando a necessidade de estratégias diferenciadas para lidar com populações em declínio e populações pequenas, a fim de mitigar o risco de extinção.
+
+O critério `A` está diretamente associado ao paradigma das populações em declínio, ao mensurar reduções no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.
+
+O critério `B` reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da Área de Ocorrência (EOO) e da Área de Ocupação (AOO), além de outros fatores como fragmentação severa, flutuações extremas e número reduzido de localizações condicionadas à ameaça. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.
+
+Os critérios `C` e `D` representam diretamente o paradigma das pequenas populações, enfocando o risco intrínseco enfrentado por espécies com poucos indivíduos maduros. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.
+
+Dessa forma, os critérios da Lista Vermelha capturam diferentes aspectos do risco de extinção, incorporando os processos de declínio, os limites da distribuição geográfica e as vulnerabilidades inerentes a populações pequenas. Juntos, eles formam uma estrutura abrangente e integrada para avaliar a conservação das espécies.
+
 ## Os cinco critérios
 
 O protocolo da Lista Vermelha apresenta cinco critérios ($A$–$E$):
@@ -91,7 +107,7 @@ Via de regra, segundo o conceito da IUCN, indivíduos reprodutivos ou capazes de
 
 Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários, como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.
 
-Portanto, no caso das plantas, "indivíduo maduro" deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um "indivíduo maduro" também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um "indivíduo maduro" para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:
+Portanto, no caso das plantas, "indivíduo maduro" deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um indivíduo maduro também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um indivíduo maduro para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:
 
 - uma moita de uma gramínea seria considerado um indivíduo;
 - tufo de briófitas seria considerados um indivíduo;
@@ -129,6 +145,84 @@ Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que p
 
 **Declínio observado** não deve ser encarado como declínio contínuo.
 
+### Área de Extensão (EOO)
+
+:::{.callout-note appearance="minimal"}
+A **Extensão de Ocorrência (EOO)** é definido como o menor polígono convexo, ainda que possa ser um triângulo, que contenha todas as áreas conhecidas, inferidas ou projetadas de ocorrência atual do táxon, com exceção dos casos errantes.
+:::
+
+O objetivo da avaliação do EOO não é estimar a quantidade de área ocupada ou potencialmente ocupada de um táxon. Essa medida pode ser verificada pela sua distribuição.
+
+O EOO serve como uma medida dos riscos aproximada aos quais um táxon está submetido e a lógica subjacente à sua utilização é a constatação de que muitas variáveis ambientais e processos são espacialmente relacionados. Assim, há uma certa expectativa de que as ameaças ocorrentes em um determinado local têm uma probabilidade maior de afetar áreas mais adjascentes do que áreas mais distantes.
+
+:::{.callout-tip collapse="true"}
+
+## Usando o R para gerar o mínimo polígono convexo
+
+```{r}
+#| warning: false
+
+# Carregar pacotes
+library(ConR)
+library(geobr)
+library(sf)
+library(leaflet)
+
+# 1. Obter o estado do MS
+ms <- read_state(code_state = "MS", year = 2020, showProgress = FALSE)
+ms <- st_transform(ms, 4326)
+
+# 2. Gerar pontos aleatórios no MS
+set.seed(42)
+pontos <- st_sample(ms, size = 10)
+pontos_sf <- st_sf(geometry = pontos, crs = 4326)
+
+# 3. Criar data.frame no formato esperado por ConR
+coords <- st_coordinates(pontos_sf)
+XY <- data.frame(
+  latitude = coords[, 2],
+  longitude = coords[, 1],
+  tax = rep("Especie_teste", length.out = nrow(coords))
+)
+
+# 4. Calcular EOO e exportar shapefile temporário
+res <- EOO.computing(
+  XY,
+  export_shp = TRUE,
+  write_shp = TRUE,
+  method.range = "convex.hull",
+  proj_type = "cea",
+  show_progress = FALSE
+)
+
+# 5. Ler o shapefile gerado
+eoo_shape <- st_read("shapesIUCN/EOO_poly.shp", quiet = TRUE)
+eoo_shape <- st_transform(eoo_shape, 4326)
+
+# 6. Visualizar no leaflet
+leaflet() |>
+  addTiles(group = "Mapa base") |>
+  addProviderTiles(providers$Esri.WorldImagery, group = "Imagem de satélite") |>
+  addPolygons(data = eoo_shape, color = "red", weight = 2, fillOpacity = 0.3, group = "EOO") |>
+  addCircleMarkers(data = pontos_sf, radius = 5, color = "blue", group = "Ocorrências") |>
+  addLayersControl(
+    baseGroups = c("Mapa base", "Imagem de satélite"),
+    overlayGroups = c("Ocorrências", "EOO"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+
+```
+
+:::
+
+### Área de Ocupação (AOO)
+
+A **Área de Ocupação (AOO)** é um parâmetro que representa a área de habitat adequado atualmente ocupado por um táxon. A AOO está incluída nos critérios por duas razões:
+
+1. o primeiro papel do AOO é como uma medida do "efeito seguro", pelo qual táxons que ocorrem em muitos ou grandes trechos em uma paisagem são protegidos contra os riscos de ameaças espacialmente explícitas.
+
+2. Há, em geral, uma correlação positiva entre a AOO e o tamanho populacional. A veracidade dessa correlação para qualquer táxon depende da variação espacial na sua densidade populacional. Não obstante, a AOO pode ser um parâmetro útil para identificar o risco de extinção de táxons quando não há dados disponíveis para estimar o tamanho da população e sua estrutura.
+
 ### Subpopulação
 
 :::{.callout-note appearance="minimal"}
@@ -154,6 +248,18 @@ Flutuações extremas ocorrem quando o tamanho populacional ou de sua área de d
 ## Critério E
 
 <iframe id="iframeE" src="./criterio-e.html" width="100%" style="border: none;"></iframe>
+
+**Análises quantitativas** são definidas como qualquer abordagem utilizada para estimar a probabilidade de extinção de um táxon, com base em informações sobre sua história de vida, requisitos de habitat, ameaças identificadas e opções de manejo disponíveis. Uma das ferramentas mais comuns nesse contexto é a **Análise de Viabilidade Populacional (PVA)**. Essas análises devem utilizar ao máximo todos os dados relevantes disponíveis. Mesmo quando as informações são limitadas, é possível empregar os dados existentes para estimar o risco de extinção — por exemplo, avaliando o impacto de eventos estocásticos no habitat. Ao apresentar os resultados, é essencial documentar as premissas adotadas (que devem ser adequadas e justificáveis), os dados utilizados e os níveis de incerteza associados aos dados ou ao modelo.
+
+```{r}
+#| fig-cap: "Software Vortex 10, para simulação estocástica de processos de extinção."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("vortex.jpg")
+```
+
+O [Vortex](https://scti.tools/vortex/) é um software de simulação estocástica desenvolvido para realizar PVA, amplamente utilizado em estudos de conservação. Ele permite modelar o comportamento dinâmico de populações de espécies ameaçadas, incorporando fatores biológicos como reprodução, mortalidade, dispersão, genética, e efeitos ambientais aleatórios. Com base nesses parâmetros, são projetados cenários futuros para estimar o risco de extinção, o tamanho populacional ao longo do tempo e a influência de diferentes estratégias de manejo. É uma ferramenta essencial para embasar decisões em programas de conservação, especialmente no desenvolvimento de planos de ação para espécies em risco.
 
 <script>
   function ajustarAltura(iframeId) {
