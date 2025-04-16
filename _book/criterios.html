@@ -127,9 +127,11 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 
-<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 
@@ -143,11 +145,15 @@ div.csl-indent {
 
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
 
-<script src="site_libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
-<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
 
-<script src="site_libs/leaflet-providers-plugin-2.1.2/leaflet-providers-plugin.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
+
+<link href="site_libs/leaflet-measure-2.1.7/leaflet-measure.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-measure-2.1.7/leaflet-measure.min.js"></script>
 
 <script src="nav-arrows.js"></script>
 
@@ -481,15 +487,32 @@ window.Quarto = {
 
 
 <p>Os critérios da Lista Vermelha da IUCN incorporam dois problemas centrais do risco de extinção, reconhecidas como paradigmas da biologia da conservação: <strong>populações em declínio</strong> e <strong>pequenas populações</strong> <span class="citation" data-cites="Caughley1994">(<a href="references.html#ref-Caughley1994" role="doc-biblioref">Caughley 1994</a>)</span>.</p>
-<p>O declínio populacional é frequentemente associado a ameaças como perda de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies.</p>
-<p>O problema de pequenas populações foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo.</p>
-<p>O trabalho discute as implicações dessas duas dimensões para a conservação das espécies, enfatizando a necessidade de estratégias diferenciadas para lidar com populações em declínio e populações pequenas, a fim de mitigar o risco de extinção.</p>
-<p>O critério <code>A</code> está diretamente associado ao paradigma das populações em declínio, ao mensurar reduções no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.</p>
-<p>O critério <code>B</code> reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da Área de Ocorrência (EOO) e da Área de Ocupação (AOO), além de outros fatores como fragmentação severa, flutuações extremas e número reduzido de localizações condicionadas à ameaça. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.</p>
-<p>Os critérios <code>C</code> e <code>D</code> representam diretamente o paradigma das pequenas populações, enfocando o risco intrínseco enfrentado por espécies com poucos indivíduos maduros. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.</p>
-<p>Dessa forma, os critérios da Lista Vermelha capturam diferentes aspectos do risco de extinção, incorporando os processos de declínio, os limites da distribuição geográfica e as vulnerabilidades inerentes a populações pequenas. Juntos, eles formam uma estrutura abrangente e integrada para avaliar a conservação das espécies.</p>
+<ul>
+<li><p>O <mark>declínio populacional</mark> é frequentemente associado a ameaças como perda e fragmentação de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies.</p></li>
+<li><p>O problema de <mark>pequenas populações</mark> foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo.</p></li>
+</ul>
 <section id="os-cinco-critérios" class="level2">
 <h2 class="anchored" data-anchor-id="os-cinco-critérios">Os cinco critérios</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Para uma visão geral dos critérios
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>O critério <code>A</code> está diretamente associado ao paradigma das populações em declínio, ao mensurar <mark>reduções</mark> no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.</p>
+<p>O critério <code>B</code> reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da <mark>Área de Ocorrência (EOO)</mark> e da <mark>Área de Ocupação (AOO)</mark>, além de outros fatores como <mark>fragmentação severa</mark>, <mark>flutuações extremas</mark> e <mark>número reduzido de localizações condicionadas à ameaça</mark>. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como perda de habitat, incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.</p>
+<p>Os critérios <code>C</code> e <code>D</code> representam diretamente o paradigma das <mark>pequenas populações</mark>, enfocando o risco intrínseco enfrentado por espécies com <mark>poucos indivíduos maduros</mark>. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.</p>
+<p>O critério <code>E</code> está relacionado à análise quantitativa do risco de extinção, utilizando modelos estatísticos para estimar a probabilidade de extinção de uma espécie ao longo do tempo. Esse critério considera dados sobre a taxa de declínio populacional, o tamanho da população e sua distribuição geográfica, bem como a variabilidade demográfica e genética. A análise quantitativa permite prever o risco de extinção sob diferentes cenários, levando em conta fatores como mudanças ambientais, perda de habitat, e impactos das intervenções humanas. Ao aplicar modelos de risco, é possível estimar de forma objetiva a probabilidade de uma espécie desaparecer dentro de um intervalo de tempo específico, fornecendo uma base sólida para decisões de conservação e manejo.</p>
+<p>Dessa forma, os critérios da Lista Vermelha capturam diferentes aspectos do risco de extinção, incorporando os processos de declínio, os limites da distribuição geográfica e as vulnerabilidades inerentes a populações pequenas. Juntos, eles formam uma estrutura abrangente e integrada para avaliar o risco de extinção das espécies.</p>
+</div>
+</div>
+</div>
 <p>O protocolo da Lista Vermelha apresenta cinco critérios (<span class="math inline">\(A\)</span>–<span class="math inline">\(E\)</span>):</p>
 <p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="streamline:graph-arrow-decrease-solid" aria-label="Icon graph-arrow-decrease-solid from streamline Iconify.design set." title="Icon graph-arrow-decrease-solid from streamline Iconify.design set."></iconify-icon></span> <span class="math inline">\(A\)</span>: Redução do tamanho da população (passado, presente e/ou projetado)</p>
 <p><span style="font-size: 2em; vertical-align: middle;"><iconify-icon role="img" inline="" icon="tdesign:map-bubble" aria-label="Icon map-bubble from tdesign Iconify.design set." title="Icon map-bubble from tdesign Iconify.design set."></iconify-icon></span> <span class="math inline">\(B\)</span>: Tamanho da distribuição geográfica e fragmentação, poucas localizações condicionadas à ameaça, declínio ou flutuações</p>
@@ -647,16 +670,16 @@ Categorização vs.&nbsp;Enquadramento
 <p>O objetivo da avaliação do EOO não é estimar a quantidade de área ocupada ou potencialmente ocupada de um táxon. Essa medida pode ser verificada pela sua distribuição.</p>
 <p>O EOO serve como uma medida dos riscos aproximada aos quais um táxon está submetido e a lógica subjacente à sua utilização é a constatação de que muitas variáveis ambientais e processos são espacialmente relacionados. Assim, há uma certa expectativa de que as ameaças ocorrentes em um determinado local têm uma probabilidade maior de afetar áreas mais adjascentes do que áreas mais distantes.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Usando o R para gerar o mínimo polígono convexo
+Usando o pacote <code>ConR</code> para gerar o mínimo polígono convexo
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar pacotes</span></span>
@@ -677,39 +700,68 @@ Usando o R para gerar o mínimo polígono convexo
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Criar data.frame no formato esperado por ConR</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(pontos_sf)</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>XY <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">latitude =</span> coords[, <span class="dv">2</span>],</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">longitude =</span> coords[, <span class="dv">1</span>],</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">tax =</span> <span class="fu">rep</span>(<span class="st">"Especie_teste"</span>, <span class="at">length.out =</span> <span class="fu">nrow</span>(coords))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">latitude =</span> coords[, <span class="dv">2</span>],</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">longitude =</span> coords[, <span class="dv">1</span>],</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">tax =</span> <span class="fu">rep</span>(<span class="st">"Especie_teste"</span>, <span class="at">length.out =</span> <span class="fu">nrow</span>(coords))</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Calcular EOO e exportar shapefile temporário</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">EOO.computing</span>(</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  XY,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">export_shp =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">write_shp =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">method.range =</span> <span class="st">"convex.hull"</span>,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">proj_type =</span> <span class="st">"cea"</span>,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">show_progress =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>resultado <span class="ot">&lt;-</span> <span class="fu">EOO.computing</span>(</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    XY,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">export_shp =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">write_shp =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">method.range =</span> <span class="st">"convex.hull"</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">proj_type =</span> <span class="st">"cea"</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">show_progress =</span> <span class="cn">FALSE</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Ler o shapefile gerado</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>eoo_shape <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"shapesIUCN/EOO_poly.shp"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>eoo_shape <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(eoo_shape, <span class="dv">4326</span>)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Visualizar no leaflet</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">"Mapa base"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group =</span> <span class="st">"Imagem de satélite"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addPolygons</span>(<span class="at">data =</span> eoo_shape, <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">weight =</span> <span class="dv">2</span>, <span class="at">fillOpacity =</span> <span class="fl">0.3</span>, <span class="at">group =</span> <span class="st">"EOO"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="at">data =</span> pontos_sf, <span class="at">radius =</span> <span class="dv">5</span>, <span class="at">color =</span> <span class="st">"blue"</span>, <span class="at">group =</span> <span class="st">"Ocorrências"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLayersControl</span>(</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">"Mapa base"</span>, <span class="st">"Imagem de satélite"</span>),</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">overlayGroups =</span> <span class="fu">c</span>(<span class="st">"Ocorrências"</span>, <span class="st">"EOO"</span>),</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">options =</span> <span class="fu">layersControlOptions</span>(<span class="at">collapsed =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>resultado</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$results
+            tax    eoo issue_eoo
+1 Especie_teste 141155        NA
+
+$spatial
+Simple feature collection with 1 feature and 1 field
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: -56.31778 ymin: -23.09143 xmax: -52.13353 ymax: -18.27791
+Geodetic CRS:  WGS 84
+            tax                       geometry
+1 Especie_teste POLYGON ((-52.13578 -21.255...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Ler o shapefile gerado</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>eoo_shape <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"shapesIUCN/EOO_poly.shp"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>eoo_shape <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(eoo_shape, <span class="dv">4326</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Visualizar no leaflet</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">"Mapa base"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addProviderTiles</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      providers<span class="sc">$</span>Esri.WorldImagery, </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Imagem de satélite"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addPolygons</span>(</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> eoo_shape, </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"red"</span>, </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">weight =</span> <span class="dv">2</span>, </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">fillOpacity =</span> <span class="fl">0.3</span>, </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"EOO"</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pontos_sf, </span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">radius =</span> <span class="dv">5</span>, </span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Ocorrências"</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addLayersControl</span>(</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">"Mapa base"</span>, <span class="st">"Imagem de satélite"</span>),</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">overlayGroups =</span> <span class="fu">c</span>(<span class="st">"Ocorrências"</span>, <span class="st">"EOO"</span>),</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">options =</span> <span class="fu">layersControlOptions</span>(<span class="at">collapsed =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5bc403e1f7b162d7d6b0" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-5bc403e1f7b162d7d6b0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"Mapa base",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imagem de satélite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[-52.1357848,-52.1335328,-52.2740682,-52.41480850000001,-52.5557548,-52.69690849999999,-52.8382705,-52.9798422,-53.1216247,-53.26361920000001,-53.4058269,-53.5482489,-53.6908864,-53.8337407,-53.9768129,-54.1201042,-54.2636157,-54.4073487,-54.526354,-54.6452531,-54.7640464,-54.88273399999999,-55.0013163,-55.11979339999999,-55.2381657,-55.3564333,-55.4031776,-55.4498435,-55.4964317,-55.5429428,-55.58937719999999,-55.6357356,-55.6820185,-55.7282265,-55.7743601,-55.8204198,-55.8664063,-55.91232,-55.9581616,-56.0039314,-56.0496302,-56.0952583,-56.1093701,-56.12345329999999,-56.1375081,-56.151535,-56.1655342,-56.17950589999999,-56.1934505,-56.2073682,-56.2212593,-56.2351242,-56.248963,-56.26277599999999,-56.27656349999999,-56.2903259,-56.30406319999999,-56.31777590000001,-56.2244422,-56.1310629,-56.0376379,-55.9441673,-55.8506508,-55.7570884,-55.66347999999999,-55.5698256,-55.476125,-55.3823781,-55.288585,-55.1947454,-55.1008594,-55.00692679999999,-54.9129476,-54.81892159999999,-54.6533711,-54.4876671,-54.32180919999999,-54.15579679999999,-53.98962940000001,-53.8233065,-53.6568277,-53.4901923,-53.3234,-53.1564503,-52.9893426,-52.8220764,-52.65465139999999,-52.487067,-52.31932279999999,-52.1514182,-52.1491985,-52.1469744,-52.1447457,-52.14251249999999,-52.1402746,-52.1380321,-52.1357848],"lat":[-21.2552259,-21.4112767,-21.5171988,-21.6230031,-21.7286887,-21.8342549,-21.9397009,-22.0450259,-22.150229,-22.2553093,-22.3602662,-22.4650986,-22.5698059,-22.6743871,-22.7788415,-22.8831681,-22.9873661,-23.0914347,-23.031361,-22.9711983,-22.91094709999999,-22.8506076,-22.7901803,-22.7296654,-22.6690632,-22.6083741,-22.4923798,-22.376372,-22.2603509,-22.1443165,-22.028269,-21.9122084,-21.7961348,-21.6800484,-21.5639491,-21.4478372,-21.3317128,-21.2155758,-21.0994264,-20.9832648,-20.8670909,-20.750905,-20.5963512,-20.4417963,-20.2872403,-20.1326832,-19.9781249,-19.8235656,-19.6690051,-19.5144436,-19.3598811,-19.2053174,-19.0507528,-18.8961871,-18.7416204,-18.5870527,-18.432484,-18.2779143,-18.3201607,-18.3623618,-18.4045173,-18.4466272,-18.4886913,-18.5307095,-18.5726816,-18.6146075,-18.6564871,-18.6983202,-18.7401067,-18.7818465,-18.8235394,-18.8651853,-18.906784,-18.9483355,-19.0253779,-19.1022728,-19.1790194,-19.2556168,-19.3320643,-19.4083612,-19.4845066,-19.5604997,-19.6363399,-19.7120261,-19.7875578,-19.8629341,-19.9381542,-20.01321729999999,-20.0881226,-20.1628694,-20.3189204,-20.4749714,-20.6310224,-20.7870733,-20.9431242,-21.0991751,-21.2552259]}]]],null,"EOO",{"interactive":true,"className":"","stroke":true,"color":"red","weight":2,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.3,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[-20.75090496208893,-20.1628693780173,-23.09143468393082,-20.4804024704756,-21.33747899216288,-18.27791425615386,-18.94833551067187,-22.60837413423107,-21.4112767479813,-19.76099773502672],[-56.09525832850017,-52.15141820275917,-54.40734872518048,-53.05989244997292,-54.85189668022375,-56.31777593219702,-54.81892160731891,-55.35643330184442,-52.13353276467228,-53.53147984687698],5,null,"Ocorrências",{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Mapa base","Imagem de satélite"],["Ocorrências","EOO"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[-23.0914347,-18.27791425615386],"lng":[-56.31777593219702,-52.13353276467228]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-5bc403e1f7b162d7d6b0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5bc403e1f7b162d7d6b0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"Mapa base",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imagem de satélite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[-52.1357848,-52.1335328,-52.2740682,-52.41480850000001,-52.5557548,-52.69690849999999,-52.8382705,-52.9798422,-53.1216247,-53.26361920000001,-53.4058269,-53.5482489,-53.6908864,-53.8337407,-53.9768129,-54.1201042,-54.2636157,-54.4073487,-54.526354,-54.6452531,-54.7640464,-54.88273399999999,-55.0013163,-55.11979339999999,-55.2381657,-55.3564333,-55.4031776,-55.4498435,-55.4964317,-55.5429428,-55.58937719999999,-55.6357356,-55.6820185,-55.7282265,-55.7743601,-55.8204198,-55.8664063,-55.91232,-55.9581616,-56.0039314,-56.0496302,-56.0952583,-56.1093701,-56.12345329999999,-56.1375081,-56.151535,-56.1655342,-56.17950589999999,-56.1934505,-56.2073682,-56.2212593,-56.2351242,-56.248963,-56.26277599999999,-56.27656349999999,-56.2903259,-56.30406319999999,-56.31777590000001,-56.2244422,-56.1310629,-56.0376379,-55.9441673,-55.8506508,-55.7570884,-55.66347999999999,-55.5698256,-55.476125,-55.3823781,-55.288585,-55.1947454,-55.1008594,-55.00692679999999,-54.9129476,-54.81892159999999,-54.6533711,-54.4876671,-54.32180919999999,-54.15579679999999,-53.98962940000001,-53.8233065,-53.6568277,-53.4901923,-53.3234,-53.1564503,-52.9893426,-52.8220764,-52.65465139999999,-52.487067,-52.31932279999999,-52.1514182,-52.1491985,-52.1469744,-52.1447457,-52.14251249999999,-52.1402746,-52.1380321,-52.1357848],"lat":[-21.2552259,-21.4112767,-21.5171988,-21.6230031,-21.7286887,-21.8342549,-21.9397009,-22.0450259,-22.150229,-22.2553093,-22.3602662,-22.4650986,-22.5698059,-22.6743871,-22.7788415,-22.8831681,-22.9873661,-23.0914347,-23.031361,-22.9711983,-22.91094709999999,-22.8506076,-22.7901803,-22.7296654,-22.6690632,-22.6083741,-22.4923798,-22.376372,-22.2603509,-22.1443165,-22.028269,-21.9122084,-21.7961348,-21.6800484,-21.5639491,-21.4478372,-21.3317128,-21.2155758,-21.0994264,-20.9832648,-20.8670909,-20.750905,-20.5963512,-20.4417963,-20.2872403,-20.1326832,-19.9781249,-19.8235656,-19.6690051,-19.5144436,-19.3598811,-19.2053174,-19.0507528,-18.8961871,-18.7416204,-18.5870527,-18.432484,-18.2779143,-18.3201607,-18.3623618,-18.4045173,-18.4466272,-18.4886913,-18.5307095,-18.5726816,-18.6146075,-18.6564871,-18.6983202,-18.7401067,-18.7818465,-18.8235394,-18.8651853,-18.906784,-18.9483355,-19.0253779,-19.1022728,-19.1790194,-19.2556168,-19.3320643,-19.4083612,-19.4845066,-19.5604997,-19.6363399,-19.7120261,-19.7875578,-19.8629341,-19.9381542,-20.01321729999999,-20.0881226,-20.1628694,-20.3189204,-20.4749714,-20.6310224,-20.7870733,-20.9431242,-21.0991751,-21.2552259]}]]],null,"EOO",{"interactive":true,"className":"","stroke":true,"color":"red","weight":2,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.3,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[-20.75090496208893,-20.1628693780173,-23.09143468393082,-20.4804024704756,-21.33747899216288,-18.27791425615386,-18.94833551067187,-22.60837413423107,-21.4112767479813,-19.76099773502672],[-56.09525832850017,-52.15141820275917,-54.40734872518048,-53.05989244997292,-54.85189668022375,-56.31777593219702,-54.81892160731891,-55.35643330184442,-52.13353276467228,-53.53147984687698],5,null,"Ocorrências",{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Mapa base","Imagem de satélite"],["Ocorrências","EOO"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[-23.0914347,-18.27791425615386],"lng":[-56.31777593219702,-52.13353276467228]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -723,6 +775,258 @@ Usando o R para gerar o mínimo polígono convexo
 <li><p>o primeiro papel do AOO é como uma medida do “efeito seguro”, pelo qual táxons que ocorrem em muitos ou grandes trechos em uma paisagem são protegidos contra os riscos de ameaças espacialmente explícitas.</p></li>
 <li><p>Há, em geral, uma correlação positiva entre a AOO e o tamanho populacional. A veracidade dessa correlação para qualquer táxon depende da variação espacial na sua densidade populacional. Não obstante, a AOO pode ser um parâmetro útil para identificar o risco de extinção de táxons quando não há dados disponíveis para estimar o tamanho da população e sua estrutura.</p></li>
 </ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Usando o pacote <code>sf</code> para gerar o AOO
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Primeiro, um exemplo inicial:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(units)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Definir a área de interesse (um retângulo simples)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Vamos criar uma área com limites de coordenadas fictícias em WGS84 (EPSG:4326)</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>area <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_polygon</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">list</span>(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="fu">matrix</span>(</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                <span class="fu">c</span>(</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">-</span><span class="fl">43.0</span>, <span class="sc">-</span><span class="fl">22.9</span>, <span class="co"># Ponto 1 (lon, lat)</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">-</span><span class="fl">42.9</span>, <span class="sc">-</span><span class="fl">22.9</span>, <span class="co"># Ponto 2</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">-</span><span class="fl">42.9</span>, <span class="sc">-</span><span class="fl">22.8</span>, <span class="co"># Ponto 3</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">-</span><span class="fl">43.0</span>, <span class="sc">-</span><span class="fl">22.8</span>, <span class="co"># Ponto 4</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                    <span class="sc">-</span><span class="fl">43.0</span>, <span class="sc">-</span><span class="fl">22.9</span> <span class="co"># Fechar o polígono</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>                ),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">ncol =</span> <span class="dv">2</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>                <span class="at">byrow =</span> <span class="cn">TRUE</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            )</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Atribuindo CRS WGS84 (EPSG:4326) à área</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(area) <span class="ot">&lt;-</span> <span class="dv">4326</span> <span class="co"># WGS84</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Transformar a área para a projeção UTM (zona 23S, que é uma projeção comum para o Brasil)</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>area_utm <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(area, <span class="at">crs =</span> <span class="dv">32723</span>) <span class="co"># Sistema UTM, zona 23S</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Gerar pontos dentro da área</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>pontos <span class="ot">&lt;-</span> <span class="fu">st_sample</span>(area_utm, <span class="at">size =</span> <span class="dv">20</span>) <span class="co"># Gerar 20 pontos dentro da área</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Criar o grid com células de 2 km</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>cellsize <span class="ot">&lt;-</span> <span class="dv">2000</span> <span class="co"># 2000 metros = 2 km por célula</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>bbox <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(area_utm)</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>grid <span class="ot">&lt;-</span> <span class="fu">st_make_grid</span>(</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    area_utm,</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">cellsize =</span> cellsize,</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">square =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">offset =</span> <span class="fu">c</span>(bbox[<span class="st">"xmin"</span>], bbox[<span class="st">"ymin"</span>])</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Verificar quais células do grid contêm pontos</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>intersections <span class="ot">&lt;-</span> <span class="fu">st_intersects</span>(grid, pontos)</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>grid_ocupado <span class="ot">&lt;-</span> grid[<span class="fu">lengths</span>(intersections) <span class="sc">&gt;</span> <span class="dv">0</span>] <span class="co"># Seleciona as células com pontos</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Visualização</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> grid, </span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> <span class="st">"lightgray"</span>, </span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>      <span class="at">lwd =</span> <span class="fl">0.5</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">+</span> <span class="co"># Mostrar o grid</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> grid_ocupado, </span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> <span class="st">"red"</span>, </span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>      <span class="at">lwd =</span> <span class="fl">0.5</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">+</span> <span class="co"># Células ocupadas</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_sf</span>(</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pontos, </span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>      <span class="at">size =</span> <span class="dv">3</span></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">+</span> <span class="co"># Mostrar os pontos</span></span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="criterios_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Área total do grid (em km²)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>area_total_grid <span class="ot">&lt;-</span> <span class="fu">set_units</span>(<span class="fu">sum</span>(<span class="fu">st_area</span>(grid)), <span class="st">"km^2"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>area_total_grid</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>144 [km^2]</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Área total das células ocupadas (em km²)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>area_total_ocupado <span class="ot">&lt;-</span> <span class="fu">set_units</span>(<span class="fu">sum</span>(<span class="fu">st_area</span>(grid_ocupado)), <span class="st">"km^2"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>area_total_ocupado</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>72 [km^2]</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geobr)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Estado do MS e pontos aleatórios</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>ms <span class="ot">&lt;-</span> <span class="fu">read_state</span>(</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">code_state =</span> <span class="st">"MS"</span>, </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> <span class="dv">2020</span>, </span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">showProgress =</span> <span class="cn">FALSE</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>ms <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(ms, <span class="dv">4326</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>pontos <span class="ot">&lt;-</span> <span class="fu">st_sample</span>(ms, <span class="at">size =</span> <span class="dv">10</span>)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>pontos_sf <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(<span class="at">geometry =</span> pontos, <span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Transformar para projeção métrica (para cálculo em metros)</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>pontos_proj <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(pontos_sf, <span class="dv">3857</span>)</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Criar grade de 2km x 2km ao redor dos pontos com offset no canto inferior esquerdo</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>cellsize <span class="ot">&lt;-</span> <span class="dv">2000</span> <span class="co"># 2 km</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>bbox_proj <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(pontos_proj)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>grid <span class="ot">&lt;-</span> <span class="fu">st_make_grid</span>(</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    pontos_proj,</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">cellsize =</span> cellsize,</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">square =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">offset =</span> <span class="fu">c</span>(</span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>      bbox_proj[<span class="st">"xmin"</span>], </span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>      bbox_proj[<span class="st">"ymin"</span>]</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Intersecção do grid com os pontos</span></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>intersections <span class="ot">&lt;-</span> <span class="fu">st_intersects</span>(grid, pontos_proj)</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>grid_intersect <span class="ot">&lt;-</span> grid[<span class="fu">lengths</span>(intersections) <span class="sc">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>aoo_grid <span class="ot">&lt;-</span> <span class="fu">st_sf</span>(<span class="at">geometry =</span> grid_intersect)</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Calcular área da AOO (em km²)</span></span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>aoo_area_km2 <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">st_area</span>(aoo_grid)) <span class="sc">/</span> <span class="fl">1e6</span></span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>  <span class="st">"AOO estimado:"</span>, </span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(aoo_area_km2, <span class="dv">2</span>), </span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>  <span class="st">"km²"</span></span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "AOO estimado: 40 km²"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Visualização: todos os pontos e AOO</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">"Mapa base"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addProviderTiles</span>(</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>      providers<span class="sc">$</span>Esri.WorldImagery, </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Imagem de satélite"</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addPolygons</span>(</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">st_transform</span>(aoo_grid, <span class="dv">4326</span>), </span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"green"</span>, </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">weight =</span> <span class="dv">2</span>, </span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">fillOpacity =</span> <span class="fl">0.3</span>, </span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"AOO"</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pontos_sf, </span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">radius =</span> <span class="dv">5</span>, </span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Ocorrências"</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addLayersControl</span>(</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">"Mapa base"</span>, <span class="st">"Imagem de satélite"</span>),</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">overlayGroups =</span> <span class="fu">c</span>(<span class="st">"Ocorrências"</span>, <span class="st">"AOO"</span>),</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">options =</span> <span class="fu">layersControlOptions</span>(<span class="at">collapsed =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-f4997105858173027594" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f4997105858173027594">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"Mapa base",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imagem de satélite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[-54.41334752986363,-54.39538122418124,-54.39538122418124,-54.41334752986363,-54.41334752986363],"lat":[-23.09143468393083,-23.09143468393083,-23.07490682009916,-23.07490682009916,-23.09143468393083]}]],[[{"lng":[-55.36556173103033,-55.34759542534793,-55.34759542534793,-55.36556173103033,-55.36556173103033],"lat":[-22.61130602444449,-22.61130602444449,-22.59471971063808,-22.59471971063808,-22.61130602444449]}]],[[{"lng":[-52.14959301388244,-52.13162670820005,-52.13162670820005,-52.14959301388244,-52.14959301388244],"lat":[-21.41205294126764,-21.41205294126764,-21.3953257300996,-21.3953257300996,-21.41205294126764]}]],[[{"lng":[-54.8625051719234,-54.844538866241,-54.844538866241,-54.8625051719234,-54.8625051719234],"lat":[-21.34513262011225,-21.34513262011225,-21.32839776198281,-21.32839776198281,-21.34513262011225]}]],[[{"lng":[-56.10218026400833,-56.08421395832594,-56.08421395832594,-56.10218026400833,-56.10218026400833],"lat":[-20.75828486307197,-20.75828486307197,-20.74148392527462,-20.74148392527462,-20.75828486307197]}]],[[{"lng":[-53.06587460368435,-53.04790829800196,-53.04790829800196,-53.06587460368435,-53.06587460368435],"lat":[-20.4892466475285,-20.4892466475285,-20.47241600466464,-20.47241600466464,-20.4892466475285]}]],[[{"lng":[-52.16755931956483,-52.14959301388244,-52.14959301388244,-52.16755931956483,-52.16755931956483],"lat":[-20.1691499857207,-20.1691499857207,-20.15228448386992,-20.15228448386992,-20.1691499857207]}]],[[{"lng":[-53.5329985514265,-53.51503224574411,-53.51503224574411,-53.5329985514265,-53.5329985514265],"lat":[-19.76387761428096,-19.76387761428096,-19.74696873308747,-19.74696873308747,-19.76387761428096]}]],[[{"lng":[-54.82657256055861,-54.80860625487622,-54.80860625487622,-54.82657256055861,-54.82657256055861],"lat":[-18.95025283753758,-18.95025283753758,-18.93325942458884,-18.93325942458884,-18.95025283753758]}]],[[{"lng":[-56.31777593219702,-56.29980962651463,-56.29980962651463,-56.31777593219702,-56.31777593219702],"lat":[-18.28624062283619,-18.28624062283619,-18.26918076126708,-18.26918076126708,-18.28624062283619]}]]],null,"AOO",{"interactive":true,"className":"","stroke":true,"color":"green","weight":2,"opacity":0.5,"fill":true,"fillColor":"green","fillOpacity":0.3,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[-20.75090496208893,-20.1628693780173,-23.09143468393082,-20.4804024704756,-21.33747899216288,-18.27791425615386,-18.94833551067187,-22.60837413423107,-21.4112767479813,-19.76099773502672],[-56.09525832850017,-52.15141820275917,-54.40734872518048,-53.05989244997292,-54.85189668022375,-56.31777593219702,-54.81892160731891,-55.35643330184442,-52.13353276467228,-53.53147984687698],5,null,"Ocorrências",{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Mapa base","Imagem de satélite"],["Ocorrências","AOO"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[-23.09143468393083,-18.26918076126708],"lng":[-56.31777593219702,-52.13162670820005]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Usar apenas o primeiro ponto</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>pontos_sf_single <span class="ot">&lt;-</span> pontos_sf[<span class="dv">1</span>, ]</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>ponto_unico_proj <span class="ot">&lt;-</span> pontos_proj[<span class="dv">1</span>, ]</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 8. Buffer circular de 1km ao redor do ponto</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>buffer_size <span class="ot">&lt;-</span> <span class="dv">1000</span> <span class="co"># metros</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>buffer_circular <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(ponto_unico_proj, <span class="at">dist =</span> buffer_size)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 9. Bounding box do buffer circular</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>bbox_buffer <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(buffer_circular)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 10. Criar quadrado a partir do bounding box</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>min_x <span class="ot">&lt;-</span> bbox_buffer[<span class="st">"xmin"</span>]</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>max_x <span class="ot">&lt;-</span> bbox_buffer[<span class="st">"xmax"</span>]</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>min_y <span class="ot">&lt;-</span> bbox_buffer[<span class="st">"ymin"</span>]</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>max_y <span class="ot">&lt;-</span> bbox_buffer[<span class="st">"ymax"</span>]</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>lado_quadrado <span class="ot">&lt;-</span> <span class="fu">max</span>(max_x <span class="sc">-</span> min_x, max_y <span class="sc">-</span> min_y)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>quadrado <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_polygon</span>(<span class="fu">list</span>(<span class="fu">matrix</span>(<span class="fu">c</span>(</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>        min_x, min_y,</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>        min_x <span class="sc">+</span> lado_quadrado, min_y,</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>        min_x <span class="sc">+</span> lado_quadrado, min_y <span class="sc">+</span> lado_quadrado,</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>        min_x, min_y <span class="sc">+</span> lado_quadrado,</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>        min_x, min_y</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    ), <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>))),</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">crs =</span> <span class="fu">st_crs</span>(ponto_unico_proj)</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 11. Visualização: buffer quadrado do ponto único</span></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">"Mapa base"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addProviderTiles</span>(</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>      providers<span class="sc">$</span>Esri.WorldImagery, </span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Imagem de satélite"</span></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addPolygons</span>(</span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> <span class="fu">st_transform</span>(quadrado, <span class="dv">4326</span>), </span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"red"</span>, </span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>      <span class="at">weight =</span> <span class="dv">2</span>, </span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>      <span class="at">fillOpacity =</span> <span class="fl">0.3</span>, </span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Buffer Quadrado (Ponto Único)"</span></span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> pontos_sf_single, </span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>      <span class="at">radius =</span> <span class="dv">5</span>, </span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">"blue"</span>, </span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a>      <span class="at">group =</span> <span class="st">"Ocorrência única"</span></span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">|&gt;</span></span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addLayersControl</span>(</span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>        <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">"Mapa base"</span>, <span class="st">"Imagem de satélite"</span>),</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a>        <span class="at">overlayGroups =</span> <span class="fu">c</span>(<span class="st">"Ocorrência única"</span>, <span class="st">"Buffer Quadrado (Ponto Único)"</span>),</span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>        <span class="at">options =</span> <span class="fu">layersControlOptions</span>(<span class="at">collapsed =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">addMeasure</span>(</span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>        <span class="at">primaryLengthUnit =</span> <span class="st">"kilometers"</span>,</span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>        <span class="at">secondaryLengthUnit =</span> <span class="st">"meters"</span>,</span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>        <span class="at">primaryAreaUnit =</span> <span class="st">"sqmeters"</span>,</span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>        <span class="at">secondaryAreaUnit =</span> <span class="st">"hectares"</span></span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-01f665b989270420b066" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-01f665b989270420b066">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"Mapa base",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imagem de satélite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[-56.10424148134136,-56.08627517565897,-56.08627517565897,-56.10424148134136,-56.10424148134136],"lat":[-20.75930514098766,-20.75930514098766,-20.74250431654692,-20.74250431654692,-20.75930514098766]}]]],null,"Buffer Quadrado (Ponto Único)",{"interactive":true,"className":"","stroke":true,"color":"red","weight":2,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.3,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[-20.75090496208893,-56.09525832850017,5,null,"Ocorrência única",{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Mapa base","Imagem de satélite"],["Ocorrência única","Buffer Quadrado (Ponto Único)"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addMeasure","args":[{"position":"topright","primaryLengthUnit":"kilometers","secondaryLengthUnit":"meters","primaryAreaUnit":"sqmeters","secondaryAreaUnit":"hectares","activeColor":"#ABE67E","completedColor":"#C8F2BE","popupOptions":{"className":"leaflet-measure-resultpopup","autoPanPadding":[10,10]},"captureZIndex":10000,"localization":"en","decPoint":".","thousandsSep":","}]}],"limits":{"lat":[-20.75930514098766,-20.74250431654692],"lng":[-56.10424148134136,-56.08627517565897]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="subpopulação" class="level3">
 <h3 class="anchored" data-anchor-id="subpopulação">Subpopulação</h3>
@@ -764,7 +1068,7 @@ Usando o R para gerar o mínimo polígono convexo
 <div class="no-row-height column-margin column-container"><div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="vortex.jpg" class="img-fluid figure-img" width="294"></p>
+<p><img src="vortex.jpg" class="img-fluid figure-img"></p>
 <figcaption>Software Vortex 10, para simulação estocástica de processos de extinção.</figcaption>
 </figure>
 </div>

@@ -2,21 +2,26 @@
 
 Os critérios da Lista Vermelha da IUCN incorporam dois problemas centrais do risco de extinção, reconhecidas como paradigmas da biologia da conservação: **populações em declínio** e **pequenas populações** [@Caughley1994].
 
-O declínio populacional é frequentemente associado a ameaças como perda de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies. 
+- O <mark>declínio populacional</mark> é frequentemente associado a ameaças como perda e fragmentação de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies. 
 
-O problema de pequenas populações foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo. 
-
-O trabalho discute as implicações dessas duas dimensões para a conservação das espécies, enfatizando a necessidade de estratégias diferenciadas para lidar com populações em declínio e populações pequenas, a fim de mitigar o risco de extinção.
-
-O critério `A` está diretamente associado ao paradigma das populações em declínio, ao mensurar reduções no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.
-
-O critério `B` reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da Área de Ocorrência (EOO) e da Área de Ocupação (AOO), além de outros fatores como fragmentação severa, flutuações extremas e número reduzido de localizações condicionadas à ameaça. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.
-
-Os critérios `C` e `D` representam diretamente o paradigma das pequenas populações, enfocando o risco intrínseco enfrentado por espécies com poucos indivíduos maduros. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.
-
-Dessa forma, os critérios da Lista Vermelha capturam diferentes aspectos do risco de extinção, incorporando os processos de declínio, os limites da distribuição geográfica e as vulnerabilidades inerentes a populações pequenas. Juntos, eles formam uma estrutura abrangente e integrada para avaliar a conservação das espécies.
+- O problema de <mark>pequenas populações</mark> foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo. 
 
 ## Os cinco critérios
+
+:::{.callout-tip collapse="true"}
+
+## Para uma visão geral dos critérios
+
+O critério `A` está diretamente associado ao paradigma das populações em declínio, ao mensurar <mark>reduções</mark> no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.
+
+O critério `B` reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da <mark>Área de Ocorrência (EOO)</mark> e da <mark>Área de Ocupação (AOO)</mark>, além de outros fatores como <mark>fragmentação severa</mark>, <mark>flutuações extremas</mark> e <mark>número reduzido de localizações condicionadas à ameaça</mark>. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como perda de habitat, incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.
+
+Os critérios `C` e `D` representam diretamente o paradigma das <mark>pequenas populações</mark>, enfocando o risco intrínseco enfrentado por espécies com <mark>poucos indivíduos maduros</mark>. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.
+
+O critério `E` está relacionado à análise quantitativa do risco de extinção, utilizando modelos estatísticos para estimar a probabilidade de extinção de uma espécie ao longo do tempo. Esse critério considera dados sobre a taxa de declínio populacional, o tamanho da população e sua distribuição geográfica, bem como a variabilidade demográfica e genética. A análise quantitativa permite prever o risco de extinção sob diferentes cenários, levando em conta fatores como mudanças ambientais, perda de habitat, e impactos das intervenções humanas. Ao aplicar modelos de risco, é possível estimar de forma objetiva a probabilidade de uma espécie desaparecer dentro de um intervalo de tempo específico, fornecendo uma base sólida para decisões de conservação e manejo.
+
+Dessa forma, os critérios da Lista Vermelha capturam diferentes aspectos do risco de extinção, incorporando os processos de declínio, os limites da distribuição geográfica e as vulnerabilidades inerentes a populações pequenas. Juntos, eles formam uma estrutura abrangente e integrada para avaliar o risco de extinção das espécies.
+:::
 
 O protocolo da Lista Vermelha apresenta cinco critérios ($A$–$E$):
 
@@ -157,7 +162,7 @@ O EOO serve como uma medida dos riscos aproximada aos quais um táxon está subm
 
 :::{.callout-tip collapse="true"}
 
-## Usando o R para gerar o mínimo polígono convexo
+## Usando o pacote `ConR` para gerar o mínimo polígono convexo
 
 ```{r}
 #| warning: false
@@ -180,20 +185,22 @@ pontos_sf <- st_sf(geometry = pontos, crs = 4326)
 # 3. Criar data.frame no formato esperado por ConR
 coords <- st_coordinates(pontos_sf)
 XY <- data.frame(
-  latitude = coords[, 2],
-  longitude = coords[, 1],
-  tax = rep("Especie_teste", length.out = nrow(coords))
+    latitude = coords[, 2],
+    longitude = coords[, 1],
+    tax = rep("Especie_teste", length.out = nrow(coords))
 )
 
 # 4. Calcular EOO e exportar shapefile temporário
-res <- EOO.computing(
-  XY,
-  export_shp = TRUE,
-  write_shp = TRUE,
-  method.range = "convex.hull",
-  proj_type = "cea",
-  show_progress = FALSE
+resultado <- EOO.computing(
+    XY,
+    export_shp = TRUE,
+    write_shp = TRUE,
+    method.range = "convex.hull",
+    proj_type = "cea",
+    show_progress = FALSE
 )
+
+resultado
 
 # 5. Ler o shapefile gerado
 eoo_shape <- st_read("shapesIUCN/EOO_poly.shp", quiet = TRUE)
@@ -201,15 +208,29 @@ eoo_shape <- st_transform(eoo_shape, 4326)
 
 # 6. Visualizar no leaflet
 leaflet() |>
-  addTiles(group = "Mapa base") |>
-  addProviderTiles(providers$Esri.WorldImagery, group = "Imagem de satélite") |>
-  addPolygons(data = eoo_shape, color = "red", weight = 2, fillOpacity = 0.3, group = "EOO") |>
-  addCircleMarkers(data = pontos_sf, radius = 5, color = "blue", group = "Ocorrências") |>
-  addLayersControl(
-    baseGroups = c("Mapa base", "Imagem de satélite"),
-    overlayGroups = c("Ocorrências", "EOO"),
-    options = layersControlOptions(collapsed = FALSE)
-  )
+    addTiles(group = "Mapa base") |>
+    addProviderTiles(
+      providers$Esri.WorldImagery, 
+      group = "Imagem de satélite"
+      ) |>
+    addPolygons(
+      data = eoo_shape, 
+      color = "red", 
+      weight = 2, 
+      fillOpacity = 0.3, 
+      group = "EOO"
+      ) |>
+    addCircleMarkers(
+      data = pontos_sf, 
+      radius = 5, 
+      color = "blue", 
+      group = "Ocorrências"
+      ) |>
+    addLayersControl(
+        baseGroups = c("Mapa base", "Imagem de satélite"),
+        overlayGroups = c("Ocorrências", "EOO"),
+        options = layersControlOptions(collapsed = FALSE)
+    )
 
 ```
 
@@ -222,6 +243,240 @@ A **Área de Ocupação (AOO)** é um parâmetro que representa a área de habit
 1. o primeiro papel do AOO é como uma medida do "efeito seguro", pelo qual táxons que ocorrem em muitos ou grandes trechos em uma paisagem são protegidos contra os riscos de ameaças espacialmente explícitas.
 
 2. Há, em geral, uma correlação positiva entre a AOO e o tamanho populacional. A veracidade dessa correlação para qualquer táxon depende da variação espacial na sua densidade populacional. Não obstante, a AOO pode ser um parâmetro útil para identificar o risco de extinção de táxons quando não há dados disponíveis para estimar o tamanho da população e sua estrutura.
+
+:::{.callout-tip collapse="true"}
+
+## Usando o pacote `sf` para gerar o AOO
+
+Primeiro, um exemplo inicial:
+
+```{r}
+#| warning: false
+
+library(sf)
+library(ggplot2)
+library(units)
+
+# 1. Definir a área de interesse (um retângulo simples)
+# Vamos criar uma área com limites de coordenadas fictícias em WGS84 (EPSG:4326)
+area <- st_sfc(
+    st_polygon(
+        list(
+            matrix(
+                c(
+                    -43.0, -22.9, # Ponto 1 (lon, lat)
+                    -42.9, -22.9, # Ponto 2
+                    -42.9, -22.8, # Ponto 3
+                    -43.0, -22.8, # Ponto 4
+                    -43.0, -22.9 # Fechar o polígono
+                ),
+                ncol = 2,
+                byrow = TRUE
+            )
+        )
+    )
+)
+
+# Atribuindo CRS WGS84 (EPSG:4326) à área
+st_crs(area) <- 4326 # WGS84
+
+# 2. Transformar a área para a projeção UTM (zona 23S, que é uma projeção comum para o Brasil)
+area_utm <- st_transform(area, crs = 32723) # Sistema UTM, zona 23S
+
+# 3. Gerar pontos dentro da área
+pontos <- st_sample(area_utm, size = 20) # Gerar 20 pontos dentro da área
+
+# 4. Criar o grid com células de 2 km
+cellsize <- 2000 # 2000 metros = 2 km por célula
+
+bbox <- st_bbox(area_utm)
+
+grid <- st_make_grid(
+    area_utm,
+    cellsize = cellsize,
+    square = TRUE,
+    offset = c(bbox["xmin"], bbox["ymin"])
+)
+
+# 5. Verificar quais células do grid contêm pontos
+intersections <- st_intersects(grid, pontos)
+grid_ocupado <- grid[lengths(intersections) > 0] # Seleciona as células com pontos
+
+# 6. Visualização
+ggplot() +
+    geom_sf(
+      data = grid, 
+      fill = "lightgray", 
+      color = "black", 
+      lwd = 0.5
+      ) + # Mostrar o grid
+    geom_sf(
+      data = grid_ocupado, 
+      fill = "red", 
+      color = "black", 
+      lwd = 0.5
+      ) + # Células ocupadas
+    geom_sf(
+      data = pontos, 
+      color = "blue", 
+      size = 3
+      ) + # Mostrar os pontos
+    theme_minimal()
+
+# Área total do grid (em km²)
+area_total_grid <- set_units(sum(st_area(grid)), "km^2")
+area_total_grid
+
+# Área total das células ocupadas (em km²)
+area_total_ocupado <- set_units(sum(st_area(grid_ocupado)), "km^2")
+area_total_ocupado
+
+```
+
+
+
+```{r}
+#| warning: false
+
+library(sf)
+library(geobr)
+library(leaflet)
+
+# 1. Estado do MS e pontos aleatórios
+ms <- read_state(
+  code_state = "MS", 
+  year = 2020, 
+  showProgress = FALSE
+  )
+ms <- st_transform(ms, 4326)
+
+set.seed(42)
+pontos <- st_sample(ms, size = 10)
+pontos_sf <- st_sf(geometry = pontos, crs = 4326)
+
+# 2. Transformar para projeção métrica (para cálculo em metros)
+pontos_proj <- st_transform(pontos_sf, 3857)
+
+# 3. Criar grade de 2km x 2km ao redor dos pontos com offset no canto inferior esquerdo
+cellsize <- 2000 # 2 km
+bbox_proj <- st_bbox(pontos_proj)
+
+grid <- st_make_grid(
+    pontos_proj,
+    cellsize = cellsize,
+    square = TRUE,
+    offset = c(
+      bbox_proj["xmin"], 
+      bbox_proj["ymin"]
+      )
+)
+
+# 4. Intersecção do grid com os pontos
+intersections <- st_intersects(grid, pontos_proj)
+grid_intersect <- grid[lengths(intersections) > 0]
+aoo_grid <- st_sf(geometry = grid_intersect)
+
+# 5. Calcular área da AOO (em km²)
+aoo_area_km2 <- sum(st_area(aoo_grid)) / 1e6
+print(
+  paste(
+  "AOO estimado:", 
+  round(aoo_area_km2, 2), 
+  "km²"
+  )
+  )
+
+# 6. Visualização: todos os pontos e AOO
+leaflet() |>
+    addTiles(group = "Mapa base") |>
+    addProviderTiles(
+      providers$Esri.WorldImagery, 
+      group = "Imagem de satélite"
+      ) |>
+    addPolygons(
+      data = st_transform(aoo_grid, 4326), 
+      color = "green", 
+      weight = 2, 
+      fillOpacity = 0.3, 
+      group = "AOO"
+      ) |>
+    addCircleMarkers(
+      data = pontos_sf, 
+      radius = 5, 
+      color = "blue", 
+      group = "Ocorrências"
+      ) |>
+    addLayersControl(
+        baseGroups = c("Mapa base", "Imagem de satélite"),
+        overlayGroups = c("Ocorrências", "AOO"),
+        options = layersControlOptions(collapsed = FALSE)
+    )
+
+# 7. Usar apenas o primeiro ponto
+pontos_sf_single <- pontos_sf[1, ]
+ponto_unico_proj <- pontos_proj[1, ]
+
+# 8. Buffer circular de 1km ao redor do ponto
+buffer_size <- 1000 # metros
+buffer_circular <- st_buffer(ponto_unico_proj, dist = buffer_size)
+
+# 9. Bounding box do buffer circular
+bbox_buffer <- st_bbox(buffer_circular)
+
+# 10. Criar quadrado a partir do bounding box
+min_x <- bbox_buffer["xmin"]
+max_x <- bbox_buffer["xmax"]
+min_y <- bbox_buffer["ymin"]
+max_y <- bbox_buffer["ymax"]
+
+lado_quadrado <- max(max_x - min_x, max_y - min_y)
+
+quadrado <- st_sfc(
+    st_polygon(list(matrix(c(
+        min_x, min_y,
+        min_x + lado_quadrado, min_y,
+        min_x + lado_quadrado, min_y + lado_quadrado,
+        min_x, min_y + lado_quadrado,
+        min_x, min_y
+    ), ncol = 2, byrow = TRUE))),
+    crs = st_crs(ponto_unico_proj)
+)
+
+# 11. Visualização: buffer quadrado do ponto único
+leaflet() |>
+    addTiles(group = "Mapa base") |>
+    addProviderTiles(
+      providers$Esri.WorldImagery, 
+      group = "Imagem de satélite"
+      ) |>
+    addPolygons(
+      data = st_transform(quadrado, 4326), 
+      color = "red", 
+      weight = 2, 
+      fillOpacity = 0.3, 
+      group = "Buffer Quadrado (Ponto Único)"
+      ) |>
+    addCircleMarkers(
+      data = pontos_sf_single, 
+      radius = 5, 
+      color = "blue", 
+      group = "Ocorrência única"
+      ) |>
+    addLayersControl(
+        baseGroups = c("Mapa base", "Imagem de satélite"),
+        overlayGroups = c("Ocorrência única", "Buffer Quadrado (Ponto Único)"),
+        options = layersControlOptions(collapsed = FALSE)
+    ) |>
+    addMeasure(
+        primaryLengthUnit = "kilometers",
+        secondaryLengthUnit = "meters",
+        primaryAreaUnit = "sqmeters",
+        secondaryAreaUnit = "hectares"
+    )
+
+```
+
+:::
 
 ### Subpopulação
 
