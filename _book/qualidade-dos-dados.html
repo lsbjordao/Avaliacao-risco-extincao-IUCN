@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -355,14 +375,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Os critérios da IUCN utilizam os termos <strong>Observado</strong>, <strong>Estimado</strong>, <strong>Projetado</strong>, <strong>Inferido</strong> e <strong>Suspeito</strong> para qualificar a natureza da evidência usada na avaliação do risco de extinção de uma espécie. Esses termos ajudam a indicar o grau de certeza ou a fonte da informação utilizada.</p>
+<p>É muito raro que informações detalhadas e relevantes estejam disponíveis para toda a amplitude de ocorrência de um táxon — como dados sobre distribuição, população, ecologia, reprodução e usos.</p>
+<ul>
+<li>Por isso, os critérios da Lista Vermelha foram desenvolvidos para incorporar <strong>incertezas</strong>, permitindo que os táxons sejam avaliados mesmo quando há lacunas de informação. Embora os critérios tenham natureza quantitativa, a ausência de dados de alta qualidade não deve impedir sua aplicação. Além da qualidade e da completude dos dados (ou da falta deles), também pode haver incertezas intrínsecas ao próprio conjunto de dados, as quais precisam ser consideradas no processo de avaliação — por exemplo, registros de ocorrência com coordenadas imprecisas ou duvidosas, dados antigos cuja atualidade é incerta, ou informações obtidas por observações esporádicas que não refletem o padrão real de distribuição ou abundância da espécie.</li>
+</ul>
+<p>Os critérios da IUCN utilizam os termos <strong>Observado</strong>, <strong>Estimado</strong>, <strong>Projetado</strong>, <strong>Inferido</strong> e <strong>Suspeito</strong> para qualificar a natureza da evidência usada na avaliação do risco de extinção de uma espécie. Esses termos ajudam a indicar o <strong>grau de certeza</strong> ou a fonte da informação utilizada.</p>
+<p>A ordem relativa da qualidade dos dados é <code>Observada &gt; Estimada (passado) = Projetada (futuro) &gt; Inferida &gt; Suspeitada</code></p>
 <section id="observação" class="level2">
 <h2 class="anchored" data-anchor-id="observação">Observação</h2>
-<p>refere-se a registros diretos de mudanças, como contagens populacionais ou perda de habitat documentada.</p>
+<p>Refere-se a dados obtidos por <strong>observações diretas</strong> e <strong>bem documentadas</strong>, que incluem tanto registros populacionais obtidos por <strong>censos completos</strong> quanto informações sobre mudanças ambientais ou ecológicas <strong>observadas no campo</strong>. A característica central desse tipo de dado é sua natureza empírica e direta, sem necessidade de inferências.</p>
+<p><strong>Exemplos:</strong></p>
+<ul>
+<li>Tamanho da população com base em um censo de todos os indivíduos maduros conhecidos do táxon;</li>
+<li>Redução populacional derivada de um censo de todos os indivíduos maduros conhecidos que ocorreu há três gerações, e um censo atual;</li>
+<li>Declínio continuado na área, extensão ou qualidade do habitat derivado de um levantamento de todos os habitats conhecidos ou de fotografias aéreas de todos os habitats conhecidos;</li>
+<li>Declínio continuado no número de indivíduos maduros derivados de múltiplos censos de todos os indivíduos maduros conhecidos.</li>
+</ul>
 </section>
 <section id="estimação" class="level2">
 <h2 class="anchored" data-anchor-id="estimação">Estimação</h2>
-<p>aplica-se quando os dados são incompletos, mas permitem inferências razoáveis com base em conhecimento técnico ou amostras.</p>
+<p>Aplica-se em situações nas quais os dados disponíveis são incompletos, mas permitem inferências fundamentadas com base em conhecimento técnico especializado e em amostragens representativas.</p>
+<p>Essas informações podem ser derivadas de estimativas calculadas, as quais frequentemente envolvem suposições estatísticas (por exemplo, sobre a representatividade da amostragem) ou pressupostos biológicos (por exemplo, sobre a relação entre uma variável observada, como um índice de abundância, e a variável de interesse, como o número de indivíduos maduros).</p>
+<ul>
+<li>Por exemplo, contagens de machos cantores de uma espécie de ave ao longo de transectos podem ser utilizadas para estimar o número total de indivíduos maduros, desde que calibradas com premissas claras sobre a proporção de machos representados e sobre a razão sexual da espécie.
+<ul>
+<li><span class="citation" data-cites="Fras2018">Frías et al. (<a href="references.html#ref-Fras2018" role="doc-biblioref">2018</a>)</span> investigou a influência da adequação do habitat e da detectabilidade relacionada ao sexo nas estimativas de densidade e tamanho populacional de felosas especializadas em habitats específicos. Os pesquisadores observaram que a maioria dos indivíduos detectados eram machos realizando cantos territoriais, devido à sua atividade vocal intensa e à dificuldade de detectar visualmente as aves em vegetação densa durante a estação reprodutiva. Para estimar o tamanho total da população, eles consideraram o número proporcional de fêmeas determinado pela razão sexual da população. O estudo enfatiza que a obtenção de dados sobre a razão sexual da população melhora as estimativas de tamanho populacional, especialmente quando baseadas em dados de amostragem com detectabilidade tipicamente enviesada para machos durante a estação reprodutiva.</li>
+</ul></li>
+</ul>
+<p>Essas premissas devem ser explicitamente declaradas e devidamente justificadas na documentação.</p>
 </section>
 <section id="projeção" class="level2">
 <h2 class="anchored" data-anchor-id="projeção">Projeção</h2>
@@ -377,6 +417,11 @@ ul.task-list li input[type="checkbox"] {
 <p>indica uma presunção com base em conhecimento limitado ou observações preliminares, ainda que sem comprovação robusta.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Fras2018" class="csl-entry" role="listitem">
+Frías, Óscar, Luis M. Bautista, Francisco V. Dénes, Jesús A. Cuevas, Félix Martínez, e Guillermo Blanco. 2018. <span>«Influence of habitat suitability and sex-related detectability on density and population size estimates of habitat-specialist warblers»</span>. Editado por Petr Heneberg. <em>PLOS ONE</em> 13 (7): e0201482. <a href="https://doi.org/10.1371/journal.pone.0201482">https://doi.org/10.1371/journal.pone.0201482</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
