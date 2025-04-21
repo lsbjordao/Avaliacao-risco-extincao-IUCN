@@ -31,3 +31,9 @@ format:
           <script src="nav-arrows.js"></script>
 
 lang: pt
+
+comments:
+  hypothesis: 
+    theme: clean
+  giscus: 
+    repo: lsbjordao/Avaliacao-risco-extincao-IUCN
