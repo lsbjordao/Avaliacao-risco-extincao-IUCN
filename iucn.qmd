@@ -4,7 +4,7 @@
 
 ::: {#first-column style="display: flex; justify-content: center;"}
 
-A **IUCN** (União Internacional para a Conservação da Natureza) é uma união composta por membros de organizações governamentais e da sociedade civil. Juntas, essas entidades trabalham para promover o desenvolvimento sustentável e construir um mundo mais justo, que valorize e conserve a natureza.
+A **IUCN** (União Internacional para a Conservação da Natureza) é uma instituição composta por membros de organizações governamentais e da sociedade civil. Juntas, essas entidades trabalham para promover o desenvolvimento sustentável e construir um mundo mais justo, que valorize e conserve a natureza.
 
 :::
 

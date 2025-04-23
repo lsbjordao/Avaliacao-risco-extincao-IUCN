@@ -173,13 +173,386 @@ e pequenas distribuições geográficas.
 
 ## Aplicação dos Critérios
 
+O pacote `ConR` [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) nos permite simular a aplicação dos critérios de A a D.
+
 ### Critério `A`
+
+```{r}
+#| warning: false
+
+library(ConR)
+
+data(example_criterionA)
+
+criterion_A(example_criterionA,
+    years = seq(1970, 2000, by = 2),
+    assess.year = 2000,
+    project.years = seq(2002, 2030, by = 2),
+    subcriteria = c("A1", "A2", "A3", "A4"),
+    generation.time = 10
+)
+```
+
+Mesmos dados e opções, mas assumindo comprimentos de geração diferentes para cada táxon:
+
+```{r}
+#| warning: false
+
+library(ConR)
+
+data(example_criterionA)
+
+criterion_A(example_criterionA,
+    years = seq(1970, 2000, by = 2),
+    assess.year = 2000,
+    project.years = seq(2002, 2030, by = 2),
+    subcriteria = c("A1", "A2", "A3", "A4"),
+    generation.time = c(2, 5, 10, 15, 30, 50) # comprimentos de geração diferentes
+) 
+```
+
+Avaliando se três espécies brasileiras de plantas (*Araucaria angustifolia*, *Euterpe edulis* e *Paubrasilia echinata*) sofreram redução populacional nas últimas 3 gerações (Subcritério `A2`), e em que grau, com base em estimativas de tamanho populacional ao longo do tempo.
+
+```{r}
+#| warning: false
+
+# Carrega o pacote ConR, utilizado para avaliações preliminares do risco de extinção
+library(ConR)
+
+# Vetor com os nomes das espécies a serem avaliadas
+spp <- c("Araucaria angustifolia", "Euterpe edulis", "Paubrasilia echinata")
+
+# Define o número de espécies (número de linhas na matriz futura)
+nrows <- length(spp)
+
+# Carrega dados de exemplo do pacote ConR
+data(example_tutorial)
+
+# Extrai a tabela de tamanhos populacionais do conjunto de dados
+pop.sizes <- example_tutorial$population.sizes
+
+# Visualiza as primeiras linhas dos dados de tamanho populacional
+head(pop.sizes)
+
+# Estima os tamanhos populacionais para os anos ausentes, com base nas tendências
+est.pop.sizes <- pop.decline(pop.sizes[, -1], # Remove a primeira coluna (nomes dos táxons)
+    taxa = spp, # Vetor de nomes das espécies
+    output = "predictions", # Solicita as previsões de tamanho
+    show_progress = FALSE
+) # Não exibe a barra de progresso
+
+# Extrai os anos dos dados previstos (serão usados como nomes das colunas)
+new.years <- est.pop.sizes[[1]][[1]]$years
+
+# Define o número de colunas da matriz (um para cada ano previsto)
+ncols <- length(new.years)
+
+# Cria uma matriz vazia com os nomes das espécies nas linhas e anos nas colunas
+mean.pop <- matrix(NA, ncol = ncols, nrow = nrows, dimnames = list(spp, new.years))
+
+# Preenche a matriz com os tamanhos populacionais previstos para cada espécie
+for (i in seq_along(spp)) {
+    mean.pop[i, ] <- est.pop.sizes[[1]][[i]]$predicted
+}
+
+# Converte a matriz em data frame e adiciona uma coluna com os nomes das espécies
+mean.pop <- cbind.data.frame(tax = spp, mean.pop, row.names = NULL)
+
+# Define o ano da avaliação (ano de referência para projeções e status)
+assess.year <- 2018
+
+# Define os comprimentos de geração (em anos) para cada espécie
+gen.length <- c(40, 65, 50)
+
+# Define os níveis de exploração (percentual de redução populacional por extração/uso)
+harvest <- c(10, 10, 10)
+
+# Executa a avaliação do Critério A da IUCN (subcritério A2)
+critA <- criterion_A(
+    x = mean.pop, # Dados de população ao longo do tempo
+    assess.year = assess.year, # Ano de avaliação
+    project.years = NULL, # Sem projeções adicionais para o futuro
+    subcriteria = c("A2"), # Subcritério A2: redução passada
+    generation.time = gen.length, # Comprimento de geração para cada espécie
+    exploitation = harvest, # Pressão de exploração estimada
+    show_progress = FALSE # Não exibe barra de progresso
+)
+critA
+```
 
 ### Critério `B`
 
+```{r}
+#| warning: false
+
+library(ConR)
+
+data(example_tutorial)
+occs <- example_tutorial$occurrences
+head(occs, 2)
+
+AOO <- AOO.computing(occs[, c(1:3)],
+    cell_size_AOO = 2, nbe.rep.rast.AOO = 30,
+    show_progress = FALSE
+)
+
+EOO.hull <- EOO.computing(
+    XY = occs[, c(1:3)], method.range = "convex.hull",
+    export_shp = TRUE, show_progress = FALSE
+)
+
+locs <- locations.comp(occs[, c(1:3), ],
+    method = "fixed_grid",
+    nbe_rep = 30,
+    cell_size_locations = 10,
+    rel_cell_size = 0.05,
+    method_polygons = "no_more_than_one",
+    show_progress = FALSE
+)
+
+radius <- subpop.radius(
+    XY = occs[, c(1:3)],
+    quant.max = 0.9
+)
+
+sub <- subpop.comp(
+    XY = occs[, c(1:3)],
+    resol_sub_pop = radius[, c("tax", "radius")],
+    show_progress = FALSE
+)
+
+sever.frag <- severe_frag(
+    XY = occs,
+    resol_sub_pop = radius[, c("tax", "radius")],
+    dist_isolated = radius$radius,
+    show_progress = FALSE
+)
+
+rel.loss <- c(8.5, 8.1, 9.0)
+declineB <- ifelse(rel.loss >= 1, "Decreasing", "Not Decreasing")
+
+critB <- criterion_B(
+    x = occs,
+    AOO = AOO,
+    EOO = EOO.hull$results,
+    locations = locs$locations,
+    severe.frag = sever.frag,
+    subpops = sub,
+    decline = declineB,
+    show_progress = FALSE
+)
+critB
+```
+
+
 ### Critério `C`
+
+```{r}
+#| warning: false
+
+library(ConR)
+
+# Vetor com os nomes das espécies a serem avaliadas
+spp <- c("Araucaria angustifolia", "Euterpe edulis", "Paubrasilia echinata")
+
+# Define o número de espécies (número de linhas na matriz futura)
+nrows <- length(spp)
+
+# Carrega dados de exemplo do pacote ConR
+data(example_tutorial)
+occs <- example_tutorial$occurrences # Dados de ocorrência geográfica das espécies
+
+# Extrai a tabela de tamanhos populacionais do conjunto de dados
+pop.sizes <- example_tutorial$population.sizes
+
+# Visualiza as primeiras linhas dos dados de tamanho populacional
+head(pop.sizes)
+
+# Estima os tamanhos populacionais para os anos ausentes, com base nas tendências observadas
+est.pop.sizes <- pop.decline(pop.sizes[, -1], # Remove a primeira coluna (nomes das espécies)
+    taxa = spp, # Vetor de nomes das espécies
+    output = "predictions", # Solicita previsões de tamanho populacional
+    show_progress = FALSE
+) # Não exibe barra de progresso
+
+# Extrai os anos dos dados previstos (esses serão os nomes das colunas da matriz)
+new.years <- est.pop.sizes[[1]][[1]]$years
+
+# Define o número de colunas da matriz (um para cada ano previsto)
+ncols <- length(new.years)
+
+# Cria uma matriz vazia com as espécies como linhas e os anos como colunas
+mean.pop <- matrix(NA, ncol = ncols, nrow = nrows, dimnames = list(spp, new.years))
+
+# Preenche a matriz com os valores de tamanho populacional previstos para cada espécie
+for (i in seq_along(spp)) {
+    mean.pop[i, ] <- est.pop.sizes[[1]][[i]]$predicted
+}
+
+# Converte a matriz em um data frame e adiciona uma coluna com os nomes das espécies
+mean.pop <- cbind.data.frame(tax = spp, mean.pop, row.names = NULL)
+
+# --------------------------
+# CÁLCULO DE SUBPOPULAÇÕES
+# --------------------------
+
+# Calcula o raio médio de dispersão das ocorrências para estimar a separação entre subpopulações
+radius <- subpop.radius(
+    XY = occs[, c(1:3)], # Dados espaciais: táxon, longitude, latitude
+    quant.max = 0.9
+) # Usa o percentil 90 para definir o raio
+
+# Usa os raios calculados para estimar o número de subpopulações por espécie
+sub <- subpop.comp(
+    XY = occs[, c(1:3)],
+    resol_sub_pop = radius[, c("tax", "radius")],
+    show_progress = FALSE
+)
+
+# --------------------------
+# PARÂMETROS PARA O CRITÉRIO C
+# --------------------------
+
+# Define o ano da avaliação
+assess.year <- 2018
+
+# Define o ano mais recente com dados confiáveis
+recent.year <- 2000
+
+# Comprimento da geração (em anos) para cada espécie
+gen.length <- c(40, 65, 50)
+
+# Proporção de indivíduos maduros na população de cada espécie
+p.mature <- c(0.4485, 0.3028, 0.4143)
+
+# Correção aplicada ao declínio populacional para espécies de sucessão precoce
+early.sucession <- c(0.9, 1, 1)
+
+# --------------------------
+# CÁLCULO DO TAMANHO DE CADA SUBPOPULAÇÃO
+# --------------------------
+
+# Identifica a coluna referente ao ano da avaliação (2018) no data frame
+id.assess <- which(names(mean.pop) %in% assess.year)
+
+# Junta os tamanhos populacionais do ano da avaliação com o número de subpopulações
+df <- merge(data.frame(tax = spp, "2018" = mean.pop[, id.assess]), sub)
+
+# Cria uma lista onde cada elemento representa as subpopulações de uma espécie
+# Cada subpopulação recebe um valor igual (dividindo a população total pelo número de subpopulações)
+subpop.sizes <- vector("list", dim(sub)[1])
+names(subpop.sizes) <- sub$tax
+for (i in seq_along(subpop.sizes)) {
+    subpop.sizes[[i]] <- rep(df$X2018[i] / df$subpop[i], df$subpop[i])
+}
+
+# --------------------------
+# APLICA O CRITÉRIO C DA IUCN
+# --------------------------
+
+# Executa a avaliação de risco com base no Critério C (população pequena e em declínio)
+critC <- criterion_C(
+    x = mean.pop, # Tamanhos populacionais ao longo dos anos
+    assess.year = assess.year, # Ano da avaliação
+    project = FALSE, # Não projeta tendências futuras
+    recent.year = recent.year, # Ano mais recente considerado confiável
+    subcriteria = c("C1", "C2"), # Subcritérios C1 e C2
+    generation.time = gen.length, # Comprimento da geração por espécie
+    prop.mature = p.mature, # Proporção de indivíduos maduros
+    subpop.size = subpop.sizes, # Tamanhos das subpopulações
+    correction = early.sucession, # Correção aplicada ao declínio
+    show_progress = FALSE
+)
+critC
+```
 
 ### Critério `D`
 
-### Critério `E`
+```{r}
+#| warning: false
 
+# Carrega o pacote ConR, que permite calcular critérios da IUCN para avaliação de risco de extinção
+library(ConR)
+
+# Proporção de indivíduos maduros na população para cada espécie
+p.mature <- c(0.4485, 0.3028, 0.4143)
+
+# Nível de exploração (em %) para cada espécie comercial — utilizado para corrigir a proporção de indivíduos maduros
+harvest <- c(10, 10, 10)
+
+# Corrige a proporção de indivíduos maduros com base na exploração (reduz o valor conforme o nível de exploração)
+p.mature.explo <- p.mature - harvest / 100
+
+# Vetor com os nomes das espécies a serem avaliadas
+spp <- c("Araucaria angustifolia", "Euterpe edulis", "Paubrasilia echinata")
+
+# Número de espécies
+nrows <- length(spp)
+
+# Carrega dados de exemplo do pacote ConR
+data(example_tutorial)
+occs <- example_tutorial$occurrences # Dados de ocorrência das espécies
+
+# Extrai a tabela de tamanhos populacionais do conjunto de dados
+pop.sizes <- example_tutorial$population.sizes
+
+# Visualiza as primeiras linhas dos dados de tamanho populacional
+head(pop.sizes)
+
+# Estima os tamanhos populacionais ao longo dos anos, com base em tendências temporais
+est.pop.sizes <- pop.decline(pop.sizes[, -1], # Remove a primeira coluna (nomes dos táxons)
+    taxa = spp, # Vetor com nomes das espécies
+    output = "predictions", # Solicita apenas as previsões de tamanho
+    show_progress = FALSE
+) # Desativa exibição de progresso
+
+# Extrai os anos incluídos nas previsões (serão usados como nomes das colunas)
+new.years <- est.pop.sizes[[1]][[1]]$years
+
+# Número de colunas da matriz final (corresponde ao número de anos previstos)
+ncols <- length(new.years)
+
+# Cria uma matriz para armazenar os tamanhos populacionais médios para cada espécie e ano
+mean.pop <- matrix(NA, ncol = ncols, nrow = nrows, dimnames = list(spp, new.years))
+
+# Preenche a matriz com os valores previstos
+for (i in seq_along(spp)) {
+    mean.pop[i, ] <- est.pop.sizes[[1]][[i]]$predicted
+}
+
+# Converte a matriz em data frame e adiciona a coluna com os nomes das espécies
+mean.pop <- cbind.data.frame(tax = spp, mean.pop, row.names = NULL)
+
+# Seleciona os tamanhos populacionais para o ano da avaliação (coluna 18 corresponde ao ano de 2018)
+pop.sizes.assess <- mean.pop[[18]]
+
+# Calcula a Área de Ocorrência (AOO) usando uma malha de 2 km x 2 km e 30 repetições
+AOO <- AOO.computing(occs[, c(1:3)],
+    cell_size_AOO = 2,
+    nbe.rep.rast.AOO = 30,
+    show_progress = FALSE
+)
+
+# Calcula o número de localidades (locations), baseado em critérios espaciais definidos pela IUCN
+locs <- locations.comp(occs[, c(1:3)],
+    nbe_rep = 30,
+    cell_size_locations = 10,
+    rel_cell_size = 0.05,
+    id_shape = "NAME",
+    method_polygons = "no_more_than_one",
+    show_progress = TRUE
+)
+
+# Avalia o Critério D da IUCN, considerando população, AOO e número de localidades
+critD <- criterion_D(
+    pop.size = pop.sizes.assess, # Tamanho da população no ano de avaliação
+    name_sp = mean.pop[[1]], # Nomes das espécies
+    AOO = AOO$aoo, # Área de Ocorrência estimada
+    n.Locs = locs$locations$locations, # Número de localidades
+    prop.mature = p.mature.explo, # Proporção de indivíduos maduros (corrigida pela exploração)
+    subcriteria = c("D", "D2"), # Subcritérios a serem avaliados
+    AOO.threshold = 20, # Limite de AOO (em km²) para subcritério D2
+    Loc.threshold = 5 # Limite de localidades para subcritério D2
+) 
+critD
+```
