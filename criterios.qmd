@@ -117,7 +117,7 @@ Indivíduos maduros são aqueles considerados potencialmente reprodutivos ou cap
 
 Via de regra, segundo o conceito da IUCN, indivíduos reprodutivos ou capazes de se reproduzir são aqueles que produzem novos indivíduos não apenas via reprodução sexuada, mas também via reprodução assexuada. 
 
-Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários, como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.
+Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.
 
 Portanto, no caso das plantas, "indivíduo maduro" deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um indivíduo maduro também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um indivíduo maduro para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:
 
@@ -179,13 +179,15 @@ O resultado desse parâmetro é medido em anos.
 - Se uma espécie tem um tempo de geração de 5 anos, as análises devem considerar 15 anos de dados (3 gerações). Se houver um declínio de 50% nesse período, pode ser classificada pelo critério A.
 
 - Vamos imaginar uma espécie que:
+
   - Começa a se reproduzir aos **3 anos**
   - Pode viver e se reproduzir até os **13 anos**
   - Produz filhotes a cada 2 anos, com igual chance em cada idade
   - A geração é a **média ponderada das idades em que os filhotes nascem**, algo como:
-  > \[
+  
+  > $$
   >  \text{Tempo de geração} = \frac{(3 + 5 + 7 + 9 + 11 + 13)}{6} = 8 anos
-  > \]
+  > $$
 
 ## Critério B
 

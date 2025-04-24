@@ -218,8 +218,8 @@ quais critérios foram quase atendidos. Por exemplo, o enquadramento como
 NT seria justificado nos seguintes casos (em cada caso, quaisquer  critérios não mencionados especificamente não são atendidos e não são quase atendidos):
 
 - A população diminuiu cerca de 20–25% nas últimas três gerações.
-- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e está diminuindo, mas a população não está gravemente fragmentada, ocorre em muito mais de 10 locais e não há extremos flutuações.
-- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e está gravemente fragmentado, mas a população não está diminuindo, ocorre em muito mais de 10 locais e não há extremos flutuações.
+- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e **está diminuindo**, mas a população **não está gravemente fragmentada**, ocorre em muito mais de 10 locais e não há extremos flutuações.
+- O táxon atende aos requisitos de área sob o critério B para ameaça (EOO < 20.000 km2 e/ou AOO < 2.000 km2) e **está gravemente fragmentado**, mas a população **não está diminuindo**, ocorre em muito mais de 10 locais e não há extremos flutuações.
 - O táxon está diminuindo e ocorre em dez locais, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.
 - O táxon está diminuindo e severamente fragmentado, mas tem um EOO de 30.000 km2 e/ou um AOO de 3.000 km2, que são estimativas incertas.
 - O táxon está diminuindo e severamente fragmentado, mas tem um EOO de 22.000 km2 e/ou um AOO de 3.000 km2, que são estimativas altamente certas.
@@ -254,9 +254,36 @@ se apliquem:
 
 Um táxon é categorizado como `LC` quando foi avaliado de acordo com os critérios e não se qualificou como `CR`, `EN`, `VU` ou `NT`. Táxons de ampla distribuição e abundantes são geralmente incluídos nesta categoria.
 
-## Menos Preocupante (DD)
+## Dados Insuficientes (DD)
 
 Um táxon é categorizado em `DD` quando não há informações adequadas para fazer uma avaliação direta ou indireta de seu risco de extinção com base em sua distribuição e/ou status populacional. Um táxon nesta categoria pode ser bem estudado e ter sua biologia bem conhecida, mas faltam dados apropriados sobre abundância e/ou distribuição. A insuficiência de dados não é, portanto, uma categoria de ameaça. A inclusão nesta categoria indica que mais informações são necessárias e reconhece que pesquisas futuras poderão demonstrar que a inclusão em categorias de ameaça é apropriada. É importante fazer uso positivo de todos os dados disponíveis. Em muitos casos, deve-se ter muito cuidado ao escolher entre DD e uma categoria de ameaça. Se houver suspeita de que a distribuição de um táxon é relativamente restrita, ou se houver transcorrido um tempo considerável desde o último registro do táxon, um status de ameaça pode muito bem ser justificado.
+
+## Categorizando como `DD`
+
+**Quando aplicar?**
+
+Se um táxon for conhecido, mas não houver nenhuma informação direta ou indireta sobre seu status atual ou possíveis ameaças, então ele deve ser categorizado como `DD`. Uma categorização com dados insuficientes não significa que um táxon não esteja ameaçado.
+
+Espécies com insuficiência de dados podem ser sinalizadas com uma ou ambas as seguintes marcações (*tags* em inglês), embora a maioria das espécies `DD` não precisem:
+
+1. **Ocorrência desconhecida**: O táxon é conhecido apenas a partir de um ou mais espécimes sem informações de localidade ou extremamente incertas, de modo que não é possível fazer qualquer inferência adicional sobre seu status.
+
+2. **Incerteza taxonômica explica a falta de informação**: A escassez de dados pode ser uma consequência da incerteza taxonômica, ou seja, a falta de informações sobre distribuição, status, ecologia e ameaças é porque há muito poucos espécimes e/ou registros, e isso pode ser porque o táxon representa indivíduos aberrantes, híbridos, ou subespécies de outras espécies.
+
+**Quando não aplicar?**
+
+A categorização em `DD` implica que o táxon foi avaliado em relação a todos os critérios, pois todas as avaliações de `DD` requerem a documentação dos dados disponíveis, fontes de incerteza e justificativa da razão de cada um dos cinco
+critérios não poder ser aplicado (e, se aplicável, as marcações discutidas na seção anterior). 
+
+Se algum dos cinco critérios não foram considerados, `DD` **não pode ser usado** (o táxon deve ser categorizado como `NE`).
+
+Em muitos casos, a incerteza nos dados impede a categorização do táxon em uma das outras categorias (LC a EX). No entanto, não ser possível enquadrar o táxon em uma única categoria, por si só, não é uma razão suficiente para uma avaliação `DD`. Se os dados são tão incertos que `CR` e `LC` são categorias plausíveis, o táxon pode ser listado como `DD`. Se, entretanto, as categorias plausíveis variam de `NT` a categorias ameaçadas, `DD` não é a categoria apropriada.
+    - Nesse caso, o avaliador deve selecionar a categoria mais plausível.
+        - Se não for possível identificar a categoria mais plausível, o avaliador deve selecionar uma das categorias, com base em seu nível de tolerância ao risco.
+            - Por exemplo, se `LC`, `NT` e `VU` forem considerados categorias igualmente plausíveis, o táxon pode ser categorizado como `NT`.
+        - Em todos os casos, o texto de justificação deve especificar todas as categorias que foram consideradas plausíveis, bem como o grau de tolerância ao risco.
+
+Em alguns casos, a incerteza dos dados tem um componente espacial; por exemplo, pode haver alguns dados de uma parte do intervalo, mas nenhum ou poucos dados das outras partes. Nesses casos, os avaliadores devem tentar evitar uma listagem DD, considerando diferentes suposições plausíveis sobre o quão representativas são as ameaças de áreas conhecidas, e usar essas suposições para formar intervalos de incerteza para os parâmetros usados (tais como indivíduos maduros, locais, subpopulações, etc.).
 
 ## Não Avaliado (NE)
 
