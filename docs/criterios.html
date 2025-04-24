@@ -248,7 +248,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Apresentação</span></a>
+ <span class="menu-text">Preâmbulo</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -306,6 +306,7 @@ window.Quarto = {
   <li><a href="#população" id="toc-população" class="nav-link" data-scroll-target="#população">População</a></li>
   <li><a href="#indivíduos-maduros" id="toc-indivíduos-maduros" class="nav-link" data-scroll-target="#indivíduos-maduros">Indivíduos maduros</a></li>
   <li><a href="#redução" id="toc-redução" class="nav-link" data-scroll-target="#redução">Redução</a></li>
+  <li><a href="#geração" id="toc-geração" class="nav-link" data-scroll-target="#geração">Geração</a></li>
   </ul></li>
   <li><a href="#critério-b" id="toc-critério-b" class="nav-link" data-scroll-target="#critério-b">Critério B</a>
   <ul class="collapse">
@@ -628,6 +629,24 @@ Categorização vs.&nbsp;Enquadramento
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nem todos os indivíduos adultos da população podem ser considerados maduros
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ind-mature.png" class="img-fluid figure-img"></p>
+<figcaption>Fonte: IUCN.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <p>Via de regra, segundo o conceito da IUCN, indivíduos reprodutivos ou capazes de se reproduzir são aqueles que produzem novos indivíduos não apenas via reprodução sexuada, mas também via reprodução assexuada.</p>
 <p>Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários, como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.</p>
 <p>Portanto, no caso das plantas, “indivíduo maduro” deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um indivíduo maduro também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um indivíduo maduro para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:</p>
@@ -677,6 +696,38 @@ Figura&nbsp;5.2: <em>Sequoiadendron giganteum</em>, Cupressaceae, as maiores ár
 <h3 class="anchored" data-anchor-id="redução">Redução</h3>
 <p>Redução da população, para fins de aplicação do critério <code>A</code>, é o declínio do número de indivíduos maduros a uma porcentagem (%) maior ou igual àquela definida pelos limiares do critério <code>A</code> e ao longo do período especificado (anos). Contudo, as fases descendentes normais de flutuações da população não devem ser consideradas como redução, a menos que haja evidência suficiente para considerá-las como uma redução anormal.</p>
 </section>
+<section id="geração" class="level3">
+<h3 class="anchored" data-anchor-id="geração">Geração</h3>
+<p>A <strong>geração</strong> se refere ao conceito de <strong>tempo de geração</strong>, que é o tempo médio entre o nascimento de um indivíduo e o nascimento de seus descendentes. Ou seja, é quanto tempo leva, em média, para uma nova geração surgir.</p>
+<p>Esse valor é utilizado principalmente para avaliar declínios populacionais ao longo do tempo, nos critérios <code>A</code>, <code>C</code> e <code>E</code>.</p>
+<p>Os critérios buscam analisar as tendências populacionais ao longo de <strong>três gerações ou 10 anos, o que for maior (com limite de 100 anos)</strong>. Assim, o tempo de geração é usado para:</p>
+<ul>
+<li>Calcular a janela temporal para avaliar o declínio populacional.</li>
+<li>Determinar a escala temporal de projeções de risco de extinção.</li>
+<li>Ajustar modelos de viabilidade populacional.</li>
+</ul>
+<section id="métodos-para-estimação" class="level4">
+<h4 class="anchored" data-anchor-id="métodos-para-estimação">Métodos para estimação</h4>
+<p>O resultado desse parâmetro é medido em anos.</p>
+<ul>
+<li>Idade média dos pais da coorte atual (“coorte” = indivíduos recém-nascidos na população).</li>
+<li>Idade média em que uma coorte de recém-nascidos produz descendentes.</li>
+</ul>
+</section>
+<section id="exemplos" class="level4">
+<h4 class="anchored" data-anchor-id="exemplos">Exemplos</h4>
+<ul>
+<li><p>Se uma espécie tem um tempo de geração de 5 anos, as análises devem considerar 15 anos de dados (3 gerações). Se houver um declínio de 50% nesse período, pode ser classificada pelo critério A.</p></li>
+<li><p>Vamos imaginar uma espécie que:</p>
+<ul>
+<li>Começa a se reproduzir aos <strong>3 anos</strong></li>
+<li>Pode viver e se reproduzir até os <strong>13 anos</strong></li>
+<li>Produz filhotes a cada 2 anos, com igual chance em cada idade</li>
+<li>A geração é a <strong>média ponderada das idades em que os filhotes nascem</strong>, algo como: &gt; [ &gt; = = 8 anos &gt; ]</li>
+</ul></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="critério-b" class="level2">
 <h2 class="anchored" data-anchor-id="critério-b">Critério B</h2>
@@ -706,7 +757,7 @@ Figura&nbsp;5.2: <em>Sequoiadendron giganteum</em>, Cupressaceae, as maiores ár
 </div>
 <p>O declínio observado do passado não deve ser automaticamente encarado como declínio contínuo: - Declínio observado: é uma queda que já foi registrada, com dados ou evidências concretas. - Declínio contínuo: é uma queda que está ocorrendo agora ou é esperada para continuar no futuro.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -715,7 +766,7 @@ Curiosidade…
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>A ideia da distinção entre declínio observado vs.&nbsp;contínuo é análoga às frases clássicas do mercado financeiro.</p>
 <blockquote class="blockquote">
@@ -740,7 +791,7 @@ Curiosidade…
 <p>O objetivo da avaliação do EOO não é estimar a quantidade de área ocupada ou potencialmente ocupada de um táxon. Essa medida pode ser verificada pela sua distribuição.</p>
 <p>O EOO serve como uma medida dos riscos aproximada aos quais um táxon está submetido e a lógica subjacente à sua utilização é a constatação de que muitas variáveis ambientais e processos são espacialmente relacionados. Assim, há uma certa expectativa de que as ameaças ocorrentes em um determinado local têm uma probabilidade maior de afetar áreas mais adjascentes do que áreas mais distantes.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -749,7 +800,7 @@ Usando o pacote <code>ConR</code> para gerar o mínimo polígono convexo
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar pacotes</span></span>
@@ -846,7 +897,7 @@ Geodetic CRS:  WGS 84
 <li><p>Há, em geral, uma correlação positiva entre a AOO e o tamanho populacional. A veracidade dessa correlação para qualquer táxon depende da variação espacial na sua densidade populacional. Não obstante, a AOO pode ser um parâmetro útil para identificar o risco de extinção de táxons quando não há dados disponíveis para estimar o tamanho da população e sua estrutura.</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -855,7 +906,7 @@ Usando o pacote <code>sf</code> para gerar o AOO
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Primeiro, um exemplo inicial:</p>
 <div class="cell">

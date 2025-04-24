@@ -108,6 +108,13 @@ Ambos os conceitos referem-se ao conjunto de todas as populações de um certo t
 Indivíduos maduros são aqueles considerados potencialmente reprodutivos ou capazes de se reproduzir.
 :::
 
+:::{.callout-caution}
+
+## Nem todos os indivíduos adultos da população podem ser considerados maduros
+
+![Fonte: IUCN.](ind-mature.png)
+:::
+
 Via de regra, segundo o conceito da IUCN, indivíduos reprodutivos ou capazes de se reproduzir são aqueles que produzem novos indivíduos não apenas via reprodução sexuada, mas também via reprodução assexuada. 
 
 Entretanto, a definição de indivíduo é um assunto bem controverso em se tratando de plantas, considerando que estes organismos são <a title="Organismos modulares são formados por partes que se repetem e crescem indefinidamente (chamadas de fitômeros em plantas). No caso das plantas, é muito comum a reprodução de novos organismos ocorrer pela fragmentação ou clonagem de partes do vegetal que podem se tornar mais ou menos isolados da parte que lhes deu origem.">modulares</a>. Além disso, as plantas apresentam grande diversidade de hábitos de vida. Nem sempre os organismos vegetais são unitários, como no caso da maioria das árvores. Em se tratando de muitos organismos vegetais, há uma significativa dificuldade por parte do especilista em botânica em definir objetivamente a unidade que seria um indivíduo.
@@ -147,6 +154,38 @@ Indivíduos arbóreos que florescem sem produzir sementes viáveis não se quali
 ### Redução
 
 Redução da população, para fins de aplicação do critério `A`, é o declínio do número de indivíduos maduros a uma porcentagem (%) maior ou igual àquela definida pelos limiares do critério `A` e ao longo do período especificado (anos). Contudo, as fases descendentes normais de flutuações da população não devem ser consideradas como redução, a menos que haja evidência suficiente para considerá-las como uma redução anormal.
+
+### Geração
+
+A **geração** se refere ao conceito de **tempo de geração**, que é o tempo médio entre o nascimento de um indivíduo e o nascimento de seus descendentes. Ou seja, é quanto tempo leva, em média, para uma nova geração surgir. 
+
+Esse valor é utilizado principalmente para avaliar declínios populacionais ao longo do tempo, nos critérios `A`, `C` e `E`.
+
+Os critérios buscam analisar as tendências populacionais ao longo de **três gerações ou 10 anos, o que for maior (com limite de 100 anos)**. Assim, o tempo de geração é usado para:
+
+- Calcular a janela temporal para avaliar o declínio populacional.
+- Determinar a escala temporal de projeções de risco de extinção.
+- Ajustar modelos de viabilidade populacional.
+
+#### Métodos para estimação
+
+O resultado desse parâmetro é medido em anos.
+
+- Idade média dos pais da coorte atual ("coorte" = indivíduos recém-nascidos na população).
+- Idade média em que uma coorte de recém-nascidos produz descendentes.
+
+#### Exemplos
+
+- Se uma espécie tem um tempo de geração de 5 anos, as análises devem considerar 15 anos de dados (3 gerações). Se houver um declínio de 50% nesse período, pode ser classificada pelo critério A.
+
+- Vamos imaginar uma espécie que:
+  - Começa a se reproduzir aos **3 anos**
+  - Pode viver e se reproduzir até os **13 anos**
+  - Produz filhotes a cada 2 anos, com igual chance em cada idade
+  - A geração é a **média ponderada das idades em que os filhotes nascem**, algo como:
+  > \[
+  >  \text{Tempo de geração} = \frac{(3 + 5 + 7 + 9 + 11 + 13)}{6} = 8 anos
+  > \]
 
 ## Critério B
 
