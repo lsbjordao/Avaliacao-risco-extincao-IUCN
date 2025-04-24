@@ -3,7 +3,7 @@
 - Para que um táxon seja incluído em qualquer uma das categorias de ameaça, basta que atenda a um dos critérios. No entanto, ele deve ser avaliado em relação a todos os critérios possíveis, de acordo com a disponibilidade de dados, e a listagem deve indicar todos os critérios aplicáveis à categoria de ameaça mais elevada.
 
 - Apenas os critérios relativos à categoria mais alta de ameaça para a qual o táxon se qualifica devem ser listados.
-    - Por exemplo, se um táxon atende aos critérios $A$, $C$ e $D$ nas categorias `VU` e `EN`, e apenas ao critério $A$ na categoria `CR`, então somente o critério $A$ atendido na categoria `CR` deve ser listado, por se tratar da categoria mais elevada de ameaça.
+    - Por exemplo, se um táxon atende aos critérios $A$, $C$ e $D$ nas categorias `VU` e `EN`, e apenas ao critério $A$ na categoria `CR`, então somente o critério $A$, atendido na categoria `CR`, deve ser listado, por se tratar da categoria mais elevada de ameaça.
         - Ainda assim, recomenda-se que os avaliadores documentem também os critérios sob os quais o táxon se enquadra em categorias de menor ameaça, pois essas informações são fundamentais para o planejamento de ações de conservação e recuperação da espécie.
 
 ## Categorizando como `DD`
@@ -12,8 +12,26 @@
 
 Se um táxon for conhecido, mas não houver nenhuma informação direta ou indireta sobre seu status atual ou possíveis ameaças, então ele deve ser categorizado como `DD`. Uma categorização com dados insuficientes não significa que um táxon não esteja ameaçado.
 
+Espécies com insuficiência de dados podem ser sinalizadas com uma ou ambas as seguintes marcações (*tags* em inglês), embora a maioria das espécies `DD` não precisem:
+
+1. **Ocorrência desconhecida**: O táxon é conhecido apenas a partir de um ou mais espécimes sem informações de localidade ou extremamente incertas, de modo que não é possível fazer qualquer inferência adicional sobre seu status.
+
+2. **Incerteza taxonômica explica a falta de informação**: A escassez de dados pode ser uma consequência da incerteza taxonômica, ou seja, a falta de informações sobre distribuição, status, ecologia e ameaças é porque há muito poucos espécimes e/ou registros, e isso pode ser porque o táxon representa indivíduos aberrantes, híbridos, ou subespécies de outras espécies.
+
 **Quando não aplicar?**
 
+A categorização em `DD` implica que o táxon foi avaliado em relação a todos os critérios, pois todas as avaliações de `DD` requerem a documentação dos dados disponíveis, fontes de incerteza e justificativa da razão de cada um dos cinco
+critérios não poder ser aplicado (e, se aplicável, as marcações discutidas na seção anterior). 
+
+Se algum dos cinco critérios não foram considerados, `DD` **não pode ser usado** (o táxon deve ser categorizado como `NE`).
+
+Em muitos casos, a incerteza nos dados impede a categorização do táxon em uma das outras categorias (LC a EX). No entanto, não ser possível enquadrar o táxon em uma única categoria, por si só, não é uma razão suficiente para uma avaliação `DD`. Se os dados são tão incertos que `CR` e `LC` são categorias plausíveis, o táxon pode ser listado como `DD`. Se, entretanto, as categorias plausíveis variam de `NT` a categorias ameaçadas, `DD` não é a categoria apropriada.
+    - Nesse caso, o avaliador deve selecionar a categoria mais plausível.
+        - Se não for possível identificar a categoria mais plausível, o avaliador deve selecionar uma das categorias, com base em seu nível de tolerância ao risco.
+            - Por exemplo, se `LC`, `NT` e `VU` forem considerados categorias igualmente plausíveis, o táxon pode ser categorizado como `NT`.
+        - Em todos os casos, o texto de justificação deve especificar todas as categorias que foram consideradas plausíveis, bem como o grau de tolerância ao risco.
+
+Em alguns casos, a incerteza dos dados tem um componente espacial; por exemplo, pode haver alguns dados de uma parte do intervalo, mas nenhum ou poucos dados das outras partes. Nesses casos, os avaliadores devem tentar evitar uma listagem DD, considerando diferentes suposições plausíveis sobre o quão representativas são as ameaças de áreas conhecidas, e usar essas suposições para formar intervalos de incerteza para os parâmetros usados (tais como indivíduos maduros, locais, subpopulações, etc.).
 
 ## Diretrizes para Documentação de Ameaça
 
@@ -173,9 +191,29 @@ e pequenas distribuições geográficas.
 
 ## Aplicação dos Critérios
 
-O pacote `ConR` [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) nos permite simular a aplicação dos critérios de A a D.
+​O pacote ConR [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) é uma ferramenta desenvolvida para auxiliar na avaliação preliminar do status de conservação de espécies, seguindo os critérios da Lista Vermelha da IUCN. 
+
+Criado por Gilles Dauby e Renato A. F. de Lima, o ConR permite análises em larga escala, facilitando o processamento de dados de múltiplas espécies simultaneamente.​
+
+Executar os exemplos trazidos pelo ConR é uma ótima maneira de simular a aplicação dos critérios.
 
 ### Critério `A`
+
+O critério `A` foi estabelecido para investigar o risco de extinção associado à táxons que **sofreram redução populacional significativa no passado próximo, ou que sofrerão redução populacional projetada no futuro próximo**.
+
+Objetivamente, o critério `A` baseia-se exclusivamente em parâmetros relacionados à redução da população verificada ao longo de uma determinada escala temporal.
+
+A lógica subjacente ao critério `A` é que todas as espécies têm igualmente maior probabilidade de extinção quando a taxa de declínio populacional é alta. 
+
+Se a causa do declínio não é interrompida, a população será extinta, independentemente do tamanho populacional. Mesmo que uma população não esteja atualmente em declínio, a mesma ameaça pode voltar a afetá-la no futuro. Se um certa ameaça é capaz de causar um declínio acentuado, o mesmo declínio pode ocorrer como resposta a essa ameaça.
+
+O critério `A` considera apenas a redução, pois quando uma população está diminuindo a uma taxa substancial, o risco de extinção é mais sensível à taxa de declínio do que ao tamanho da população.
+
+Existem muitos exemplos de espécies abundantes que se tornaram extintas ou quase extintas. Essas espécies poderiam ter sido identificadas como ameaçadas apenas por um critério baseado apenas em declínios
+
+Assim, tanto do ponto de vista prático quanto teórico, é necessário ter um critério baseado apenas na taxa de declínio, além de um que se baseie tanto no tamanho da população quanto na taxa de declínio (critério `C`).
+
+#### Exercício de simulação
 
 ```{r}
 #| warning: false
@@ -282,6 +320,12 @@ critA
 
 ### Critério `B`
 
+O critério `B` foi estabelecido para investigar o risco de extinção associado à táxons que apresentam distribuição restrita e/ou especificidade de habitat expressos através de seus valores de EOO e AOO. E que além disso, também apresentam pelo menos duas das três condições (`(a)`, `(b)` e `(c)`). Se apenas uma condição é atendida, não é possível categorizar o táxon sob o criterio `B`. Essas condições referem-se a fragmentação severa ou número de situações de ameaças, declínio contínuo observado, estimado ou projetado em EOO, AOO, área, extensão e/ou qualidade do habitat, no número de situações de ameaça ou e no número de indivíduos maduros.
+
+A condição `(a)` requer fragmentação severa e/ou número limitado de situações de ameaças. A IUCN recomenda que os avaliadores especifique explicitamente em sua documentação: (1) se o táxon está gravemente fragmentado e (2) o número de localizações condicionadas à ameaça.
+
+A condição `(c)` requer que a flutuação seja extrema em qualquer dos parâmetros: `(i)` EOO; `(ii)` AOO; `(iii)` número de situações de ameaças ou subpopulações; e `(iv)` número de indivíduos maduros.
+
 ```{r}
 #| warning: false
 
@@ -346,6 +390,10 @@ critB
 
 
 ### Critério `C`
+
+O critério `C` foi estabelecido para investigar o risco de extinção associado a táxons que apresentam **população global pequena e em declínio**. Assim, o **número de indivíduos maduros da população global é uma informação fundamental** para acessar esse critério, que também demanda dados sobre **declínio contínuo no número de indivíduos maduros** em um dado tempo ou número de geração na qual o declínio de indivíduos maduros foi verificado. 
+
+Além disso, o **número de indivíduos maduros em cada subpopulação** (valor absoluto N), a **proporção (%) de indivíduos maduros** situadas em uma dada subpopulação conhecida de um táxon específico e **flutuações extremas** no número de indivíduos maduros completam o conjunto de subcritérios que caracterizam o critério `C`.
 
 ```{r}
 #| warning: false
@@ -467,6 +515,8 @@ critC
 ```
 
 ### Critério `D`
+
+O critério `D` se destina a avaliar táxons que possuam populações muito pequenas ou restritas. Para acessar esse critério, são necessários dados referentes ao número de indivíduos maduros (`D` ou `D1`) ou então, a espécie precisa apresentar AOO restrita (AOO < 20 km²) ou pequeno número de situções de ameaça (menor ou igual a 5), além de incidência de ameaça plausível que irá levá-la a uma categoria de ameaça mais restritiva (`CR` ou `EX`) no futuro próximo (`VU D2`).
 
 ```{r}
 #| warning: false

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lucas S.B. Jordão">
 
-<title>Avaliação do Risco de Extinção de Espécies</title>
+<title>Lista Vermelha da IUCN – Avaliação do Risco de Extinção de Espécies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./iucn.html" rel="next">
+<link href="./qualidade-dos-dados.html" rel="next">
+<link href="./iucn.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,6 +91,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8SR6PPZR5C"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8SR6PPZR5C', { 'anonymize_ip': true});
+</script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean"
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Apresentação</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lista-vermelha.html"><span class="chapter-title">Lista Vermelha da IUCN</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -127,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Apresentação</span></a>
   </div>
 </li>
@@ -138,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lista-vermelha.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista Vermelha da IUCN</span></a>
+  <a href="./lista-vermelha.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Lista Vermelha da IUCN</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,7 +206,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#apresentação" id="toc-apresentação" class="nav-link active" data-scroll-target="#apresentação">Apresentação</a></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é?</a></li>
+  <li><a href="#para-que-serve" id="toc-para-que-serve" class="nav-link" data-scroll-target="#para-que-serve">Para que serve?</a></li>
+  <li><a href="#por-que-importa" id="toc-por-que-importa" class="nav-link" data-scroll-target="#por-que-importa">Por que importa?</a></li>
+  <li><a href="#responsáveis-pelas-avaliações" id="toc-responsáveis-pelas-avaliações" class="nav-link" data-scroll-target="#responsáveis-pelas-avaliações">Responsáveis pelas avaliações</a>
+  <ul class="collapse">
+  <li><a href="#o-que-são-as-red-list-authorities-rlas" id="toc-o-que-são-as-red-list-authorities-rlas" class="nav-link" data-scroll-target="#o-que-são-as-red-list-authorities-rlas">O que são as Red List Authorities (RLAs)?</a></li>
+  <li><a href="#qual-é-o-papel-das-rlas" id="toc-qual-é-o-papel-das-rlas" class="nav-link" data-scroll-target="#qual-é-o-papel-das-rlas">Qual é o papel das RLAs?</a></li>
+  <li><a href="#quem-coordena-as-atividades" id="toc-quem-coordena-as-atividades" class="nav-link" data-scroll-target="#quem-coordena-as-atividades">Quem coordena as atividades?</a></li>
+  <li><a href="#como-estão-organizadas-as-rlas" id="toc-como-estão-organizadas-as-rlas" class="nav-link" data-scroll-target="#como-estão-organizadas-as-rlas">Como estão organizadas as RLAs?</a></li>
+  <li><a href="#e-quando-não-há-uma-rla-para-certo-grupo-ou-região" id="toc-e-quando-não-há-uma-rla-para-certo-grupo-ou-região" class="nav-link" data-scroll-target="#e-quando-não-há-uma-rla-para-certo-grupo-ou-região">E quando não há uma RLA para certo grupo ou região?</a></li>
+  <li><a href="#cncflorajbrj-é-autoridade-brasileira-em-plantas" id="toc-cncflorajbrj-é-autoridade-brasileira-em-plantas" class="nav-link" data-scroll-target="#cncflorajbrj-é-autoridade-brasileira-em-plantas">CNCFlora/JBRJ é autoridade brasileira em plantas</a></li>
+  </ul></li>
+  <li><a href="#categorias-e-critérios" id="toc-categorias-e-critérios" class="nav-link" data-scroll-target="#categorias-e-critérios">Categorias e critérios</a></li>
+  <li><a href="#documentos-oficiais-da-iucn" id="toc-documentos-oficiais-da-iucn" class="nav-link" data-scroll-target="#documentos-oficiais-da-iucn">Documentos oficiais da IUCN</a></li>
   </ul>
 </nav>
     </div>
@@ -345,26 +387,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Avaliação do Risco de Extinção de Espécies</h1>
+<h1 class="title"><span class="chapter-title">Lista Vermelha da IUCN</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autor</div>
-    <div class="quarto-title-meta-contents">
-             <p>Lucas S.B. Jordão </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Data de Publicação</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">3 de novembro de 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -374,10 +404,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="apresentação" class="level1 unnumbered">
-<h1 class="unnumbered">Apresentação</h1>
+<div style="text-align: center;">
+<p><img src="https://upload.wikimedia.org/wikipedia/en/e/ec/IUCN_Red_List.svg" class="img-fluid"></p>
+</div>
+<section id="o-que-é" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é">O que é?</h2>
+<p>A Lista Vermelha de Espécies Ameaçadas da IUCN (<a href="https://www.iucnredlist.org/">https://www.iucnredlist.org/</a>) é a mais abrangente fonte de informações sobre o <em>status</em> de risco de extinção das espécies em escala global. Ela classifica espécies em diferentes categorias de risco de extinção com base em critérios científicos e dados atualizados sobre populações, distribuição e ameaças.</p>
+</section>
+<section id="para-que-serve" class="level2">
+<h2 class="anchored" data-anchor-id="para-que-serve">Para que serve?</h2>
+<p>A Lista orienta ações de conservação, políticas públicas e decisões ambientais em todo o mundo. É usada por governos, ONGs, cientistas e gestores para priorizar esforços, identificar espécies ameaçadas e promover a proteção de habitats e ecossistemas.</p>
+<p>A Avaliação da Lista Vermelha da IUCN é uma estimativa do risco de extinção que busca responder qual a probabilidade de uma espécie se tornar extinta num futuro próximo, considerando o conhecimento atual sobre tendências populacionais, distribuição geográfica e ameaças recentes, atuais ou projetadas.</p>
+</section>
+<section id="por-que-importa" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-importa">Por que importa?</h2>
+<p>Porque fornece uma base confiável para entender o risco de extinção das espécies e agir antes que seja tarde demais. Ao reunir conhecimento científico e promover cooperação internacional, a Lista Vermelha contribui para a conservação da biodiversidade e o uso sustentável dos recursos naturais — fundamentais para o equilíbrio ecológico e o bem-estar humano.</p>
+</section>
+<section id="responsáveis-pelas-avaliações" class="level2">
+<h2 class="anchored" data-anchor-id="responsáveis-pelas-avaliações">Responsáveis pelas avaliações</h2>
+<p>As avaliações da Lista Vermelha da IUCN são conduzidas principalmente pela Comissão de Sobrevivência de Espécies (<em>Species Survival Commission</em> – SSC), por meio das Autoridades da Lista Vermelha (<em>Red List Authorities</em> – RLA). Também contam com a colaboração de parceiros institucionais, organizações conservacionistas, jardins botânicos, além de especialistas que atuam em projetos de avaliação liderados pela IUCN ou por membros das comissões temáticas que compõem os grupos de especialistas da SSC.</p>
+<section id="o-que-são-as-red-list-authorities-rlas" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-são-as-red-list-authorities-rlas">O que são as Red List Authorities (RLAs)?</h3>
+<p>As <em>Red List Authorities</em> (RLAs), ou <strong>Autoridades da Lista Vermelha</strong>, são grupos responsáveis por coordenar a avaliação de espécies dentro de sua área de atuação, seguindo as Regras e Procedimentos da IUCN.</p>
+</section>
+<section id="qual-é-o-papel-das-rlas" class="level3">
+<h3 class="anchored" data-anchor-id="qual-é-o-papel-das-rlas">Qual é o papel das RLAs?</h3>
+<p>O principal objetivo das RLAs é garantir que <strong>todas as espécies sob sua responsabilidade sejam avaliadas corretamente</strong> de acordo com as <strong>Categorias e Critérios da Lista Vermelha da IUCN</strong>, preferencialmente a cada cinco anos, e <strong>obrigatoriamente a cada dez anos</strong>.</p>
+<p>As responsabilidades das RLAs incluem:</p>
+<ul>
+<li>Estabelecer mecanismos para avaliação e reavaliação regular das espécies;</li>
+<li>Atuar como <strong>autoridade taxonômica</strong> para os grupos de espécies sob sua responsabilidade;</li>
+<li>Quando não realizam diretamente as avaliações, revisar os resultados feitos por outros avaliadores.</li>
+</ul>
+</section>
+<section id="quem-coordena-as-atividades" class="level3">
+<h3 class="anchored" data-anchor-id="quem-coordena-as-atividades">Quem coordena as atividades?</h3>
+<p>Cada RLA possui um <strong>Coordenador</strong>, que tem as seguintes funções:</p>
+<ul>
+<li>Supervisionar e coordenar as atividades relacionadas à Lista Vermelha dentro da RLA;</li>
+<li>Garantir que <strong>pelo menos um revisor independente</strong> (sem envolvimento direto na avaliação) valide o status de cada espécie, com base na documentação fornecida;</li>
+<li>Assegurar que as avaliações sejam enviadas corretamente à Lista Vermelha da IUCN.</li>
+</ul>
+</section>
+<section id="como-estão-organizadas-as-rlas" class="level3">
+<h3 class="anchored" data-anchor-id="como-estão-organizadas-as-rlas">Como estão organizadas as RLAs?</h3>
+<p>As RLAs existem para todos os <strong>principais grupos taxonômicos</strong> presentes na Lista Vermelha. Em geral, uma RLA funciona como um <strong>subgrupo dentro de um Grupo de Especialistas da SSC/IUCN</strong>, responsável por um grupo de espécies ou por espécies de uma determinada região geográfica.</p>
+<p>Há também <strong>casos especiais</strong>, como o da <strong>BirdLife International</strong>, que é a RLA oficial para <strong>todas as aves</strong>.</p>
+<p>Uma lista completa das RLAs e seus contatos está disponível no <strong>Diretório da SSC</strong>.</p>
+</section>
+<section id="e-quando-não-há-uma-rla-para-certo-grupo-ou-região" class="level3">
+<h3 class="anchored" data-anchor-id="e-quando-não-há-uma-rla-para-certo-grupo-ou-região">E quando não há uma RLA para certo grupo ou região?</h3>
+<p>Se não houver um grupo de especialistas cobrindo determinado grupo taxonômico ou área geográfica, a equipe da IUCN pode encaminhar essas avaliações para um <strong>Subcomitê de Conservação</strong>, que revisará as informações.</p>
+<p>Além disso, a equipe da <strong>Unidade da Lista Vermelha</strong> (<em>Red List Unit</em>), junto com outros parceiros da IUCN, pode <strong>indicar novas organizações ou redes</strong> adequadas para atuarem como RLAs.</p>
+</section>
+<section id="cncflorajbrj-é-autoridade-brasileira-em-plantas" class="level3">
+<h3 class="anchored" data-anchor-id="cncflorajbrj-é-autoridade-brasileira-em-plantas">CNCFlora/JBRJ é autoridade brasileira em plantas</h3>
+<p>No Brasil, o CNCFlora/JBRJ (<a href="https://cncflora.jbrj.gov.br/">https://cncflora.jbrj.gov.br/</a>), é reconhecido como a autoridade nacional para a elaboração de listas vermelhas de espécies da flora nativa, conforme estabelecido oficialmente através das Portaria MMA nº 43/14 e Portaria MMA nº 443/14, e internacionalmente, a partir da designação do CNCFlora pela Comissão de Sobrevivência de Espécies - SSC da IUCN como a autoridade global em avaliação de risco de extinção de plantas brasileiras (<em>Brazil Plants Red List Authority</em> - BP-RLA) <a href="https://iucn.org/our-union/commissions/group/iucn-ssc-brazil-plant-red-list-authority"></a>.</p>
+</section>
+</section>
+<section id="categorias-e-critérios" class="level2">
+<h2 class="anchored" data-anchor-id="categorias-e-critérios">Categorias e critérios</h2>
+<p>As avaliações do risco de extinção de espécies seguem as diretrizes da IUCN, que estabelece um sistema padronizado de <strong>categorias</strong> e <strong>critérios</strong> quantitativos. A atribuição das categorias deve ser baseada na aplicação criteriosa e fundamentada desses critérios.</p>
+</section>
+<section id="documentos-oficiais-da-iucn" class="level2">
+<h2 class="anchored" data-anchor-id="documentos-oficiais-da-iucn">Documentos oficiais da IUCN</h2>
+<p><object data="IUCN-categories.pdf" type="application/pdf" width="100%" height="800"><a href="IUCN-categories.pdf" download="">Download PDF file.</a></object></p>
+<ul>
+<li><strong><em>Guidelines for Using the IUCN Red List Categories and Criteria</em></strong>
+<ul>
+<li>Em português: <a href="https://nc.iucnredlist.org/redlist/content/attachment_files/Red_List_Guidelines_v16_PORTUGUES_20250326.pdf">Diretrizes para o Uso das Categorias e Critérios da Lista Vermelha</a></li>
+</ul></li>
+<li><strong><em>Supporting Information Guidelines</em></strong>
+<ul>
+<li><a href="https://nc.iucnredlist.org/redlist/content/attachment_files/RL_Standards_Consistency.pdf"><em>Documentation Standards and Consistency Checks for IUCN Red List Assessments and Species Accounts</em></a></li>
+</ul></li>
+<li><strong>Esquemas de classificação de informações:</strong> <a href="https://www.iucnredlist.org/resources/classification-schemes">Classification Schemes</a>
+<ul>
+<li>Um dos alicerces fundamentais de qualquer ciência é uma nomenclatura comum (interoperabilidade semântica), que permita aos profissionais descrever seus objetos de investigação de maneira mutuamente compreensível <span class="citation" data-cites="Salafsky2008">(<a href="references.html#ref-Salafsky2008" role="doc-biblioref">Salafsky et al. 2008</a>)</span>.</li>
+</ul></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Salafsky2008" class="csl-entry" role="listitem">
+Salafsky, Nick, Daniel Salzer, Alison J. Stattersfield, Craig Hilton‐Taylor, Rachel Neugarten, Stuart H. M. Butchart, Ben Collen, et al. 2008. <span>«A Standard Lexicon for Biodiversity Conservation: Unified Classifications of Threats and Actions»</span>. <em>Conservation Biology</em> 22 (4): 897–911. <a href="https://doi.org/10.1111/j.1523-1739.2008.00937.x">https://doi.org/10.1111/j.1523-1739.2008.00937.x</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -844,10 +956,13 @@ loadGiscusWhenReady();
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./iucn.html" class="pagination-link" aria-label="IUCN">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">IUCN</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./iucn.html" class="pagination-link" aria-label="IUCN">
-        <span class="nav-page-text"><span class="chapter-title">IUCN</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./qualidade-dos-dados.html" class="pagination-link" aria-label="Qualidade dos dados">
+        <span class="nav-page-text"><span class="chapter-title">Qualidade dos dados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

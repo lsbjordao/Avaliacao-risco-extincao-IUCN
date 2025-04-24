@@ -91,6 +91,26 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8SR6PPZR5C"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-8SR6PPZR5C', { 'anonymize_ip': true});
+</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 <script src="nav-arrows.js"></script>
 
 
@@ -495,7 +515,7 @@ Trade-off entre dois tipos de erro
 <div id="fig-Pseudophilautus-stellatus" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-Pseudophilautus-stellatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Pseudophilautus-stellatus.jpeg" class="img-fluid figure-img">
+<img src="Pseudophilautus-stellatus.jpeg" class="img-fluid figure-img" width="250">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Pseudophilautus-stellatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;4.1: <em>Pseudophilautus stellatus</em>, anfíbio da família Rhacophoridae. Em 2004, a IUCN declarou a espécie extinta, já que buscas na região não foram capazes de encontrar um indivíduo vivo. Em 2012, foi anunciada oficialmente a redescoberta do anfíbio no Santuário do Pico Wilderness (<a href="https://pt.wikipedia.org/wiki/Pseudophilautus_stellatus">Wikipedia</a>).
@@ -506,7 +526,7 @@ Figura&nbsp;4.1: <em>Pseudophilautus stellatus</em>, anfíbio da família Rhacop
 <div id="fig-baiji" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-baiji-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="baiji.jpeg" class="img-fluid figure-img">
+<img src="baiji.jpeg" class="img-fluid figure-img" width="237">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-baiji-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;4.2: O odontoceto baiji é categorizado como <strong>Criticamente em Perigo (Possivelmente Extinto)</strong> pela <a href="https://www.iucnredlist.org/species/12119/50362206">IUCN</a>.
@@ -1100,6 +1120,55 @@ Wickramasinghe, L. J. Mendis, Dulan Ranga Vidanapathirana, Sameera Airyarathne, 
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+function loadGiscusWhenReady() {
+  // Function to get the theme based on body class
+  const getTheme = () => {
+    const baseTheme = document.getElementById('giscus-base-theme').value;
+    const altTheme = document.getElementById('giscus-alt-theme').value;
+    return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+  };
+  // Create the Giscus script and add it to the desired location
+  const loadGiscus = () => {
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "lsbjordao/Avaliacao-risco-extincao-IUCN";
+    script.dataset.repoId = "R_kgDOOVp-0w";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOOVp-084CpUgL";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  };
+  // MutationObserver to detect when the 'quarto-light' or 'quarto-dark' class is added to the body
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      if (mutation.type === "attributes" && mutation.attributeName === "class") {
+        if (document.body.classList.contains('quarto-light') || document.body.classList.contains('quarto-dark')) {
+          loadGiscus();
+          observer.disconnect(); // Stop observing once Giscus is loaded
+          break;
+        }
+      }
+    }
+  });
+  // Start observing the body for class attribute changes
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["class"],
+  });
+}
+loadGiscusWhenReady();
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./qualidade-dos-dados.html" class="pagination-link" aria-label="Qualidade dos dados">

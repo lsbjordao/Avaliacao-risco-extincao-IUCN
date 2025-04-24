@@ -1,10 +1,12 @@
 project:
   type: book
+  output-dir: docs
+
 
 book:
   title: "Avaliação do Risco de Extinção de Espécies"
   author: "Lucas S.B. Jordão"
-  date: "23/03/2025"
+  date: "03/23/2025"
   chapters:
     - index.qmd
     - iucn.qmd
@@ -14,6 +16,7 @@ book:
     - criterios.qmd
     - avaliacao.qmd
     - references.qmd
+  google-analytics: "G-8SR6PPZR5C"
 
 bibliography: references.bib
 

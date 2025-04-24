@@ -2,9 +2,9 @@
 
 Os critérios da Lista Vermelha da IUCN incorporam dois problemas centrais do risco de extinção, reconhecidas como paradigmas da biologia da conservação: **populações em declínio** e **pequenas populações** [@Caughley1994].
 
-- O <mark>declínio populacional</mark> é frequentemente associado a ameaças como perda e fragmentação de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies. 
+- O <b>declínio populacional</b> é frequentemente associado a ameaças como perda e fragmentação de habitat, mudanças climáticas e impactos antrópicos, e como isso afeta a persistência das espécies. 
 
-- O problema de <mark>pequenas populações</mark> foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo. 
+- O problema de <b>pequenas populações</b> foca nas vulnerabilidades específicas enfrentadas por grupos reduzidos de indivíduos, como efeitos estocásticos e riscos genéticos, que podem comprometer a viabilidade a longo prazo. 
 
 ## Os cinco critérios
 
@@ -12,11 +12,11 @@ Os critérios da Lista Vermelha da IUCN incorporam dois problemas centrais do ri
 
 ## Para uma visão geral dos critérios
 
-O critério `A` está diretamente associado ao paradigma das populações em declínio, ao mensurar <mark>reduções</mark> no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.
+O critério `A` está diretamente associado ao paradigma das populações em declínio, ao mensurar <b>reduções</b> no número de indivíduos maduros ao longo de um intervalo de tempo definido. Essa redução pode ser provocada por fatores como desmatamento, exploração excessiva, mudanças climáticas ou invasões biológicas. O critério se concentra na tendência negativa da população, independentemente de seu tamanho absoluto atual.
 
-O critério `B` reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da <mark>Área de Ocorrência (EOO)</mark> e da <mark>Área de Ocupação (AOO)</mark>, além de outros fatores como <mark>fragmentação severa</mark>, <mark>flutuações extremas</mark> e <mark>número reduzido de localizações condicionadas à ameaça</mark>. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como perda de habitat, incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.
+O critério `B` reflete o risco associado à distribuição geográfica restrita, muitas vezes correlacionada a populações pequenas e isoladas. Ele considera o tamanho da <b>Área de Ocorrência (EOO)</b> e da <b>Área de Ocupação (AOO)</b>, além de outros fatores como <b>fragmentação severa</b>, <b>flutuações extremas</b> e <b>número reduzido de localizações condicionadas à ameaça</b>. Espécies com distribuição limitada estão mais expostas a eventos locais ou regionais — como perda de habitat, incêndios, secas, enchentes ou epidemias — que podem ter impacto desproporcional, mesmo que o número de indivíduos ainda seja relativamente alto.
 
-Os critérios `C` e `D` representam diretamente o paradigma das <mark>pequenas populações</mark>, enfocando o risco intrínseco enfrentado por espécies com <mark>poucos indivíduos maduros</mark>. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.
+Os critérios `C` e `D` representam diretamente o paradigma das <b>pequenas populações</b>, enfocando o risco intrínseco enfrentado por espécies com <b>poucos indivíduos maduros</b>. Esses critérios avaliam não apenas o tamanho populacional, mas também a taxa de declínio, a fragmentação e a vulnerabilidade a processos estocásticos. Pequenas populações são particularmente suscetíveis a efeitos genéticos, demográficos e ambientais imprevisíveis, que comprometem sua viabilidade a longo prazo.
 
 O critério `E` está relacionado à análise quantitativa do risco de extinção, utilizando modelos estatísticos para estimar a probabilidade de extinção de uma espécie ao longo do tempo. Esse critério considera dados sobre a taxa de declínio populacional, o tamanho da população e sua distribuição geográfica, bem como a variabilidade demográfica e genética. A análise quantitativa permite prever o risco de extinção sob diferentes cenários, levando em conta fatores como mudanças ambientais, perda de habitat, e impactos das intervenções humanas. Ao aplicar modelos de risco, é possível estimar de forma objetiva a probabilidade de uma espécie desaparecer dentro de um intervalo de tempo específico, fornecendo uma base sólida para decisões de conservação e manejo.
 
@@ -114,12 +114,35 @@ Entretanto, a definição de indivíduo é um assunto bem controverso em se trat
 
 Portanto, no caso das plantas, "indivíduo maduro" deve ser considerado como o menor corpo vegetal capaz de sobreviver e se reproduzir independentemente e que está sujeito à estocasticidade demográfica. Não obstante, um indivíduo maduro também pode ser considerado como aquele crescendo na menor unidade de substrato, limitado por certas condições e recursos em comum. Nesse sentido, um indivíduo maduro para o conceito da IUCN pode envolver um único indivíduo, partes de um indivíduo ou múltiplos indivíduos. Por exemplo:
 
+```{r}
+#| label: fig-baillonella
+#| fig-cap: "*Baillonella toxisperma*, Sapotaceae, grande árvore que cresce nas florestas tropicais da África, nome popular: Moabi."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("baillonella.jpg")
+```
+
+```{r}
+#| label: fig-Sequoiadendron
+#| fig-cap: "*Sequoiadendron giganteum*, Cupressaceae, as maiores árvores viventes na Terra."
+#| column: margin
+#| echo: false
+
+knitr::include_graphics("sequoia.jpg")
+```
+
 - uma moita de uma gramínea seria considerado um indivíduo;
 - tufo de briófitas seria considerados um indivíduo;
 - uma herbácea crescendo sobre uma rocha;
 - uma monilófita epífita crescendo sobre o tronco de uma árvore;
 - cada brotamento de uma monocotiledônea que se propaga por estolões seriam considerados como um indivíduos, desde que tenham a capacidade de se reproduzir independentemente;
 - um indivíduo arbóreo que não possui capacidade de se reproduzir via reprodução sexuada, isto é, produzir sementes, não é considerado um indivíduo maduro, como no caso de árvores que não alcançou a idade reprodutiva levando um longo tempo para produzir a floração.
+
+Indivíduos arbóreos que florescem sem produzir sementes viáveis não se qualificam como indivíduos maduros.
+
+- Por exemplo, *Baillonella toxisperma* (@fig-baillonella) floresce pela primeira vez aos 50-70 anos e não frutifica até cerca de 20 anos depois.
+- Por outro lado, *Sequoiadendron giganteum* (@fig-Sequoiadendron) pode produzir sementes com menos de 20 anos de idade e prosseguir produzindo por 3.000 anos.
 
 ### Redução
 
@@ -148,7 +171,19 @@ O conceito de **localizações condicionadas à ameaça** (*locations* em inglê
 Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso medidas corretivas ou mitigadoras não sejam tomadas. 
 :::
 
-**Declínio observado** não deve ser encarado como declínio contínuo.
+O declínio observado do passado não deve ser automaticamente encarado como declínio contínuo:
+  - Declínio observado: é uma queda que já foi registrada, com dados ou evidências concretas.
+  - Declínio contínuo: é uma queda que está ocorrendo agora ou é esperada para continuar no futuro.
+
+:::{.callout-note collapse="true"}
+
+## Curiosidade...
+
+A ideia da distinção entre declínio observado vs. contínuo é análoga às frases clássicas do mercado financeiro.
+
+> O desempenho passado não é garantia de resultados futuros.
+> Rentabilidade passada não é garantia de rentabilidade futura.
+:::
 
 ### Área de Extensão (EOO)
 
