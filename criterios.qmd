@@ -212,9 +212,10 @@ O conceito de **localizações condicionadas à ameaça** (*locations* em inglê
 Declínio contínuo é um declínio recente, atual ou projetado ao futuro (que pode ser regular, irregular ou esporádico), que tende ter continuidade caso medidas corretivas ou mitigadoras não sejam tomadas. 
 :::
 
-O declínio observado do passado não deve ser automaticamente encarado como declínio contínuo:
-  - Declínio observado: é uma queda que já foi registrada, com dados ou evidências concretas.
-  - Declínio contínuo: é uma queda que está ocorrendo agora ou é esperada para continuar no futuro.
+O **declínio observado** do passado não deve ser automaticamente encarado como **declínio contínuo**:
+
+  - **Declínio observado**: é uma queda que já foi registrada, com dados ou evidências concretas.
+  - **Declínio contínuo**: é uma queda que está ocorrendo agora ou é esperada para continuar no futuro.
 
 :::{.callout-note collapse="true"}
 
@@ -223,6 +224,7 @@ O declínio observado do passado não deve ser automaticamente encarado como dec
 A ideia da distinção entre declínio observado vs. contínuo é análoga às frases clássicas do mercado financeiro.
 
 > O desempenho passado não é garantia de resultados futuros.
+
 > Rentabilidade passada não é garantia de rentabilidade futura.
 :::
 
