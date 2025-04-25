@@ -202,13 +202,6 @@ O resultado desse parâmetro é medido em anos.
   > $$
 
 - Neste exemplo, os dois métodos resultam no mesmo valor, pois a fecundidade é uniforme. Porém, em espécies com variação na reprodução ao longo da vida, a média ponderada é preferível, pois representa com mais precisão o intervalo entre gerações.
-  - Funciona neste caso específico porque:
-    - As idades reprodutivas estão espaçadas igualmente (a cada 2 anos).
-    - A fecundidade é constante em cada idade.
-  - Mas esse método pode ser impreciso se:
-    - A fecundidade for maior em idades intermediárias.
-    - A espécie tiver reprodução concentrada em certas fases da vida.
-    - A distribuição entre primeira e última reprodução não for simétrica.
 
 ## Critério B
 

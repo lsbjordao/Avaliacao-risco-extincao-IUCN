@@ -10,21 +10,20 @@
 
 Os critérios têm como objetivo detectar sintomas de risco, e não suas causas [@Mace2008]. Em outras palavras, buscam identificar os padrões das ameaças, independentemente dos processos que deram origem a esses padrões objetivos.
 
-Os critérios são aplicáveis a qualquer processo de ameaça que resulte em sintomas como declínio populacional, tamanhos populacionais pequenos 
-e pequenas distribuições geográficas.
+Os critérios são aplicáveis a qualquer processo de ameaça que resulte em sintomas como declínio populacional, tamanhos populacionais pequenos e pequenas distribuições geográficas.
 
-**Vide abaixo o esquema de classificação das ameaças:**
+**Vide abaixo o esquema de classificação das ameaças da IUCN:**
 
 :::{.callout-note collapse="true"}
 
 ## *Threats Classification Scheme*
 
-- 1 Residential & commercial development
+- 1 **Residential & commercial development**
     - 1.1 Housing & urban areas
     - 1.2 Commercial & industrial areas
     - 1.3 Tourism & recreation areas
  
-- 2 Agriculture & aquaculture
+- **2 Agriculture & aquaculture**
     - 2.1 Annual & perennial non-timber crops
         - 2.1.1 Shifting agriculture
         - 2.1.2 Small-holder farming
@@ -44,18 +43,18 @@ e pequenas distribuições geográficas.
         - 2.4.2 Industrial aquaculture
         - 2.4.3 Scale Unknown/Unrecorded
  
-- 3 Energy production & mining
+- **3 Energy production & mining**
     - 3.1 Oil & gas drilling
     - 3.2 Mining & quarrying
     - 3.3 Renewable energy
  
-- 4 Transportation & service corridors
+- **4 Transportation & service corridors**
     - 4.1 Roads & railroads
     - 4.2 Utility & service lines
     - 4.3 Shipping lanes
     - 4.4 Flight paths
  
-- 5 Biological resource use
+- **5 Biological resource use**
     - 5.1 Hunting & collecting terrestrial animals
         - 5.1.1 Intentional use (species being assessed is the target)
         - 5.1.2 Unintentional effects (species being assessed is not the target)
@@ -80,12 +79,12 @@ e pequenas distribuições geográficas.
         - 5.4.5 Persecution/control
         - 5.4.6 Motivation Unknown/Unrecorded
  
-- 6 Human intrusions & disturbance
+- **6 Human intrusions & disturbance**
     - 6.1 Recreational activities
     - 6.2 War, civil unrest & military exercises
     - 6.3 Work & other activities
  
-- 7 Natural system modifications
+- **7 Natural system modifications**
     - 7.1 Fire & fire suppression
         - 7.1.1 Increase in fire frequency/intensity
         - 7.1.2 Suppression in fire frequency/intensity
@@ -104,7 +103,7 @@ e pequenas distribuições geográficas.
         - 7.2.11 Dams (size unknown)
     - 7.3 Other ecosystem modifications
  
-- 8 Invasive & other problematic species, genes & diseases
+- **8 Invasive & other problematic species, genes & diseases**
     - 8.1 Invasive non-native/alien species/diseases
         - 8.1.1 Unspecified species
         - 8.1.2 Named species
@@ -120,7 +119,7 @@ e pequenas distribuições geográficas.
         - 8.5.2 Named "species" (disease)
     - 8.6 Diseases of unknown cause 
  
-- 9 Pollution
+- **9 Pollution**
     - 9.1 Domestic & urban waste water
         - 9.1.1 Sewage
         - 9.1.2 Run-off
@@ -146,29 +145,176 @@ e pequenas distribuições geográficas.
         - 9.6.3 Noise pollution
         - 9.6.4 Type Unknown/Unrecorded
  
-- 10 Geological events
+- **10 Geological events**
     - 10.1 Volcanoes
     - 10.2 Earthquakes/tsunamis
     - 10.3 Avalanches/landslides
  
-- 11 Climate change & severe weather
+- **11 Climate change & severe weather**
     - 11.1 Habitat shifting & alteration
     - 11.2 Droughts
     - 11.3 Temperature extremes
     - 11.4 Storms & flooding
     - 11.5 Other impacts
  
-- 12 Other options
+- **12 Other options**
     - 12.1 Other threat
+:::
+
+:::{.callout-note collapse="true"}
+
+## *Esquema de Classificação de Ameaças* (tradução do inglês)
+
+- **1. Desenvolvimento residencial e comercial**  
+    - 1.1 Habitação e áreas urbanas  
+    - 1.2 Áreas comerciais e industriais  
+    - 1.3 Áreas de turismo e recreação  
+
+- **2. Agricultura e aquicultura**  
+    - 2.1 Culturas anuais e perenes não madeireiras  
+        - 2.1.1 Agricultura itinerante  
+        - 2.1.2 Agricultura de pequenos produtores  
+        - 2.1.3 Agricultura agroindustrial  
+        - 2.1.4 Escala desconhecida/não registrada  
+    - 2.2 Plantações de madeira e celulose  
+        - 2.2.1 Plantações de pequenos produtores  
+        - 2.2.2 Plantações agroindustriais  
+        - 2.2.3 Escala desconhecida/não registrada  
+    - 2.3 Pecuária e criação de animais  
+        - 2.3.1 Pastoreio nômade  
+        - 2.3.2 Pastoreio, criação ou agricultura de pequenos produtores  
+        - 2.3.3 Pastoreio, criação ou agricultura agroindustrial  
+        - 2.3.4 Escala desconhecida/não registrada  
+    - 2.4 Aquicultura marinha e de água doce  
+        - 2.4.1 Aquicultura de subsistência/artesanal  
+        - 2.4.2 Aquicultura industrial  
+        - 2.4.3 Escala desconhecida/não registrada  
+
+- **3. Produção de energia e mineração**  
+    - 3.1 Perfuração de petróleo e gás  
+    - 3.2 Mineração e extração de pedras  
+    - 3.3 Energia renovável  
+
+- **4. Corredores de transporte e serviços**  
+    - 4.1 Estradas e ferrovias  
+    - 4.2 Linhas de utilidades e serviços  
+    - 4.3 Rotas de navegação  
+    - 4.4 Rotas aéreas  
+
+- **5. Uso de recursos biológicos**  
+    - 5.1 Caça e coleta de animais terrestres  
+        - 5.1.1 Uso intencional (espécie avaliada é o alvo)  
+        - 5.1.2 Efeitos não intencionais (espécie avaliada não é o alvo)  
+        - 5.1.3 Perseguição/controle  
+        - 5.1.4 Motivação desconhecida/não registrada  
+    - 5.2 Coleta de plantas terrestres  
+        - 5.2.1 Uso intencional (espécie avaliada é o alvo)  
+        - 5.2.2 Efeitos não intencionais (espécie avaliada não é o alvo)  
+        - 5.2.3 Perseguição/controle  
+        - 5.2.4 Motivação desconhecida/não registrada  
+    - 5.3 Extração de madeira e produtos florestais  
+        - 5.3.1 Uso intencional: subsistência/pequena escala (espécie avaliada é o alvo)  
+        - 5.3.2 Uso intencional: grande escala (espécie avaliada é o alvo)  
+        - 5.3.3 Efeitos não intencionais: subsistência/pequena escala (espécie avaliada não é o alvo)  
+        - 5.3.4 Efeitos não intencionais: grande escala (espécie avaliada não é o alvo)  
+        - 5.3.5 Motivação desconhecida/não registrada  
+    - 5.4 Pesca e extração de recursos aquáticos  
+        - 5.4.1 Uso intencional: subsistência/pequena escala (espécie avaliada é o alvo)  
+        - 5.4.2 Uso intencional: grande escala (espécie avaliada é o alvo)  
+        - 5.4.3 Efeitos não intencionais: subsistência/pequena escala (espécie avaliada não é o alvo)  
+        - 5.4.4 Efeitos não intencionais: grande escala (espécie avaliada não é o alvo)  
+        - 5.4.5 Perseguição/controle  
+        - 5.4.6 Motivação desconhecida/não registrada  
+
+- **6. Intrusões humanas e perturbações**  
+    - 6.1 Atividades recreativas  
+    - 6.2 Guerra, distúrbios civis e exercícios militares  
+    - 6.3 Trabalho e outras atividades  
+
+- **7. Modificações nos sistemas naturais**  
+    - 7.1 Fogo e supressão de fogo  
+        - 7.1.1 Aumento na frequência/intensidade do fogo  
+        - 7.1.2 Redução na frequência/intensidade do fogo  
+        - 7.1.3 Tendência desconhecida/não registrada  
+    - 7.2 Barragens e gestão/uso da água  
+        - 7.2.1 Captação de água superficial (uso doméstico)  
+        - 7.2.2 Captação de água superficial (uso comercial)  
+        - 7.2.3 Captação de água superficial (uso agrícola)  
+        - 7.2.4 Captação de água superficial (uso desconhecido)  
+        - 7.2.5 Captação de água subterrânea (uso doméstico)  
+        - 7.2.6 Captação de água subterrânea (uso comercial)  
+        - 7.2.7 Captação de água subterrânea (uso agrícola)  
+        - 7.2.8 Captação de água subterrânea (uso desconhecido)  
+        - 7.2.9 Pequenas barragens  
+        - 7.2.10 Grandes barragens  
+        - 7.2.11 Barragens (tamanho desconhecido)  
+    - 7.3 Outras modificações dos ecossistemas  
+
+- **8. Espécies invasoras e outros organismos problemáticos, genes e doenças**  
+    - 8.1 Espécies/doenças invasoras exóticas/alóctones  
+        - 8.1.1 Espécies não especificadas  
+        - 8.1.2 Espécies nomeadas  
+    - 8.2 Espécies/doenças nativas problemáticas  
+        - 8.2.1 Espécies não especificadas  
+        - 8.2.2 Espécies nomeadas  
+    - 8.3 Material genético introduzido  
+    - 8.4 Espécies/doenças problemáticas de origem desconhecida  
+        - 8.4.1 Espécies não especificadas  
+        - 8.4.2 Espécies nomeadas  
+    - 8.5 Doenças virais/priónicas  
+        - 8.5.1 “Espécies” (doenças) não especificadas  
+        - 8.5.2 “Espécies” (doenças) nomeadas  
+    - 8.6 Doenças de causa desconhecida  
+
+- **9. Poluição**  
+    - 9.1 Efluentes domésticos e urbanos  
+        - 9.1.1 Esgoto  
+        - 9.1.2 Escoamento superficial  
+        - 9.1.3 Tipo desconhecido/não registrado  
+    - 9.2 Efluentes industriais e militares  
+        - 9.2.1 Vazamentos de óleo  
+        - 9.2.2 Vazamentos de mineração  
+        - 9.2.3 Tipo desconhecido/não registrado  
+    - 9.3 Efluentes da agricultura e silvicultura  
+        - 9.3.1 Carga de nutrientes  
+        - 9.3.2 Erosão do solo, sedimentação  
+        - 9.3.3 Herbicidas e pesticidas  
+        - 9.3.4 Tipo desconhecido/não registrado  
+    - 9.4 Lixo e resíduos sólidos  
+    - 9.5 Poluentes atmosféricos  
+        - 9.5.1 Chuva ácida  
+        - 9.5.2 Névoa fotoquímica (smog)  
+        - 9.5.3 Ozônio  
+        - 9.5.4 Tipo desconhecido/não registrado  
+    - 9.6 Excesso de energia  
+        - 9.6.1 Poluição luminosa  
+        - 9.6.2 Poluição térmica  
+        - 9.6.3 Poluição sonora  
+        - 9.6.4 Tipo desconhecido/não registrado  
+
+- **10. Eventos geológicos**  
+    - 10.1 Vulcões  
+    - 10.2 Terremotos/tsunamis  
+    - 10.3 Avalanches/deslizamentos  
+
+- **11. Mudanças climáticas e eventos climáticos severos**  
+    - 11.1 Mudança e alteração de habitat  
+    - 11.2 Secas  
+    - 11.3 Extremos de temperatura  
+    - 11.4 Tempestades e inundações  
+    - 11.5 Outros impactos  
+
+- **12. Outras opções**  
+    - 12.1 Outras ameaças  
 :::
 
 ## Aplicação dos Critérios
 
-​O pacote ConR [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) é uma ferramenta desenvolvida para auxiliar na avaliação preliminar do status de conservação de espécies, seguindo os critérios da Lista Vermelha da IUCN. 
+​O pacote `ConR` [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) para <i class="fab fa-r-project" style="color:blue"> é uma ferramenta desenvolvida para auxiliar na avaliação preliminar do status de conservação de espécies, seguindo os critérios da Lista Vermelha da IUCN. 
 
-Criado por Gilles Dauby e Renato A. F. de Lima, o ConR permite análises em larga escala, facilitando o processamento de dados de múltiplas espécies simultaneamente.​
+Criado por Gilles Dauby e Renato A. F. de Lima, o `ConR` permite análises em larga escala, facilitando o processamento de dados de múltiplas espécies simultaneamente.​
 
-Executar os exemplos trazidos pelo ConR é uma ótima maneira de simular a aplicação dos critérios.
+Executar os exemplos trazidos pelo `ConR` é uma ótima maneira de simular a aplicação dos critérios.
 
 ### Critério `A`
 
@@ -204,7 +350,7 @@ criterion_A(example_criterionA,
 )
 ```
 
-Mesmos dados e opções, mas assumindo comprimentos de geração diferentes para cada táxon:
+Mesmos dados e opções, mas **assumindo comprimentos de geração diferentes** para cada táxon:
 
 ```{r}
 #| warning: false
@@ -295,9 +441,17 @@ critA
 
 O critério `B` foi estabelecido para investigar o risco de extinção associado à táxons que apresentam distribuição restrita e/ou especificidade de habitat expressos através de seus valores de EOO e AOO. E que além disso, também apresentam pelo menos duas das três condições (`(a)`, `(b)` e `(c)`). Se apenas uma condição é atendida, não é possível categorizar o táxon sob o criterio `B`. Essas condições referem-se a fragmentação severa ou número de situações de ameaças, declínio contínuo observado, estimado ou projetado em EOO, AOO, área, extensão e/ou qualidade do habitat, no número de situações de ameaça ou e no número de indivíduos maduros.
 
-A condição `(a)` requer fragmentação severa e/ou número limitado de situações de ameaças. A IUCN recomenda que os avaliadores especifique explicitamente em sua documentação: (1) se o táxon está gravemente fragmentado e (2) o número de localizações condicionadas à ameaça.
+A condição `(a)` requer fragmentação severa e/ou número limitado de situações de ameaças. A IUCN recomenda que os avaliadores especifique explicitamente em sua documentação: 
 
-A condição `(c)` requer que a flutuação seja extrema em qualquer dos parâmetros: `(i)` EOO; `(ii)` AOO; `(iii)` número de situações de ameaças ou subpopulações; e `(iv)` número de indivíduos maduros.
+1. Se o táxon está gravemente fragmentado; e 
+2. O número de localizações condicionadas à ameaça.
+
+A condição `(c)` requer que a flutuação seja extrema em qualquer dos parâmetros (subcondições): 
+
+- `(i)` EOO; 
+- `(ii)` AOO; 
+- `(iii)` número de situações de ameaças ou subpopulações; e 
+- `(iv)` número de indivíduos maduros.
 
 ```{r}
 #| warning: false
