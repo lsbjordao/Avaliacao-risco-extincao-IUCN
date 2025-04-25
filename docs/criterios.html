@@ -772,12 +772,19 @@ Conforme orientações da IUCN, pode-se estimar:</p>
 <p>A <strong>Fragmentação severa</strong> é um conceito fundamental na avaliação do risco de extinção, especialmente no Critério <code>B</code>, mas também pode ser considerado nos subcritérios <code>C2</code> e <code>A3</code>, quando a divisão do habitat em pequenos e isolados fragmentos pode levar à extinção local de subpopulações. Quando a densidade populacional e a distribuição dos fragmentos indicam um aumento provável nas taxas de extinções locais, essa condição pode ser usada para inferir um <strong>declínio futuro continuado</strong> no tamanho da população.</p>
 <p>As mesmas condições que indicam fragmentação severa também podem ser usadas para inferir uma redução populacional sob o subcritério <code>A3</code>, desde que haja uma previsão quantitativa:</p>
 <ul>
-<li>Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para Vulnerável), a espécie pode ser listada como ameaçada.</li>
+<li>Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para <code>VU</code>), a espécie pode ser listada como ameaçada.</li>
 </ul>
 </section>
 <section id="localizações-condicionadas-à-ameaça" class="level3">
 <h3 class="anchored" data-anchor-id="localizações-condicionadas-à-ameaça">Localizações condicionadas à ameaça</h3>
 <p>O conceito de <strong>localizações condicionadas à ameaça</strong> (<em>locations</em> em inglês) é definido com base na área de impacto de ameaças específicas, segundo os critérios da IUCN.</p>
+<p>O entendimento cuidadoso desse conceito é fundamental para sua correta aplicação, uma vez que um juízo construído rapidamente à respeito de sua definição pode induzir ao erro. Trata-se de um conceito operacional complexo cuja finalidade é servir como requisito para atendimento dos critérios <code>B</code> e <code>D</code>. A contagem do número de <em>localizações condicionadas à ameaça</em> representa o parâmetro a ser verificado nesses critérios.</p>
+<p>Segundo a IUCN, o termo <em>localizações condicionadas à ameaça</em> define uma área geograficamente ou ecologicamente distinta, na qual um único evento de ameaça pode afetar <strong>rapidamente todos os indivíduos do táxon ali presentes</strong>.</p>
+<p>A amplitude da <em>localização condicionada à ameaça</em> depende da área coberta pelo evento ameaçador e pode incluir parte de uma ou até várias subpopulações. Quando um táxon é afetado por mais de um evento ameaçador, a situação de ameaça deve ser definida considerando a ameaça plausível mais séria.</p>
+<p>Os termos <em>localização condicionada à ameaça</em> e <em>subpopulação</em> são frequentemente utilizados juntos, o que leva a confusão, uma vez que ambos têm definições independentes na terminologia da IUCN <span class="citation" data-cites="Rivers2010">(<a href="references.html#ref-Rivers2010" role="doc-biblioref">Rivers et al. 2010</a>)</span>. Os termos aparecem juntos no critério <code>B</code>, por exemplo, onde declínio contínuo e flutuações extremas podem ser observados em números de subpopulações ou situação de ameaça para cumprir a condição <code>b</code> e <code>c</code>, respectivamente.</p>
+<p>A definição de <em>localização condicionada à ameaça</em> requer um ou mais eventos ameaçadores (ameaças diretas), e o número de situações é baseado na área impactada por essas ameaças incidentes sobre partes de uma subpopulação, ou então, sobre uma ou várias subpopulações, ou partes destas.</p>
+<p>Cada <em>localização condicionada à ameaça</em> é uma área geográfica distinta susceptível a uma ameaça mais severa. Caso haja outras subpopulações ou partes destas nas quais aquela ameaça mais severa não produza impactos, e havendo outras ameaças incidentes a estas subpopulações não afetadas, a segunda ameaça direta mais severa deverá distinguir e contabilizar as <em>localizações condicionadas à ameaça</em>. Ademais, havendo outras subpopulações não afetadas pela segunda ameaça direta mais severa e ainda houver outras ameaças incidindo sobre estas subpopulações, um terceiro evento ameaçador deverá distinguir e contabilizar as <em>localizações condicionadas à ameaça</em>, até que não haja mais eventos ameaçadores capazes de rapidamente afetar todos os indivíduos do táxon ali presentes.</p>
+<p>Quando partes da distribuição de uma espécie <strong>não são afetadas por nenhuma ameaça</strong>, então é preciso definir o número de <em>localizações condicionadas à ameaça</em> nas áreas <strong>não afetadas</strong> com o número de subpopulações restantes. Isso implica que, apesar das diferentes definições, o número de subpopulações e <em>localizações condicionadas à ameaça</em> estão intimamente relacionados. É importante documentar o método usado para estimar o número de <em>localizações condicionadas à ameaça</em>.</p>
 </section>
 <section id="declínio-contínuo" class="level3">
 <h3 class="anchored" data-anchor-id="declínio-contínuo">Declínio contínuo</h3>
@@ -1251,7 +1258,37 @@ Usando o pacote <code>sf</code> para gerar o AOO
 </section>
 <section id="flutuação-extrema" class="level3">
 <h3 class="anchored" data-anchor-id="flutuação-extrema">Flutuação extrema</h3>
-<p>Flutuações extremas ocorrem quando o tamanho populacional ou de sua área de distribuição varia de forma acentuada, rápida ou frequente, e cuja variação é maior do que aproximadamente 10 vezes.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definicão segundo a IUCN:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Flutuação extrema</strong> é reconhecida quando o tamanho da população ou área de distribuição do táxon varia de forma ampla, rápida e frequente, em geral com variação maior que uma ordem de magnitude (ou seja, aumento ou diminuição de dez vezes).</p>
+</div>
+</div>
+<p>Há duas maneiras principais de diagnosticar flutuações extremas:</p>
+<ol type="1">
+<li>Interpretando as trajetórias populacionais com base em um índice de abundância apropriado para o táxon; e</li>
+<li>Usando características de história de vida ou biologia do habitat do táxon.</li>
+</ol>
+<section id="índice-de-abundância" class="level4">
+<h4 class="anchored" data-anchor-id="índice-de-abundância">Índice de abundância</h4>
+<p>Índices de abundância em vegetação são medidas relativas que expressam a frequência, cobertura ou dominância de espécies vegetais em uma área de estudo, permitindo comparações espaciais ou temporais <span class="citation" data-cites="kent2012">(<a href="references.html#ref-kent2012" role="doc-biblioref">Kent 2012</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="flutuacao.png" class="img-fluid figure-img"></p>
+<figcaption>Exemplos de diferentes padrões temporais de variação no tamanho populacional com o eixo Y em escala logarítmica.<br><br>(a) Flutuação irregular em torno de uma média constante, sem tendência clara de aumento ou declínio.<br><br>(b) Variações abruptas entre níveis discretos de abundância, mas sem direção definida (mudanças tipo “degraus”).<br><br>(c) Ciclos regulares de aumento e queda, com retorno recorrente a níveis semelhantes de abundância.<br><br>(d) Flutuações com quedas pronunciadas seguidas de recuperação parcial, mas sem tendência direcional ao longo do tempo.<br><br>(e) Declínio contínuo e gradual na abundância populacional, sem flutuações acentuadas.<br><br>(f) Queda abrupta seguida de estabilização em um novo patamar mais baixo de abundância.<br><br>(g) Declínio gradual com flutuações regulares, refletindo uma tendência de queda combinada com variações cíclicas.<br><br>(h) Reduções abruptas intercaladas por períodos de relativa estabilidade ou pequenas flutuações.<br><br>(i) Tendência de declínio populacional com flutuações cíclicas superpostas, formando um padrão de queda escalonada.</figcaption>
+</figure>
+</div>
+</section>
+<section id="características-de-história-de-vida-ou-biologia-do-habitat" class="level4">
+<h4 class="anchored" data-anchor-id="características-de-história-de-vida-ou-biologia-do-habitat">Características de história de vida ou biologia do habitat</h4>
+</section>
 </section>
 </section>
 <section id="critério-c" class="level2">
@@ -1308,6 +1345,12 @@ Usando o pacote <code>sf</code> para gerar o AOO
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-Caughley1994" class="csl-entry" role="listitem">
 Caughley, Graeme. 1994. <span>«Directions in Conservation Biology»</span>. <em>The Journal of Animal Ecology</em> 63 (2): 215. <a href="https://doi.org/10.2307/5542">https://doi.org/10.2307/5542</a>.
+</div>
+<div id="ref-kent2012" class="csl-entry" role="listitem">
+Kent, Martin. 2012. <em>Vegetation Description and Data Analysis: A Practical Approach</em>. 2nd ed. Chichester, UK: Wiley-Blackwell.
+</div>
+<div id="ref-Rivers2010" class="csl-entry" role="listitem">
+Rivers, Malin C, Steven P Bachman, Thomas R Meagher, Eimear Nic Lughadha, e Neil A Brummitt. 2010. <span>«<span>Subpopulations, locations and fragmentation: applying <span>IUCN</span> Red List criteria to herbarium specimen data</span>»</span>. <em>Biodivers. Conserv.</em> 19 (7): 2071–85.
 </div>
 </div>
 </section>

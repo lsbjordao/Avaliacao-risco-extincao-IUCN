@@ -222,11 +222,25 @@ A **Fragmentação severa** é um conceito fundamental na avaliação do risco d
 
 As mesmas condições que indicam fragmentação severa também podem ser usadas para inferir uma redução populacional sob o subcritério `A3`, desde que haja uma previsão quantitativa:
 
-  - Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para Vulnerável), a espécie pode ser listada como ameaçada.
+  - Modelos bioclimáticos ou de uso do solo podem prever que, no futuro, o habitat da espécie será dividido em fragmentos menores e mais isolados. Se muitos indivíduos da espécie ficarem restritos a fragmentos pequenos, a chance de extinções locais nesses fragmentos aumenta. Isso pode ser usado para inferir uma redução adicional na população total da espécie — mesmo que nem toda essa redução seja observável hoje. Quando essa redução futura combinada (ex: pela perda de área e pelo efeito da fragmentação) atinge os limiares do critério A3 (por exemplo, 30% para `VU`), a espécie pode ser listada como ameaçada.
 
 ### Localizações condicionadas à ameaça
 
 O conceito de **localizações condicionadas à ameaça** (*locations* em inglês) é definido com base na área de impacto de ameaças específicas, segundo os critérios da IUCN.
+
+O entendimento cuidadoso desse conceito é fundamental para sua correta aplicação, uma vez que um juízo construído rapidamente à respeito de sua definição pode induzir ao erro. Trata-se de um conceito operacional complexo cuja finalidade é servir como requisito para atendimento dos critérios `B` e `D`. A contagem do número de *localizações condicionadas à ameaça* representa o parâmetro a ser verificado nesses critérios.
+
+Segundo a IUCN, o termo *localizações condicionadas à ameaça* define uma área geograficamente ou ecologicamente distinta, na qual um único evento de ameaça pode afetar **rapidamente todos os indivíduos do táxon ali presentes**.
+
+A amplitude da *localização condicionada à ameaça* depende da área coberta pelo evento ameaçador e pode incluir parte de uma ou até várias subpopulações. Quando um táxon é afetado por mais de um evento ameaçador, a situação de ameaça deve ser definida considerando a ameaça plausível mais séria.
+
+Os termos *localização condicionada à ameaça* e *subpopulação* são frequentemente utilizados juntos, o que leva a confusão, uma vez que ambos têm definições independentes na terminologia da IUCN [@Rivers2010]. Os termos aparecem juntos no critério `B`, por exemplo, onde declínio contínuo e flutuações extremas podem ser observados em números de subpopulações ou situação de ameaça para cumprir a condição `b` e `c`, respectivamente.
+
+A definição de *localização condicionada à ameaça* requer um ou mais eventos ameaçadores (ameaças diretas), e o número de situações é baseado na área impactada por essas ameaças incidentes sobre partes de uma subpopulação, ou então, sobre uma ou várias subpopulações, ou partes destas.
+
+Cada *localização condicionada à ameaça* é uma área geográfica distinta susceptível a uma ameaça mais severa. Caso haja outras subpopulações ou partes destas nas quais aquela ameaça mais severa não produza impactos, e havendo outras ameaças incidentes a estas subpopulações não afetadas, a segunda ameaça direta mais severa deverá distinguir e contabilizar as *localizações condicionadas à ameaça*. Ademais, havendo outras subpopulações não afetadas pela segunda ameaça direta mais severa e ainda houver outras ameaças incidindo sobre estas subpopulações, um terceiro evento ameaçador deverá distinguir e contabilizar as *localizações condicionadas à ameaça*, até que não haja mais eventos ameaçadores capazes de rapidamente afetar todos os indivíduos do táxon ali presentes.
+
+Quando partes da distribuição de uma espécie **não são afetadas por nenhuma ameaça**, então é preciso definir o número de *localizações condicionadas à ameaça* nas áreas **não afetadas** com o número de subpopulações restantes. Isso implica que, apesar das diferentes definições, o número de subpopulações e *localizações condicionadas à ameaça* estão intimamente relacionados. É importante documentar o método usado para estimar o número de *localizações condicionadas à ameaça*.
 
 ### Declínio contínuo
 
@@ -632,7 +646,25 @@ Contudo, vale destacar que embora as subpopulações sejam agrupamentos distinto
 
 ### Flutuação extrema
 
-Flutuações extremas ocorrem quando o tamanho populacional ou de sua área de distribuição varia de forma acentuada, rápida ou frequente, e cuja variação é maior do que aproximadamente 10 vezes.
+:::{.callout-note}
+
+## Definicão segundo a IUCN:
+
+**Flutuação extrema** é reconhecida quando o tamanho da população ou área de distribuição do táxon varia de forma ampla, rápida e frequente, em geral com variação maior que uma ordem de magnitude (ou seja, aumento ou diminuição de dez vezes).
+:::
+
+Há duas maneiras principais de diagnosticar flutuações extremas: 
+
+1. Interpretando as trajetórias populacionais com base em um índice de abundância apropriado para o táxon; e 
+2. Usando características de história de vida ou biologia do habitat do táxon.
+
+#### Índice de abundância
+
+Índices de abundância em vegetação são medidas relativas que expressam a frequência, cobertura ou dominância de espécies vegetais em uma área de estudo, permitindo comparações espaciais ou temporais [@kent2012].
+
+![Exemplos de diferentes padrões temporais de variação no tamanho populacional com o eixo Y em escala logarítmica.<br><br>(a) Flutuação irregular em torno de uma média constante, sem tendência clara de aumento ou declínio.<br><br>(b) Variações abruptas entre níveis discretos de abundância, mas sem direção definida (mudanças tipo "degraus").<br><br>(c) Ciclos regulares de aumento e queda, com retorno recorrente a níveis semelhantes de abundância.<br><br>(d) Flutuações com quedas pronunciadas seguidas de recuperação parcial, mas sem tendência direcional ao longo do tempo.<br><br>(e) Declínio contínuo e gradual na abundância populacional, sem flutuações acentuadas.<br><br>(f) Queda abrupta seguida de estabilização em um novo patamar mais baixo de abundância.<br><br>(g) Declínio gradual com flutuações regulares, refletindo uma tendência de queda combinada com variações cíclicas.<br><br>(h) Reduções abruptas intercaladas por períodos de relativa estabilidade ou pequenas flutuações.<br><br>(i) Tendência de declínio populacional com flutuações cíclicas superpostas, formando um padrão de queda escalonada.](flutuacao.png)
+
+#### Características de história de vida ou biologia do habitat
 
 ## Critério C
 
