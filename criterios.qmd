@@ -365,7 +365,7 @@ A **Área de Ocupação (AOO)** é um parâmetro que representa a área de habit
 
 ## Usando o pacote `sf` para gerar o AOO
 
-Vamos executar um exemplo hipotético gerando pontos de coordenadas aleatórios no estado do Mato Grosso do Sul (MS) e gerar a EOO através do pacote `sf` ([*Simple Features*](https://r-spatial.github.io/sf/)) para <i class="fab fa-r-project" style="color:blue"> e visualizar o resultado com o pacote ([`leaflet`](https://rstudio.github.io/leaflet/index.html)) .
+Vamos executar um exemplo hipotético gerando pontos de coordenadas aleatórios no estado do Mato Grosso do Sul (MS) e gerar a EOO através do pacote `sf` ([*Simple Features*](https://r-spatial.github.io/sf/)) para {{< fa brands r-project >}} e visualizar o resultado com o pacote ([`leaflet`](https://rstudio.github.io/leaflet/index.html)) .
 
 ```{r}
 #| warning: false

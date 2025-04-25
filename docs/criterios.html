@@ -100,6 +100,8 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-dark-9080cd1872618827307f6bc34f81b6b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-32d3c918484c9f49d94f37e56798127d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -966,7 +968,7 @@ Usando o pacote <code>sf</code> para gerar o AOO
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Vamos executar um exemplo hipotético gerando pontos de coordenadas aleatórios no estado do Mato Grosso do Sul (MS) e gerar a EOO através do pacote <code>sf</code> (<a href="https://r-spatial.github.io/sf/"><em>Simple Features</em></a>) para <i class="fab fa-r-project" style="color:blue"> e visualizar o resultado com o pacote (<a href="https://rstudio.github.io/leaflet/index.html"><code>leaflet</code></a>) .</i></p><i class="fab fa-r-project" style="color:blue">
+<p>Vamos executar um exemplo hipotético gerando pontos de coordenadas aleatórios no estado do Mato Grosso do Sul (MS) e gerar a EOO através do pacote <code>sf</code> (<a href="https://r-spatial.github.io/sf/"><em>Simple Features</em></a>) para <i class="fa-brands fa-r-project" aria-label="r-project"></i> e visualizar o resultado com o pacote (<a href="https://rstudio.github.io/leaflet/index.html"><code>leaflet</code></a>) .</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lista dos pacotes necessários</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pacotes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sf"</span>, <span class="st">"ggplot2"</span>, <span class="st">"units"</span>)</span>
@@ -1228,10 +1230,10 @@ Usando o pacote <code>sf</code> para gerar o AOO
 <script type="application/json" data-for="htmlwidget-01f665b989270420b066">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"Mapa base",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Imagem de satélite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[-56.10424148134136,-56.08627517565897,-56.08627517565897,-56.10424148134136,-56.10424148134136],"lat":[-20.75930514098766,-20.75930514098766,-20.74250431654692,-20.74250431654692,-20.75930514098766]}]]],null,"Buffer Quadrado (Ponto Único)",{"interactive":true,"className":"","stroke":true,"color":"red","weight":2,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.3,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[-20.75090496208893,-56.09525832850017,5,null,"Ponto único",{"interactive":true,"className":"","stroke":true,"color":"blue","weight":5,"opacity":0.5,"fill":true,"fillColor":"blue","fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Mapa base","Imagem de satélite"],["(Ponto único","Buffer Quadrado (Ponto Único)"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addMeasure","args":[{"position":"topright","primaryLengthUnit":"kilometers","secondaryLengthUnit":"meters","primaryAreaUnit":"sqmeters","secondaryAreaUnit":"hectares","activeColor":"#ABE67E","completedColor":"#C8F2BE","popupOptions":{"className":"leaflet-measure-resultpopup","autoPanPadding":[10,10]},"captureZIndex":10000,"localization":"en","decPoint":".","thousandsSep":","}]}],"limits":{"lat":[-20.75930514098766,-20.74250431654692],"lng":[-56.10424148134136,-56.08627517565897]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-</i></div><i class="fab fa-r-project" style="color:blue">
-</i></div><i class="fab fa-r-project" style="color:blue">
-</i></div><i class="fab fa-r-project" style="color:blue">
-</i></section><i class="fab fa-r-project" style="color:blue">
+</div>
+</div>
+</div>
+</section>
 <section id="subpopulação" class="level3">
 <h3 class="anchored" data-anchor-id="subpopulação">Subpopulação</h3>
 <div class="callout callout-style-simple callout-note no-icon">
@@ -1251,7 +1253,7 @@ Usando o pacote <code>sf</code> para gerar o AOO
 <h3 class="anchored" data-anchor-id="flutuação-extrema">Flutuação extrema</h3>
 <p>Flutuações extremas ocorrem quando o tamanho populacional ou de sua área de distribuição varia de forma acentuada, rápida ou frequente, e cuja variação é maior do que aproximadamente 10 vezes.</p>
 </section>
-</i></section><i class="fab fa-r-project page-columns page-full" style="color:blue">
+</section>
 <section id="critério-c" class="level2">
 <h2 class="anchored" data-anchor-id="critério-c">Critério C</h2>
 <iframe id="iframeC" src="./criterio-c.html" width="100%" style="border: none;">
@@ -1310,7 +1312,7 @@ Caughley, Graeme. 1994. <span>«Directions in Conservation Biology»</span>. <em
 </div>
 </section>
 
-</i></main><i class="fab fa-r-project" style="color:blue"> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1784,9 +1786,9 @@ loadGiscusWhenReady();
       </a>
   </div>
 </nav>
-</i></div><i class="fab fa-r-project" style="color:blue"> <!-- /content -->
+</div> <!-- /content -->
 
 
 
 
-</i></body></html>
+</body></html>
