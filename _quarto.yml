@@ -23,8 +23,8 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: litera
-      dark: morph
+      light: brite
+      dark: cyborg
     number-sections: false
     crossref:
       fig-prefix: "Figura"
