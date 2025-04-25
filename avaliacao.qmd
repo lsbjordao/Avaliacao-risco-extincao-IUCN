@@ -337,6 +337,12 @@ Assim, tanto do ponto de vista prático quanto teórico, é necessário ter um c
 ```{r}
 #| warning: false
 
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 data(example_criterionA)
@@ -355,6 +361,12 @@ Mesmos dados e opções, mas **assumindo comprimentos de geração diferentes** 
 ```{r}
 #| warning: false
 
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 data(example_criterionA)
@@ -373,7 +385,12 @@ Avaliando se três espécies brasileiras de plantas (*Araucaria angustifolia*, *
 ```{r}
 #| warning: false
 
-# Carrega o pacote ConR, utilizado para avaliações preliminares do risco de extinção
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 # Vetor com os nomes das espécies a serem avaliadas
@@ -456,6 +473,12 @@ A condição `(c)` requer que a flutuação seja extrema em qualquer dos parâme
 ```{r}
 #| warning: false
 
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 data(example_tutorial)
@@ -525,6 +548,12 @@ Além disso, o **número de indivíduos maduros em cada subpopulação** (valor 
 ```{r}
 #| warning: false
 
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 # Vetor com os nomes das espécies a serem avaliadas
@@ -648,17 +677,16 @@ O critério `D` se destina a avaliar táxons que possuam populações muito pequ
 ```{r}
 #| warning: false
 
-# Carrega o pacote ConR, que permite calcular critérios da IUCN para avaliação de risco de extinção
+# Instala o ConR se não tiver instalado
+if (!requireNamespace("ConR", quietly = TRUE)) {
+  install.packages("ConR")
+}
+
+# Carrega o pacote ConR
 library(ConR)
 
 # Proporção de indivíduos maduros na população para cada espécie
 p.mature <- c(0.4485, 0.3028, 0.4143)
-
-# Nível de exploração (em %) para cada espécie comercial — utilizado para corrigir a proporção de indivíduos maduros
-harvest <- c(10, 10, 10)
-
-# Corrige a proporção de indivíduos maduros com base na exploração (reduz o valor conforme o nível de exploração)
-p.mature.explo <- p.mature - harvest / 100
 
 # Vetor com os nomes das espécies a serem avaliadas
 spp <- c("Araucaria angustifolia", "Euterpe edulis", "Paubrasilia echinata")
@@ -726,7 +754,7 @@ critD <- criterion_D(
     name_sp = mean.pop[[1]], # Nomes das espécies
     AOO = AOO$aoo, # Área de Ocorrência estimada
     n.Locs = locs$locations$locations, # Número de localidades
-    prop.mature = p.mature.explo, # Proporção de indivíduos maduros (corrigida pela exploração)
+    prop.mature = p.mature, # Proporção de indivíduos maduros
     subcriteria = c("D", "D2"), # Subcritérios a serem avaliados
     AOO.threshold = 20, # Limite de AOO (em km²) para subcritério D2
     Loc.threshold = 5 # Limite de localidades para subcritério D2
