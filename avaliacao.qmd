@@ -310,7 +310,7 @@ Os critérios são aplicáveis a qualquer processo de ameaça que resulte em sin
 
 ## Aplicação dos Critérios
 
-​O pacote `ConR` [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) para <i class="fab fa-r-project" style="color:blue"> é uma ferramenta desenvolvida para auxiliar na avaliação preliminar do status de conservação de espécies, seguindo os critérios da Lista Vermelha da IUCN. 
+​O pacote `ConR` [Dalby & Lima, 2023](https://gdauby.github.io/ConR/) para {{< fa brands r-project >}} é uma ferramenta desenvolvida para auxiliar na avaliação preliminar do status de conservação de espécies, seguindo os critérios da Lista Vermelha da IUCN. 
 
 Criado por Gilles Dauby e Renato A. F. de Lima, o `ConR` permite análises em larga escala, facilitando o processamento de dados de múltiplas espécies simultaneamente.​
 
