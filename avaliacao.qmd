@@ -320,7 +320,7 @@ Executar os exemplos trazidos pelo `ConR` é uma ótima maneira de simular a apl
 
 O critério `A` foi estabelecido para investigar o risco de extinção associado à táxons que **sofreram redução populacional significativa no passado próximo, ou que sofrerão redução populacional projetada no futuro próximo**.
 
-Objetivamente, o critério `A` baseia-se exclusivamente em parâmetros relacionados à redução da população verificada ao longo de uma determinada escala temporal.
+Objetivamente, o critério `A` baseia-se exclusivamente em parâmetros relacionados à redução do tamanho populacional verificada ao longo de uma determinada escala temporal.
 
 A lógica subjacente ao critério `A` é que todas as espécies têm igualmente maior probabilidade de extinção quando a taxa de declínio populacional é alta. 
 
